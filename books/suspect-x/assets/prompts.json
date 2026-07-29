@@ -5,7 +5,7 @@
     "suffix": ", high detail, atmospheric, somber mood, key-visual quality, no text, no UI, no watermark",
     "negative": "moe, chibi, cute, glossy cel-shading, oversaturated, neon, 3D CG render, photorealistic photo, text, captions, watermark, signature, UI elements, frame border, extra fingers, deformed hands, lowres, too dark, underexposed, pitch black, crushed blacks, murky, low visibility",
     "sizes": { "background": "1920x1080", "cg": "1920x1080", "title": "1920x1080", "icon": "768x1024" },
-    "note": "尺寸按 item.type 取 style.sizes：场景/CG/封面 = 1920x1080（16:9 横图）；线索图标 = 768x1024（3:4 竖图）。封面 title_keyvisual 必须是 16:9 横图（勿出成竖图）。每条 prompt 已拼好可直接喂图像模型，negative 全局通用。背景/CG 存 assets/images/，封面+8图标存 assets/images/cover_icons/，再运行 node scripts/sync-manifest.mjs 回填。"
+    "note": "尺寸按 item.type 取 style.sizes：场景/CG/封面 = 1920x1080（16:9 横图）；线索图标 = 768x1024（3:4 竖图）。封面 title_keyvisual 必须是 16:9 横图（勿出成竖图）。每条 prompt 已拼好可直接喂图像模型，negative 全局通用。背景/CG 存 assets/images/，封面+8图标存 assets/images/cover_icons/，再运行 node scripts/sync-manifest.mjs --book suspect-x 回填。"
   },
   "items": [
     { "id": "bg_tentei_day", "filename": "bg_tentei_day.png", "type": "background", "aspect": "16:9",

@@ -1,7 +1,7 @@
 # 《嫌疑犯X的献身》互动 VN — 图像生成提示词（29 张）
 
 > 画风：暗调半写实动漫 VN（参考《人狼村之谜》Raging Loop）。
-> 用法：出图后按各自**文件名**存入 `assets/images/`，运行 `node scripts/sync-manifest.mjs` 回填，刷新浏览器即顶替占位。
+> 用法：出图后按各自**文件名**存入 `assets/images/`，运行 `node scripts/sync-manifest.mjs --book suspect-x` 回填，刷新浏览器即顶替占位。
 > 下方每条 prompt 已拼成可直接粘贴的成品；负面词所有图共用。
 
 **通用负面词（negative，所有图共用）：**
@@ -199,7 +199,7 @@ Cinematic semi-realistic anime visual-novel key visual, painterly highly detaile
 2. 保存为对应**文件名**：
    - 场景背景、事件 CG → `assets/images/`
    - **封面 `title_keyvisual.png` 与 8 个 `icon_*.png` → `assets/images/cover_icons/`**（单独文件夹）
-3. 运行 `node scripts/sync-manifest.mjs` 回填 `assets/manifest.json`（已支持子文件夹递归）。
+3. 运行 `node scripts/sync-manifest.mjs --book suspect-x` 回填 `assets/manifest.json`（已支持子文件夹递归）。
 4. 刷新浏览器（`localhost:8099`，文件名不变时用 `Cmd+Shift+R` 硬刷新），占位自动替换为正式美术。
 
 建议先出 `cg_interrogation_climax`、`cg_murder_strangling`、`cg_ishigami_examines_body`、`bg_yasuko_apt_night`、`title_keyvisual` 这 5 张校准画风，统一后再批量出全。

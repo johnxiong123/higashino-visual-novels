@@ -1,7 +1,7 @@
 # 封面 + 8 线索图标 · 生成提示词
 
 > 这 9 张归在本文件夹（`assets/images/cover_icons/`）。
-> 出图后按下方**文件名**存回本文件夹（文件名不变）→ 运行 `node scripts/sync-manifest.mjs` → 浏览器 `Cmd+Shift+R` 硬刷新。
+> 出图后按下方**文件名**存回本文件夹（文件名不变）→ 运行 `node scripts/sync-manifest.mjs --book suspect-x` → 浏览器 `Cmd+Shift+R` 硬刷新。
 > 画风：暗调半写实动漫 VN（参考《人狼村之谜》Raging Loop）。
 
 **通用负面词（negative，所有图共用）：**
