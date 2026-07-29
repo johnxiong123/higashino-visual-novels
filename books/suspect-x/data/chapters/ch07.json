@@ -1,0 +1,152 @@
+{
+  "meta": { "id": "ch07", "title": "终章 · 献身", "defaultPov": "ishigami" },
+  "start": "ch07_001",
+  "nodes": {
+    "ch07_001": {
+      "bg": "bg_interrogation_room",
+      "cg": "cg_interrogation_climax",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "案子本已定调，谁也没想到石神会主动走进分局，把一切揽到自己身上。" },
+        { "speaker": "石神", "text": "人是我杀的。我跟踪她很久了，她不肯理我，我才动了手。" },
+        { "speaker": "旁白", "text": "供述滴水不漏，连脚踏车的指纹、烧到一半的衣物都解释得合情合理。" }
+      ],
+      "onEnter": { "clues": ["ishigami_confession"] },
+      "next": "ch07_002"
+    },
+    "ch07_002": {
+      "bg": "bg_university_lab",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "草薙", "text": "他的口供毫无破绽，所有证据都指向他。可我就是不信他会做这种事。" },
+        { "speaker": "汤川", "text": "他给你们出了一道题，再附上一份完美的解答。你们以为答对了，其实只是照着他的证明在走。" },
+        { "speaker": "汤川", "text": "真正该做的，是去证明——除了他给的答案，再没有别的可能。" }
+      ],
+      "next": "ch07_003"
+    },
+    "ch07_003": {
+      "bg": "bg_university_lab",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "汤川悄悄去图书馆翻了三月十日之后的旧报纸，还打听了千叶、埼玉的地方报。" },
+        { "speaker": "草薙", "text": "（他在找什么？一具身份不明的尸体？）" }
+      ],
+      "next": "ch07_004"
+    },
+    "ch07_004": {
+      "bg": "bg_sumida_bank_dawn",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "旁白", "text": "隅田川岸，游民小屋渐渐稀疏的地方，汤川停下脚步，回头望向跟来的草薙。" },
+        { "speaker": "汤川", "text": "接下来要说的，是讲给朋友听的，不是讲给刑警听的。你能答应我，不告诉任何人吗？" },
+        { "speaker": "草薙", "text": "……我答应你。" }
+      ],
+      "onEnter": { "clues": ["homeless_victim"] },
+      "next": "ch07_005"
+    },
+    "ch07_005": {
+      "bg": "bg_family_restaurant_dusk",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "旁白", "text": "高架桥下的小公园，靖子被汤川拦住。她本是要去赴工藤的约。" },
+        { "speaker": "汤川", "text": "我不信他会对你做那种卑劣的事。他在说谎，而说谎只有一个理由——替别人扛下真相。" },
+        { "speaker": "靖子", "text": "（他想让真凶去自首……是想救石神。）" }
+      ],
+      "next": "ch07_006"
+    },
+    "ch07_006": {
+      "bg": "bg_family_restaurant_dusk",
+      "cg": "cg_park_truth_reveal",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "汤川", "text": "旧江户川那具尸体，确实是石神杀的。他不是顶罪，他真的杀了人——只是死者并不是富坚。" },
+        { "speaker": "汤川", "text": "在富坚死的第二天，他又杀了另一个人，伪装成富坚，把案子整个从你身上挪开。" },
+        { "speaker": "旁白", "text": "靖子用手捂住嘴，几乎要尖叫出声。原来那看似松散的不在场证明，藏的根本是另一桩命案。" }
+      ],
+      "next": "ch07_007"
+    },
+    "ch07_007": {
+      "bg": "bg_family_restaurant_dusk",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "汤川", "text": "我什么证据都没有，全是推论。今后的路，由你自己选。" },
+        { "speaker": "靖子", "text": "（他逼我做的，是何等残酷的选择……）" }
+      ],
+      "onEnter": { "state": { "guilt": 2 }, "clues": ["hidden_witness"] },
+      "next": "ch07_008"
+    },
+    "ch07_008": {
+      "bg": "bg_yasuko_apt_night",
+      "cg": "cg_rescue_flashback",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "旁白", "text": "一年前，石神在屋里钉好钉子，把绳圈套上脖子。他想，自己死了也不会有人难过。" },
+        { "speaker": "旁白", "text": "就在脚踏上凳子的瞬间，门铃响了。门外站着刚搬来的母女俩，眼睛亮得惊人。" },
+        { "speaker": "石神", "text": "（原来美，和解开一道难题，是同一回事。是她们，让我重新有了活下去的理由。）" }
+      ],
+      "onEnter": { "clues": ["ishigami_past"] },
+      "next": "ch07_009"
+    },
+    "ch07_009": {
+      "bg": "bg_yasuko_apt_night",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "旁白", "text": "回到家，靖子取出石神塞进信箱的那张纸——上面连美里该怎么回答都写得清清楚楚。" },
+        { "speaker": "石神", "text": "（工藤先生可靠，和他结婚，你和美里会更幸福。请把我忘了，千万别有罪恶感。）" },
+        { "speaker": "旁白", "text": "她看着工藤送的钻戒，泪水又一次涌出。这世上竟有人能把整个人生，悄悄押在她身上。" }
+      ],
+      "onEnter": { "clues": ["diamond_ring"] },
+      "choices": [
+        { "text": "顺着他的心愿，藏起真相去抓住幸福", "tag": "分支 · 沉默",
+          "effects": { "state": { "guilt": 2 }, "flags": ["yasuko_silent"] }, "goto": "ch07_resolve" },
+        { "text": "无法承受，决意到分局说出一切", "tag": "分支 · 自首",
+          "effects": { "state": { "resolve": 2, "guilt": 1 }, "flags": ["yasuko_confess"] }, "goto": "ch07_resolve" }
+      ]
+    },
+    "ch07_resolve": {
+      "bg": "bg_interrogation_room",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "命运的齿轮，已经咬合到最后一格。" }
+      ],
+      "branches": [
+        { "requires": { "vars": { "suspicion": { "gte": 6 } } }, "goto": "ch07_be_caught" },
+        { "requires": { "flags": ["yasuko_silent"], "vars": { "suspicion": { "lte": 2 } } }, "goto": "ch07_ge_perfect" },
+        { "goto": "ch07_te_devotion" }
+      ]
+    },
+    "ch07_be_caught": {
+      "bg": "bg_interrogation_room",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "破绽终究还是露了。脚踏车、衣物、还有那具对不上的尸体——警方一层层撬开了石神的谎言。" },
+        { "speaker": "草薙", "text": "身份不明的死者查到了家属，DNA一比对，富坚的死期对不上。整套诡计塌了。" },
+        { "speaker": "旁白", "text": "石神、靖子、美里，连同那桩被掩埋的命案，一起被押上了审判席。无人幸免。" }
+      ],
+      "ending": { "id": "BE_caught", "title": "结局 · 诡计崩塌", "type": "bad" }
+    },
+    "ch07_ge_perfect": {
+      "bg": "bg_river_kiyosu_dawn",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "旁白", "text": "没有人识破那道题。案子结了，石神在狱中，靖子戴上了钻戒。" },
+        { "speaker": "靖子", "text": "（我自由了……可这份自由，是用他的一生换来的。）" },
+        { "speaker": "旁白", "text": "她得到了所有人羡慕的幸福，却也将终生背着一个永远说不出口的秘密活下去。" }
+      ],
+      "ending": { "id": "GE_perfect_crime", "title": "结局 · 无人识破的题", "type": "good" }
+    },
+    "ch07_te_devotion": {
+      "bg": "bg_interrogation_room",
+      "cg": "cg_ishigami_breakdown",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "旁白", "text": "侦讯室外的走廊，靖子忽然出现在石神面前。她扑通跪下。" },
+        { "speaker": "靖子", "text": "对不起……怎么能只有我们得到幸福。我要和您一起接受惩罚，我能做的只有这个。" },
+        { "speaker": "石神", "text": "你胡说什么……你在说什么傻话……" },
+        { "speaker": "旁白", "text": "石神猛然转身，双手抱头。一声野兽般的咆哮撕开了走廊——那是绝望，是他呕出的整个灵魂。" }
+      ],
+      "onEnter": { "state": { "guilt": 1 } },
+      "ending": { "id": "TE_devotion", "title": "结局 · 嫌疑人的献身", "type": "true" }
+    }
+  }
+}

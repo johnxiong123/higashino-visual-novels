@@ -1,0 +1,10 @@
+[
+  { "id": "TE_devotion", "title": "真结局 · 嫌疑人的献身", "type": "true",
+    "summary": "石神顶下所有罪名，靖子却无法承受这份献身而自首——他发出野兽般的哀嚎。", "cg": "cg_ishigami_breakdown" },
+  { "id": "GE_perfect_crime", "title": "结局 · 无人识破", "type": "good",
+    "summary": "诡计天衣无缝，无人识破。靖子获得自由，却终生背负愧疚。", "cg": null },
+  { "id": "BE_caught", "title": "结局 · 东窗事发", "type": "bad",
+    "summary": "破绽暴露，母女与石神一同被捕。", "cg": null },
+  { "id": "BE_call_police", "title": "结局 · 慌乱的代价", "type": "bad",
+    "summary": "慌乱中报警，正当防卫的主张没能站住脚，美里的人生蒙上阴影。", "cg": null }
+]

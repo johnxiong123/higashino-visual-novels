@@ -1,0 +1,199 @@
+{
+  "meta": { "id": "ch06", "title": "第六章 · 识破", "defaultPov": "yukawa" },
+  "start": "ch06_001",
+  "nodes": {
+    "ch06_001": {
+      "bg": "bg_university_lab",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "旁白", "text": "石神自首之后，研究室里却没有半分轻松。汤川站在窗前，背对草薙，久久不语。" },
+        { "speaker": "草薙", "text": "凶手都招了，证词滴水不漏。我们各个角度都查证过了。" },
+        { "speaker": "汤川", "text": "我不想听『身为警察』那一套。我问的是——你心里，相信吗？" }
+      ],
+      "next": "ch06_002"
+    },
+    "ch06_002": {
+      "bg": "bg_university_lab",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "草薙", "text": "……老实说，怪得很。他说的全都合情合理，可我就是不信他会做那种事。" },
+        { "speaker": "汤川", "text": "他最后问过我一道题：自己解一道题，和判断别人给的答案对不对——哪个更难。" },
+        { "speaker": "汤川", "text": "这就是 P 是否等于 NP。石神交给你们一份『答案』，你们却只顾着照他的证明往下走。" }
+      ],
+      "onEnter": { "clues": ["p_vs_np_riddle"] },
+      "next": "ch06_003"
+    },
+    "ch06_003": {
+      "bg": "bg_university_lab",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "汤川", "text": "你们该做的，不是验证他给的答案，而是去找——有没有别的答案。" },
+        { "speaker": "草薙", "text": "你是说他在撒谎？真凶不是他？" },
+        { "speaker": "旁白", "text": "汤川垂下眼。那张一向冷静的脸，此刻只剩痛苦。" }
+      ],
+      "next": "ch06_004"
+    },
+    "ch06_004": {
+      "bg": "bg_university_lab",
+      "cg": "cg_interrogation_climax",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "旁白", "text": "草薙随手摊开一份石神的出勤表。三月十日上午，请假。他没当回事。" },
+        { "speaker": "旁白", "text": "可汤川的目光落在那一格上，瞬间凝住。脸色，一寸寸褪尽了血色。" },
+        { "speaker": "汤川", "text": "（十日上午请假……他要藏的，不是那天。是那天的『前一夜』。）" },
+        { "speaker": "汤川", "text": "（看似不在场证明的障眼法……真正的诡计，在尸体的身份上。）" }
+      ],
+      "onEnter": { "state": { "suspicion": 1 }, "clues": ["attendance_sheet"] },
+      "next": "ch06_005"
+    },
+    "ch06_005": {
+      "bg": "bg_university_lab",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "旁白", "text": "答案豁然展开，却比任何谜题都更令人战栗。汤川抬手按住额角，闭紧双眼。" },
+        { "speaker": "汤川", "text": "（不是顶罪……他真的杀了人。为了让这具尸体被当成富坚慎二。）" },
+        { "speaker": "草薙", "text": "喂，你脸色很难看。到底想到了什么？" },
+        { "speaker": "汤川", "text": "……今天先这样吧。我有点累了。" }
+      ],
+      "onEnter": { "state": { "guilt": 1 } },
+      "next": "ch06_006"
+    },
+    "ch06_006": {
+      "bg": "bg_university_lab",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "旁白", "text": "草薙走后，汤川独自去了图书馆，翻查三月十日之后的旧报纸，又问起千叶、埼玉的地方报。" },
+        { "speaker": "汤川", "text": "（一具无人认领的尸体，迟早会浮出来。他不会把它留在警视厅的辖区里。）" },
+        { "speaker": "旁白", "text": "拼图的最后一块，落进了它该在的位置。汤川摘下眼镜，长长吐出一口气。" }
+      ],
+      "onEnter": { "clues": ["unclaimed_corpse"] },
+      "next": "ch06_010"
+    },
+    "ch06_010": {
+      "bg": "bg_sumida_bank_dawn",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "草薙一路尾随汤川的计程车，过了日本桥，停在新大桥前。汤川走下河堤，沿隅田川缓步而行。" },
+        { "speaker": "汤川", "text": "你的车太显眼了。那么旧的车，如今可不好找。" },
+        { "speaker": "草薙", "text": "你早知道我在跟着你？还是说，你本来就想把我引到这儿来？" }
+      ],
+      "next": "ch06_011"
+    },
+    "ch06_011": {
+      "bg": "bg_sumida_bank_dawn",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "汤川", "text": "我最后一次和石神说话，就在这里。我对他说——这世上没有无用的齿轮，唯有齿轮自己能决定它的用途。" },
+        { "speaker": "草薙", "text": "齿轮？那些和命案有关的疑问，你到底问了他什么？" },
+        { "speaker": "汤川", "text": "那些不重要。重要的是齿轮。他就是听了那句话，才下定决心去自首。" }
+      ],
+      "next": "ch06_012"
+    },
+    "ch06_012": {
+      "bg": "bg_apartment_exterior_rain_night",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "旁白", "text": "汤川说起命案初起时的那一夜。他和石神并肩，望着办公楼玻璃门上映出的两人身影。" },
+        { "speaker": "汤川", "text": "他说我看起来还那么年轻，头发也浓密——还下意识摸了摸自己稀疏的发顶。" },
+        { "speaker": "汤川", "text": "石神，那个从不把外貌当回事的男人。会在意这种事，只有一个解释：他恋爱了。" }
+      ],
+      "next": "ch06_013"
+    },
+    "ch06_013": {
+      "bg": "bg_river_kiyosu_dawn",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "草薙", "text": "一个小小的破绽，竟成了他的致命伤。你……真可怕。" },
+        { "speaker": "汤川", "text": "我有个请求，对你可能很残忍。" },
+        { "speaker": "汤川", "text": "接下来我要说的话，是说给朋友听的，不是说给刑警听的。你能答应——绝不外传吗？" }
+      ],
+      "choices": [
+        { "text": "以朋友的身份答应他", "tag": "分支 · 道义",
+          "effects": { "state": { "trust": 1 } }, "flags": ["yukawa_told_kusanagi"], "goto": "ch06_020" },
+        { "text": "犹豫片刻，终究还是点头", "tag": "谨慎",
+          "effects": { "state": { "suspicion": 1 } }, "flags": ["yukawa_told_kusanagi"], "goto": "ch06_020" }
+      ]
+    },
+    "ch06_020": {
+      "bg": "bg_river_kiyosu_dawn",
+      "cg": "cg_river_confrontation",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "旁白", "text": "时间倒回那个清晨。清洲桥畔，汤川来寻最后一面。河水泛着冷光，石神立在栏杆边。" },
+        { "speaker": "汤川", "text": "石神，你还记得自己问过我的那道题吗？自己解题难，还是验证别人的答案难。" },
+        { "speaker": "石神", "text": "……你来，是为了告诉我答案？" }
+      ],
+      "next": "ch06_021"
+    },
+    "ch06_021": {
+      "bg": "bg_river_kiyosu_dawn",
+      "cg": "cg_river_confrontation",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "汤川", "text": "没有无用的齿轮。可一个齿轮硬要去咬不属于它的位置，那不叫献身，叫自毁。" },
+        { "speaker": "石神", "text": "你看错了。我只是一个，恰好被需要的齿轮。" },
+        { "speaker": "汤川", "text": "为了一道无人能解的题，你把自己整个人填了进去。值得吗，石神？" }
+      ],
+      "next": "ch06_022"
+    },
+    "ch06_022": {
+      "bg": "bg_river_kiyosu_dawn",
+      "cg": "cg_river_confrontation",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "旁白", "text": "石神久久望着脚下流淌的河水。晨雾里，他的侧脸第一次显出动摇。" },
+        { "speaker": "石神", "text": "（只要我不松口，这道题就永远无解。哪怕站在我面前的，是唯一懂它的人……）" }
+      ],
+      "choices": [
+        { "text": "（直面汤川的眼睛，险些脱口）", "tag": "分支 · 松动",
+          "effects": { "state": { "resolve": -1, "trust": 1, "guilt": 1 } }, "goto": "ch06_023" },
+        { "text": "（移开视线，把话咽回喉咙）", "tag": "决绝",
+          "effects": { "state": { "resolve": 1, "trust": -1 } }, "goto": "ch06_024" }
+      ]
+    },
+    "ch06_023": {
+      "bg": "bg_river_kiyosu_dawn",
+      "cg": "cg_river_confrontation",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "石神", "text": "汤川……如果，我说我后悔了——你会怎么做？" },
+        { "speaker": "汤川", "text": "我会松一口气。哪怕只有一瞬。" },
+        { "speaker": "旁白", "text": "可话一出口，石神的眼神又重新冷了下来。他摇头，仿佛要把那一瞬的软弱赶出体外。" },
+        { "speaker": "石神", "text": "……当我没说。答案，已经交出去了。" }
+      ],
+      "next": "ch06_025"
+    },
+    "ch06_024": {
+      "bg": "bg_river_kiyosu_dawn",
+      "cg": "cg_river_confrontation",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "石神", "text": "你不必为我惋惜。一个能派上用场的齿轮，就该转到磨损为止。" },
+        { "speaker": "旁白", "text": "汤川张了张口，最终什么也没说。两个昔日的天才，隔着一线晨光，像隔了整片荒原。" }
+      ],
+      "next": "ch06_025"
+    },
+    "ch06_025": {
+      "bg": "bg_river_kiyosu_dawn",
+      "cg": "cg_river_confrontation",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "汤川", "text": "好。我不会再劝你了。但我会去见她——把真相告诉她。要怎么做，由她自己决定。" },
+        { "speaker": "石神", "text": "……你不该这么做。" },
+        { "speaker": "汤川", "text": "也许吧。可我无法眼看着你的牺牲，连她都蒙在鼓里。再会了，石神。" }
+      ],
+      "onEnter": { "state": { "guilt": 1 } },
+      "next": "ch06_026"
+    },
+    "ch06_026": {
+      "bg": "bg_river_kiyosu_dawn",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "旁白", "text": "汤川转身离去。石神独自留在桥畔，望着那道远去的背影，直到它消失在晨雾尽头。" },
+        { "speaker": "旁白", "text": "回到现实——草薙在河堤上点起一根烟。汤川凝视着『天亭』的方向，下定了决心。" },
+        { "speaker": "汤川", "text": "我要去见花冈靖子。剩下的，赌在她身上。" }
+      ],
+      "next": "ch07_001"
+    }
+  }
+}

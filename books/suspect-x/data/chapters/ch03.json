@@ -1,0 +1,65 @@
+{
+  "meta": { "id": "ch03", "title": "第三章 · 旧友", "defaultPov": "yukawa" },
+  "start": "ch03_001",
+  "nodes": {
+    "ch03_001": {
+      "bg": "bg_university_lab",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "帝都大学物理学科，第十三号研究室。汤川学正摆着西洋棋自娱。" },
+        { "speaker": "草薙", "text": "嫌疑人的邻居，是个数学老师，叫石神。也是帝大出身——你认识？" },
+        { "speaker": "汤川", "text": "石神……哲哉？" }
+      ],
+      "next": "ch03_002"
+    },
+    "ch03_002": {
+      "bg": "bg_university_lab",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "旁白", "text": "汤川取出一本旧相册，翻到一张圆脸研究生的照片。" },
+        { "speaker": "汤川", "text": "五十年难遇的天才。我们都叫他『达摩』——终日不动、只埋首于数学。" },
+        { "speaker": "汤川", "text": "他会是凶手？不……我更好奇，他会不会成为一个『出题的人』。" }
+      ],
+      "onEnter": { "clues": ["ishigami_past"] },
+      "next": "ch03_010"
+    },
+    "ch03_010": {
+      "bg": "bg_ishigami_apt_night",
+      "cg": "cg_yukawa_reunion_night",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "旁白", "text": "那一夜，汤川带着清酒，敲开了石神的门。久别重逢。" },
+        { "speaker": "汤川", "text": "给你看个东西——有人声称证出了黎曼假说。你怎么看？" },
+        { "speaker": "旁白", "text": "石神伏案演算，汤川披着大衣睡去。窗外泛白时，石神放下笔。" },
+        { "speaker": "石神", "text": "……论文错了。质数分布的前提，根本站不住。" }
+      ],
+      "onEnter": { "state": { "resolve": 1 } },
+      "next": "ch03_020"
+    },
+    "ch03_020": {
+      "bg": "bg_apartment_stairs_night",
+      "cg": "cg_stairs_passing",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "旁白", "text": "送汤川下楼时，狭窄的楼梯上，迎面是抱着东西上楼的靖子。" },
+        { "speaker": "石神", "text": "（只要错身而过就好。不要让她为难。）" }
+      ],
+      "choices": [
+        { "text": "垂下头，只低声说一句「晚安」", "tag": "克制",
+          "effects": { "state": { "resolve": 1 } }, "goto": "ch03_030" },
+        { "text": "忍不住，多看了她一眼", "tag": "分支",
+          "effects": { "state": { "trust": 1, "guilt": 1 } }, "goto": "ch03_030" }
+      ]
+    },
+    "ch03_030": {
+      "bg": "bg_university_lab",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "旁白", "text": "回到研究室，汤川却怎么也静不下来。" },
+        { "speaker": "汤川", "text": "（如果是他……那道『题』，会难到什么程度？）" },
+        { "speaker": "旁白", "text": "一丝不祥的预感，悄然浮现。" }
+      ],
+      "next": "ch04_001"
+    }
+  }
+}

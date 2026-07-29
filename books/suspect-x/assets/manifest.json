@@ -1,0 +1,120 @@
+{
+  "images": {
+    "bg_tentei_day": {
+      "label": "天亭便当店 · 清晨",
+      "src": "assets/images/bg_tentei_day.png"
+    },
+    "bg_yasuko_apt_night": {
+      "label": "靖子的公寓 · 夜",
+      "src": "assets/images/bg_yasuko_apt_night.png"
+    },
+    "bg_ishigami_apt_night": {
+      "label": "石神的公寓 · 夜",
+      "src": "assets/images/bg_ishigami_apt_night.png"
+    },
+    "bg_sumida_bank_dawn": {
+      "label": "隅田川河岸 · 清晨",
+      "src": "assets/images/bg_sumida_bank_dawn.png"
+    },
+    "bg_apartment_stairs_night": {
+      "label": "公寓楼梯 · 夜",
+      "src": "assets/images/bg_apartment_stairs_night.png"
+    },
+    "bg_interrogation_room": {
+      "label": "侦讯室",
+      "src": "assets/images/bg_interrogation_room.png"
+    },
+    "bg_university_lab": {
+      "label": "帝都大学物理研究室",
+      "src": "assets/images/bg_university_lab.png"
+    },
+    "bg_family_restaurant_dusk": {
+      "label": "家庭餐厅 · 黄昏",
+      "src": "assets/images/bg_family_restaurant_dusk.png"
+    },
+    "bg_river_kiyosu_dawn": {
+      "label": "清洲桥河边 · 清晨",
+      "src": "assets/images/bg_river_kiyosu_dawn.png"
+    },
+    "bg_apartment_exterior_rain_night": {
+      "label": "公寓外观 · 雨夜",
+      "src": "assets/images/bg_apartment_exterior_rain_night.png"
+    },
+    "cg_murder_strangling": {
+      "label": "CG · 命案（四只手）",
+      "src": "assets/images/cg_murder_strangling.png"
+    },
+    "cg_ishigami_examines_body": {
+      "label": "CG · 石神验尸",
+      "src": "assets/images/cg_ishigami_examines_body.png"
+    },
+    "cg_stairs_passing": {
+      "label": "CG · 楼梯擦身",
+      "src": "assets/images/cg_stairs_passing.png"
+    },
+    "cg_umbrella_rain_watcher": {
+      "label": "CG · 雨夜撑伞",
+      "src": "assets/images/cg_umbrella_rain_watcher.png"
+    },
+    "cg_yukawa_reunion_night": {
+      "label": "CG · 汤川夜访解题",
+      "src": "assets/images/cg_yukawa_reunion_night.png"
+    },
+    "cg_river_confrontation": {
+      "label": "CG · 河边对峙",
+      "src": "assets/images/cg_river_confrontation.png"
+    },
+    "cg_park_truth_reveal": {
+      "label": "CG · 公园揭真相",
+      "src": "assets/images/cg_park_truth_reveal.png"
+    },
+    "cg_interrogation_climax": {
+      "label": "CG · 侦讯室对峙",
+      "src": "assets/images/cg_interrogation_climax.png"
+    },
+    "cg_ishigami_breakdown": {
+      "label": "CG · 结局崩溃",
+      "src": "assets/images/cg_ishigami_breakdown.png"
+    },
+    "cg_rescue_flashback": {
+      "label": "CG · 一年前救赎",
+      "src": "assets/images/cg_rescue_flashback.png"
+    },
+    "icon_green_bicycle": {
+      "label": "绿色脚踏车",
+      "src": "assets/images/cover_icons/icon_green_bicycle.png"
+    },
+    "icon_kotatsu_cord": {
+      "label": "暖桌电线",
+      "src": "assets/images/cover_icons/icon_kotatsu_cord.png"
+    },
+    "icon_room_key_305": {
+      "label": "旅馆钥匙 305",
+      "src": "assets/images/cover_icons/icon_room_key_305.png"
+    },
+    "icon_movie_tickets": {
+      "label": "电影票根",
+      "src": "assets/images/cover_icons/icon_movie_tickets.png"
+    },
+    "icon_math_notebook": {
+      "label": "算式报告纸",
+      "src": "assets/images/cover_icons/icon_math_notebook.png"
+    },
+    "icon_wiretap": {
+      "label": "窃听器",
+      "src": "assets/images/cover_icons/icon_wiretap.png"
+    },
+    "icon_diamond_ring": {
+      "label": "钻戒",
+      "src": "assets/images/cover_icons/icon_diamond_ring.png"
+    },
+    "icon_blue_tarp": {
+      "label": "蓝色塑胶布",
+      "src": "assets/images/cover_icons/icon_blue_tarp.png"
+    },
+    "title_keyvisual": {
+      "label": "嫌疑犯X的献身",
+      "src": "assets/images/cover_icons/title_keyvisual.png"
+    }
+  }
+}

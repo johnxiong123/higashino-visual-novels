@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>互动小说播放器</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link id="book-theme" rel="stylesheet" />
+</head>
+<body>
+  <div id="viewport">
+  <div id="screen">
+  <div id="app">
+    <nav id="navrail" class="navrail"></nav>
+    <main id="stage" class="stage">
+      <div id="scene" class="scene"></div>
+      <div class="topbar">
+        <div class="topbar-left">
+          <div class="seal" aria-hidden="true"><span id="book-mark"></span></div>
+          <div id="chapter-label" class="chapter-label"></div>
+        </div>
+        <div id="status" class="status"></div>
+      </div>
+      <div id="quickbar" class="quickbar"></div>
+      <div id="dialogue" class="dialogue"></div>
+    </main>
+    <aside id="panel" class="panel"></aside>
+  </div>
+  <div id="overlays" class="overlays"></div>
+  </div><!-- #screen -->
+  </div><!-- #viewport -->
+  <script>
+    // 等比适配：以 1920×1080 为设计基准整体缩放到当前窗口，保证任何窗口大小/浏览器缩放下界面一致（非 16:9 时留深色边）
+    (function () {
+      var el = document.getElementById('screen');
+      function fit() {
+        var w = window.innerWidth || document.documentElement.clientWidth;
+        var h = window.innerHeight || document.documentElement.clientHeight;
+        if (!w || !h) return;
+        el.style.setProperty('--ui-scale', Math.min(w / 1920, h / 1080));
+      }
+      window.addEventListener('resize', fit);
+      window.addEventListener('orientationchange', fit);
+      if (window.ResizeObserver) new ResizeObserver(fit).observe(document.documentElement);
+      fit();
+    })();
+  </script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "tracks": {
+    "title":  { "label": "标题 · 主题", "src": "assets/audio/title.mp3" },
+    "main":   { "label": "日常 · 推进", "src": null },
+    "tense":  { "label": "紧张 · 调查", "src": null },
+    "sad":    { "label": "悲怆 · 终章", "src": null }
+  },
+  "sfx": { "type": "assets/audio/カーソル移動12.mp3" },
+  "note": "把循环 BGM（mp3/ogg）放进 assets/audio/，再把对应 src 改成 \"assets/audio/xxx.mp3\"。标题播 title；各章默认播 main，可在章节 meta.bgm 指定 tense/sad。无 src 时静默。"
+}

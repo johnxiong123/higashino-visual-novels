@@ -1,0 +1,34 @@
+{
+  "id": "suspect-x",
+  "title": "嫌疑犯X的献身",
+  "author": "东野圭吾",
+  "cover": "assets/images/cover_icons/title_keyvisual.png",
+  "theme": "theme.css",
+  "mark": "X",
+  "tagline": "真相是一种渴望救赎的诡计",
+  "quote": "我平凡，渺小，微不足道。但这也许就是我能做的一切了。",
+  "start": "ch01_001",
+  "chapters": [
+    { "id": "ch01", "title": "第一章 · 黄昏的访客", "start": "ch01_001", "bgm": "main" },
+    { "id": "ch02", "title": "第二章 · 河岸的发现", "start": "ch02_001", "bgm": "main" },
+    { "id": "ch03", "title": "第三章 · 旧友", "start": "ch03_001", "bgm": "main" },
+    { "id": "ch04", "title": "第四章 · 情敌", "start": "ch04_001", "bgm": "main" },
+    { "id": "ch05", "title": "第五章 · 罗网", "start": "ch05_001", "bgm": "main" },
+    { "id": "ch06", "title": "第六章 · 识破", "start": "ch06_001", "bgm": "main" },
+    { "id": "ch07", "title": "终章 · 献身", "start": "ch07_001", "bgm": "main" }
+  ],
+  "vars": [
+    { "key": "suspicion", "label": "怀疑度", "color": "#d98a2b", "init": 0, "max": 10 },
+    { "key": "resolve", "label": "决意", "color": "#9a7bd0", "init": 0, "max": 10 },
+    { "key": "trust", "label": "信任", "color": "#3f9ae0", "init": 0, "max": 10 },
+    { "key": "guilt", "label": "愧疚", "color": "#c0566a", "init": 0, "max": 10 }
+  ],
+  "initialState": {
+    "povUnlocked": ["ishigami"]
+  },
+  "features": {
+    "clues": true,
+    "flowchart": true,
+    "pov": true
+  }
+}

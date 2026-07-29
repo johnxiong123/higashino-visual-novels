@@ -1,0 +1,86 @@
+{
+  "meta": { "id": "ch02", "title": "第二章 · 河岸的发现", "defaultPov": "kusanagi" },
+  "start": "ch02_001",
+  "nodes": {
+    "ch02_001": {
+      "bg": "bg_sumida_bank_dawn",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "数日后，旧江户川的堤防边。寒风刺骨，河对岸杳无人迹。" },
+        { "speaker": "旁白", "text": "蓝色塑胶布下，露出一截人的脚。掀开——是一具全裸的尸体，脸被砸得面目全非。" },
+        { "speaker": "草薙", "text": "（脸和指尖都被毁了……是不想让人认出身份。）" },
+        { "speaker": "旁白", "text": "尸体旁，停着一辆很新的脚踏车，轮胎被钉子戳破。" }
+      ],
+      "onEnter": { "clues": ["disfigured_corpse", "blue_tarp"] },
+      "next": "ch02_002"
+    },
+    "ch02_002": {
+      "bg": "bg_sumida_bank_dawn",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "岸谷", "text": "草薙前辈，牙齿的治疗痕迹比对上了——死者是富坚慎二。" },
+        { "speaker": "旁白", "text": "富坚以本名在龟户的旅馆「扇屋」登记过，房号 305。" },
+        { "speaker": "草薙", "text": "查他的关系人。……前妻，花冈靖子。先去会会她。" }
+      ],
+      "onEnter": { "clues": ["room_key_305"] },
+      "next": "ch02_010"
+    },
+    "ch02_010": {
+      "bg": "bg_yasuko_apt_night",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "入夜。草薙与岸谷循着地址，敲开了花冈家挂着门链的门。" },
+        { "speaker": "草薙", "text": "深夜打扰。富坚慎二……他遇害了。最后见他是什么时候？" },
+        { "speaker": "靖子", "text": "……他？我们早就离婚了，已经很久没联系。" }
+      ],
+      "next": "ch02_011"
+    },
+    "ch02_011": {
+      "bg": "bg_yasuko_apt_night",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "靖子", "text": "（心跳得厉害……要冷静。我该怎么回答？）" }
+      ],
+      "choices": [
+        { "text": "照石神教的剧本，平静作答", "tag": "分支",
+          "requires": { "flags": ["ishigami_plan"] },
+          "effects": { "state": { "suspicion": -1, "trust": 1 }, "flags": ["answered_by_script"] },
+          "goto": "ch02_012" },
+        { "text": "强压慌乱，自己应付", "tag": "谨慎",
+          "effects": { "state": { "suspicion": 2 } },
+          "goto": "ch02_012" }
+      ]
+    },
+    "ch02_012": {
+      "bg": "bg_yasuko_apt_night",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "草薙细问着案情。就在这时，他眼角瞥见——里屋的纸门，啪地一声合上了。" },
+        { "speaker": "草薙", "text": "（屋里还有人……在偷听。）" }
+      ],
+      "onEnter": { "clues": ["hidden_witness"] },
+      "next": "ch02_020"
+    },
+    "ch02_020": {
+      "bg": "bg_ishigami_apt_night",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "顺道，草薙敲了隔壁 203 室的门。开门的是个矮壮、面无表情的男人。" },
+        { "speaker": "石神", "text": "案发那几天？我每天都去学校，下班就回家。没什么特别的。" },
+        { "speaker": "旁白", "text": "对答滴水不漏。草薙瞥见他门口的信箱里，露出印着「帝都大学」的校友会刊。" },
+        { "speaker": "草薙", "text": "（数学老师……帝都大学出身。这个邻居，有点意思。）" }
+      ],
+      "onEnter": { "clues": ["daito_univ_mail"] },
+      "next": "ch02_030"
+    },
+    "ch02_030": {
+      "bg": "bg_ishigami_apt_night",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "那张面无表情的脸，草薙怎么也读不透。" },
+        { "speaker": "草薙", "text": "帝都大学……理工科。也许，该去找那个老同学聊聊了。" }
+      ],
+      "next": "ch03_001"
+    }
+  }
+}

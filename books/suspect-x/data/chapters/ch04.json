@@ -1,0 +1,184 @@
+{
+  "meta": { "id": "ch04", "title": "第四章 · 情敌", "defaultPov": "yasuko" },
+  "start": "ch04_001",
+  "nodes": {
+    "ch04_001": {
+      "bg": "bg_tentei_day",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "旁白", "text": "午后客人散去，店里只剩下油锅的余温。靖子的手机震了一下，是个许久未联络的号码。" },
+        { "speaker": "工藤", "text": "是我，工藤。冒昧打扰——听说出了那种事，我一直放心不下。今晚有空吗？" },
+        { "speaker": "靖子", "text": "（陪酒那几年的老主顾……他怎么突然……）" }
+      ],
+      "next": "ch04_002"
+    },
+    "ch04_002": {
+      "bg": "bg_tentei_day",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "靖子", "text": "（这种时候，不该兴冲冲去赴约。可是……拒绝，反而显得不自然吧。）" },
+        { "speaker": "旁白", "text": "她替自己找了一个又一个理由。可她心里清楚，真正想见他的，只是她自己。" }
+      ],
+      "choices": [
+        { "text": "答应赴约，提早回家换身衣服", "tag": "分支 · 心动",
+          "effects": { "state": { "trust": 1, "guilt": 1 }, "flags": ["kudo_date"] }, "goto": "ch04_010" },
+        { "text": "克制住，婉拒他", "tag": "克制",
+          "effects": { "state": { "resolve": 1 } }, "goto": "ch04_005" }
+      ]
+    },
+    "ch04_005": {
+      "bg": "bg_yasuko_apt_night",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "靖子", "text": "对不起，最近实在不方便……改天吧。" },
+        { "speaker": "旁白", "text": "挂了电话，房间空荡荡的。她说服了自己，却没说服心里那一点说不清的失落。" },
+        { "speaker": "旁白", "text": "可工藤没有就此罢休。几天后，他又约了一次。这一回，她没能再拒绝。" }
+      ],
+      "onEnter": { "flags": ["kudo_date"] },
+      "next": "ch04_010"
+    },
+    "ch04_010": {
+      "bg": "bg_family_restaurant_dusk",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "旁白", "text": "汐留的意大利餐厅。久违的地道菜肴，让靖子恍惚回到从前。" },
+        { "speaker": "工藤", "text": "酒还喝吗？我倒是没以前能喝了，年纪到了。" },
+        { "speaker": "靖子", "text": "这样反而好，要保重身体。" }
+      ],
+      "next": "ch04_011"
+    },
+    "ch04_011": {
+      "bg": "bg_family_restaurant_dusk",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "工藤", "text": "今天约你出来，其实是想跟你说件事——我现在，是一个人了。" },
+        { "speaker": "靖子", "text": "……一个人？" },
+        { "speaker": "工藤", "text": "内人去年走了，胰脏癌。从查出来到送走她，快得像被人推着走。" }
+      ],
+      "onEnter": { "clues": ["kudo_widower"] },
+      "next": "ch04_012"
+    },
+    "ch04_012": {
+      "bg": "bg_family_restaurant_dusk",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "靖子", "text": "（她离职那天，他还送了她一束花。那时，他自己正背着这么重的担子……）" },
+        { "speaker": "工藤", "text": "说这些不是要你同情。只是约你吃饭，你总会顾忌我有没有家室。先说清楚，我心里踏实。" },
+        { "speaker": "旁白", "text": "他没有明说，但话里的意思她全懂——他想认真地，和她在一起。" }
+      ],
+      "next": "ch04_013"
+    },
+    "ch04_013": {
+      "bg": "bg_family_restaurant_dusk",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "工藤", "text": "下次，把你女儿也带上吧。我是真心想见见她。" },
+        { "speaker": "靖子", "text": "（在他面前，我又变回了一个女人。可这一面，我不想让美里看见……）" }
+      ],
+      "choices": [
+        { "text": "迎上他的目光，轻声答应", "tag": "分支 · 回应",
+          "effects": { "state": { "trust": 2, "guilt": 1 } }, "goto": "ch04_020" },
+        { "text": "垂下眼，含糊带过", "tag": "回避",
+          "effects": { "state": { "guilt": 1, "resolve": 1 } }, "goto": "ch04_020" }
+      ]
+    },
+    "ch04_020": {
+      "bg": "bg_apartment_exterior_rain_night",
+      "cg": "cg_umbrella_rain_watcher",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "旁白", "text": "同一个夜里，雨。石神撑着黑伞，立在公寓楼下的暗处，一动不动。" },
+        { "speaker": "旁白", "text": "一辆计程车停下。靖子下了车，回头朝车里的男人笑——那笑容，他从没在便当店见过。" },
+        { "speaker": "石神", "text": "（那不是母亲的脸，也不是店员的脸。是一个……女人的脸。）" }
+      ],
+      "onEnter": { "state": { "guilt": 2 }, "clues": ["kudo_widower"] },
+      "next": "ch04_021"
+    },
+    "ch04_021": {
+      "bg": "bg_apartment_exterior_rain_night",
+      "cg": "cg_umbrella_rain_watcher",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "旁白", "text": "雨水顺着伞骨滴下。他想起白天汤川硬拉他去『天亭』，店里也撞见过这个男人。" },
+        { "speaker": "石神", "text": "（他是谁？什么时候，钻进了她的生活？）" },
+        { "speaker": "石神", "text": "（不行。我替她算好的每一步，都不能有变数。这个人，就是变数。）" }
+      ],
+      "next": "ch04_030" }
+    ,
+    "ch04_030": {
+      "bg": "bg_ishigami_apt_night",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "旁白", "text": "回到堆满数学书的房间，石神拨了三次公用电话，靖子的手机才接通。" },
+        { "speaker": "靖子", "text": "对不起，刚才……手机关着。" },
+        { "speaker": "石神", "text": "刑警去过了吧？借电影票根、问暖桌——都在我的预料之内，不必慌。" }
+      ],
+      "next": "ch04_031"
+    },
+    "ch04_031": {
+      "bg": "bg_ishigami_apt_night",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "旁白", "text": "他没提那个男人。把暖桌的事、票根的事一一交代清楚后，话筒里安静下来。" },
+        { "speaker": "石神", "text": "（暖桌我早换成了自己那张，电线种类不同，他们查不出。问题从来不在那里。）" },
+        { "speaker": "石神", "text": "（问题在于……她今晚，为什么那么开心。）" }
+      ],
+      "next": "ch04_032"
+    },
+    "ch04_032": {
+      "bg": "bg_ishigami_apt_night",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "旁白", "text": "他坐在窗前，看着楼下那条被雨打湿的路，整夜没有合眼。" }
+      ],
+      "choices": [
+        { "text": "查清那个男人——明天就去跟踪", "tag": "分支 · 执念",
+          "effects": { "state": { "guilt": 1, "resolve": 1 }, "flags": ["ishigami_tails_kudo"] }, "goto": "ch04_040" },
+        { "text": "克制自己，这与计划无关", "tag": "克制",
+          "effects": { "state": { "resolve": 2 } }, "goto": "ch04_041" }
+      ]
+    },
+    "ch04_040": {
+      "bg": "bg_apartment_exterior_rain_night",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "旁白", "text": "他租了车，远远缀在那辆绿色奔驰后面。男人住进大崎一栋公寓，车牌、姓名，他都记下了。" },
+        { "speaker": "石神", "text": "工藤邦明……经营印刷公司。（原来如此。一个有钱、体面、能给她安稳生活的男人。）" },
+        { "speaker": "石神", "text": "（我能为她做的，只有让她活下去。至于幸福……那不该由我来决定。）" }
+      ],
+      "onEnter": { "clues": ["kudo_widower"] },
+      "next": "ch04_050"
+    },
+    "ch04_041": {
+      "bg": "bg_ishigami_apt_night",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "石神", "text": "（无关。那个男人，与命案无关，与我替她设的题，也无关。）" },
+        { "speaker": "旁白", "text": "他翻开数学笔记，可那一行行公式，今夜怎么也算不进心里去。" },
+        { "speaker": "石神", "text": "（只要她平安……就够了。哪怕，她身边站着的是别人。）" }
+      ],
+      "next": "ch04_050"
+    },
+    "ch04_050": {
+      "bg": "bg_interrogation_room",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "间宫", "text": "这个工藤，案发后突然冒出来，时机太巧。给我查清楚。" },
+        { "speaker": "草薙", "text": "便当店老板说，他和靖子重逢是在案发之后，看着不像演戏。" },
+        { "speaker": "草薙", "text": "（要真有共犯，谁会大大方方一起吃饭？方向，怕是错了。）" }
+      ],
+      "onEnter": { "clues": ["hidden_witness"] },
+      "next": "ch04_051"
+    },
+    "ch04_051": {
+      "bg": "bg_interrogation_room",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "草薙", "text": "（可昨晚在『天亭』外蹲守，我看见一个意外的人——汤川。）" },
+        { "speaker": "草薙", "text": "（他竟和那个数学老师，住靖子隔壁的石神，连袂走了出来。）" },
+        { "speaker": "草薙", "text": "（汤川……你到底在那张铜墙铁壁的不在场证明背后，看到了什么？）" }
+      ],
+      "next": "ch05_001"
+    }
+  }
+}

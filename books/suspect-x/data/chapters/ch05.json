@@ -1,0 +1,172 @@
+{
+  "meta": { "id": "ch05", "title": "第五章 · 罗网", "defaultPov": "kusanagi" },
+  "start": "ch05_001",
+  "nodes": {
+    "ch05_001": {
+      "bg": "bg_interrogation_room",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "江户川分局。间宫一边揉着肩，一边听草薙汇报对花冈靖子近况的盯梢结果。" },
+        { "speaker": "间宫", "text": "那个工藤，案发之后才突然冒出来。时机太巧了——再去查查他。" },
+        { "speaker": "草薙", "text": "（一个女人，独自处理不了这种现场。她身边一定有个男人在帮忙……）" }
+      ],
+      "next": "ch05_002"
+    },
+    "ch05_002": {
+      "bg": "bg_sumida_bank_dawn",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "草薙登门拜访开印刷公司的工藤。开门见山，他抛出三月十日的不在场证明问题。" },
+        { "speaker": "工藤", "text": "你绕来绕去，不就是想听我承认？好，我直说——我喜欢她，是男女之间那种喜欢。" },
+        { "speaker": "工藤", "text": "正因为出了命案，我才觉得这是接近她的机会。这样你满意了？" }
+      ],
+      "next": "ch05_003"
+    },
+    "ch05_003": {
+      "bg": "bg_sumida_bank_dawn",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "工藤", "text": "十日那天傍晚我去拜访客户，对方还请我吃了串烤，喝到九点左右。名片在这儿。" },
+        { "speaker": "旁白", "text": "草薙记下，心里却已有了判断：这个男人是清白的，而且，他是真心爱着靖子。" },
+        { "speaker": "草薙", "text": "（协助靖子的，另有其人。那么——会是谁？）" }
+      ],
+      "choices": [
+        { "text": "把焦点彻底转向靖子身边的男人", "tag": "直觉",
+          "effects": { "state": { "suspicion": 1 } }, "goto": "ch05_010" },
+        { "text": "暂且按下，先理清脚踏车的疑点", "tag": "谨慎",
+          "effects": { "state": { "resolve": 1 } }, "goto": "ch05_010" }
+      ]
+    },
+    "ch05_010": {
+      "bg": "bg_university_lab",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "草薙循着研究生的口风，追到了条崎车站。汤川正坐在书店前的护栏上吃冰淇淋。" },
+        { "speaker": "草薙", "text": "伽利略大师，你在这种地方做什么？" },
+        { "speaker": "汤川", "text": "等你。我猜你迟早会嗅着味道找过来——刑警的鼻子，向来很灵。" }
+      ],
+      "next": "ch05_011"
+    },
+    "ch05_011": {
+      "bg": "bg_university_lab",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "旁白", "text": "汤川指着超市前一整排脚踏车，目光落在那些上了链锁的新车上。" },
+        { "speaker": "汤川", "text": "现场那辆脚踏车，是辆新车。明明没锁的多得是，凶手偏偏剪断链锁去偷一辆会被立刻报案的。" },
+        { "speaker": "汤川", "text": "目的只有一个——逼车主报警，好让你们把注意力，引到条崎车站来。" }
+      ],
+      "onEnter": { "clues": ["bicycle_decoy"] },
+      "next": "ch05_012"
+    },
+    "ch05_012": {
+      "bg": "bg_university_lab",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "草薙", "text": "你是说……烧毁尸体的指纹，本身就是多此一举？就为了让我们『以为』脚踏车不是故布疑阵？" },
+        { "speaker": "汤川", "text": "这案子，远比你们想的精致。我是基于私人理由在查——这次，你别指望我全力相助。" },
+        { "speaker": "草薙", "text": "那好。这次，我们各查各的。" }
+      ],
+      "branches": [
+        { "requires": { "vars": { "suspicion": 3 } }, "goto": "ch05_020" },
+        { "goto": "ch05_021" }
+      ]
+    },
+    "ch05_020": {
+      "bg": "bg_river_kiyosu_dawn",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "回程的地铁里，工藤那句『我向来不喜欢说三道四』突然在草薙脑中炸开。" },
+        { "speaker": "草薙", "text": "（有客人，每天清早只为见她去买便当……那个人是谁？）" },
+        { "speaker": "旁白", "text": "他猛地挺直腰杆，吓到了对面的女乘客。一条新的线，已经牵到手里。" }
+      ],
+      "next": "ch05_030"
+    },
+    "ch05_021": {
+      "bg": "bg_river_kiyosu_dawn",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "草薙在便当店『天亭』追问下去，老板娘提到了一件小事。" },
+        { "speaker": "天亭老板娘", "text": "有个客人，几乎每天一早都来。我们私下猜，他是为了见靖子……是隔壁那位老师，姓石神。" },
+        { "speaker": "草薙", "text": "（石神……一个数学老师。汤川在意的，恐怕也是他。）" }
+      ],
+      "next": "ch05_030"
+    },
+    "ch05_030": {
+      "bg": "bg_university_lab",
+      "cg": "cg_yukawa_reunion_night",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "第十三研究室。草薙把两只脏马克杯里的咖啡推到一边，正式提出『和平条约』。" },
+        { "speaker": "草薙", "text": "我把情报给你，你把推论给我。我已经找到怀疑石神的理由了——往后我会死死盯住他。" },
+        { "speaker": "汤川", "text": "（他终究还是查到石神身上了……）" }
+      ],
+      "next": "ch05_031"
+    },
+    "ch05_031": {
+      "bg": "bg_university_lab",
+      "pov": "yukawa",
+      "lines": [
+        { "speaker": "草薙", "text": "若现场在别处，搬尸体的就是石神。可脚踏车上的指纹他忘了擦——再厉害的天才也会出错。" },
+        { "speaker": "汤川", "text": "他不会。那家伙不会犯这种最基本的错误。" },
+        { "speaker": "汤川", "text": "而且他没有车。搬运尸体要车——我向你保证，租车公司你一家家查，绝对查不到。" }
+      ],
+      "onEnter": { "state": { "trust": 1 } },
+      "next": "ch05_032"
+    },
+    "ch05_032": {
+      "bg": "bg_university_lab",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "草薙", "text": "也许是临时起意。靖子约出富坚谈判，石神当保镖陪同，一言不合就失手杀了人——" },
+        { "speaker": "汤川", "text": "那就和电影票的不在场证明矛盾了。光是谈判，用不着事先准备不在场证明。" },
+        { "speaker": "汤川", "text": "可若是计划性犯案，以石神的本事，又绝不会拟出这种漏洞百出的方案。两头都说不通。" }
+      ],
+      "next": "ch05_033"
+    },
+    "ch05_033": {
+      "bg": "bg_interrogation_room",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "岸谷来电：美里的同学作证，案发当天白天，美里就提过晚上要和母亲去看电影。" },
+        { "speaker": "草薙", "text": "白天就定好了去电影院——看来是计划性犯案，错不了。" },
+        { "speaker": "汤川", "text": "不可能。" }
+      ],
+      "next": "ch05_040"
+    },
+    "ch05_040": {
+      "bg": "bg_interrogation_room",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "锦系町，老旧大楼五楼的酒店『玛莉安』。妈妈桑杉村园子在草薙身旁坐下。" },
+        { "speaker": "园子", "text": "怀疑靖子？那你们准是搞错了，她根本没有杀人动机。" },
+        { "speaker": "园子", "text": "倒是……三月十日深夜，靖子还打过电话来这店里。说话挺久的，我记得清楚。" }
+      ],
+      "onEnter": { "clues": ["march10_call"] },
+      "next": "ch05_041"
+    },
+    "ch05_041": {
+      "bg": "bg_interrogation_room",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "草薙", "text": "（十日深夜还在通话……可档案里写的命案时间，正卡在那一段。）" },
+        { "speaker": "旁白", "text": "这通电话，像一根楔子，狠狠敲进了那份『天衣无缝』的不在场证明里。" }
+      ],
+      "choices": [
+        { "text": "立刻调出会客室出勤表，正面对峙", "tag": "强攻",
+          "effects": { "state": { "suspicion": 2 }, "clues": ["attendance_sheet"] }, "goto": "ch05_042" },
+        { "text": "先按兵不动，深查这通电话的来龙去脉", "tag": "谨慎",
+          "effects": { "state": { "resolve": 1, "suspicion": 1 }, "clues": ["attendance_sheet"] }, "goto": "ch05_042" }
+      ]
+    },
+    "ch05_042": {
+      "bg": "bg_interrogation_room",
+      "pov": "kusanagi",
+      "lines": [
+        { "speaker": "旁白", "text": "草薙调来案发前后的会客探视与值勤记录，逐行比对那张出勤表上的时间。" },
+        { "speaker": "草薙", "text": "时间对不上。她声称的行程，和这通深夜电话，硬生生撞在了一起。" },
+        { "speaker": "草薙", "text": "（石神，你设的这道题……到底把答案藏在了哪一行？）" }
+      ],
+      "next": "ch06_001"
+    }
+  }
+}

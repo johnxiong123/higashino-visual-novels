@@ -1,0 +1,149 @@
+{
+  "meta": { "id": "ch01", "title": "第一章 · 黄昏的访客", "defaultPov": "ishigami" },
+  "start": "ch01_001",
+  "nodes": {
+    "ch01_001": {
+      "bg": "bg_tentei_day",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "旁白", "text": "上午七点三十五分，石神一如往常离开公寓。三月的风还很冷，他把下巴埋进围巾里。" },
+        { "speaker": "旁白", "text": "经过楼下的脚踏车停车场时，他不动声色地瞥了一眼——那辆绿色脚踏车，不在。" },
+        { "speaker": "石神", "text": "（她已经出门了……那么，今天也去买便当吧。）" }
+      ],
+      "onEnter": { "clues": ["green_bicycle"] },
+      "next": "ch01_002"
+    },
+    "ch01_002": {
+      "bg": "bg_tentei_day",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "靖子", "text": "欢迎光临——啊，老师，早。" },
+        { "speaker": "旁白", "text": "戴着白帽的花冈靖子，笑颜如花。石神低着头，盯着皮夹，不敢正视她。" },
+        { "speaker": "石神", "text": "呃……招牌便当，一个。" },
+        { "speaker": "石神", "text": "（只是买个便当而已。除此之外，我和她之间，什么也没有。）" }
+      ],
+      "next": "ch01_010"
+    },
+    "ch01_010": {
+      "bg": "bg_family_restaurant_dusk",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "旁白", "text": "傍晚，家庭餐厅。靖子最不愿见到的人，正坐在窗边吸烟。" },
+        { "speaker": "富坚", "text": "哟，气色不错嘛。想查出前妻的下落，对我来说可不是什么难事。" },
+        { "speaker": "靖子", "text": "……你到底想怎样。" },
+        { "speaker": "富坚", "text": "别这么凶嘛。我会改过自新的——再给我一次机会，啊？" }
+      ],
+      "choices": [
+        { "text": "硬起来，彻底拒绝他", "tag": "分支",
+          "effects": { "state": { "resolve": 1 } }, "goto": "ch01_011" },
+        { "text": "敷衍他，先脱身要紧", "tag": "谨慎",
+          "effects": { "state": { "suspicion": 1 } }, "goto": "ch01_011" }
+      ]
+    },
+    "ch01_011": {
+      "bg": "bg_yasuko_apt_night",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "旁白", "text": "可富坚还是尾随而来，硬闯进了她的公寓。" },
+        { "speaker": "富坚", "text": "美里呢？我好歹是她爸……过来！" },
+        { "speaker": "旁白", "text": "他揪住躲闪的美里。混乱中，美里抓起桌上的铜花瓶，朝他后脑砸了下去。" }
+      ],
+      "next": "ch01_013"
+    },
+    "ch01_013": {
+      "bg": "bg_yasuko_apt_night",
+      "cg": "cg_murder_strangling",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "旁白", "text": "富坚没有倒下。他骑在美里身上，发出野兽般的吼叫。" },
+        { "speaker": "靖子", "text": "（不行……绝不能让美里出事！）" },
+        { "speaker": "旁白", "text": "靖子扯下暖桌的电线，缠住他的脖子，用尽全身力气。美里也扑上来，一起拉紧。" },
+        { "speaker": "旁白", "text": "四只手，死死地勒着。直到那个男人，再也不动了。" }
+      ],
+      "onEnter": { "state": { "guilt": 2 }, "flags": ["murder_done"], "clues": ["kotatsu_cord"] },
+      "next": "ch01_020"
+    },
+    "ch01_020": {
+      "bg": "bg_yasuko_apt_night",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "靖子", "text": "……我，杀了人。" },
+        { "speaker": "旁白", "text": "脑海一片空白。就在这时——门铃响了。" }
+      ],
+      "next": "ch01_021"
+    },
+    "ch01_021": {
+      "bg": "bg_yasuko_apt_night",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "旁白", "text": "门外，是隔壁那位数学老师，石神。他面无表情地问：" },
+        { "speaker": "石神", "text": "……出什么事了吗？刚才，好像有很大的动静。" },
+        { "speaker": "靖子", "text": "没、没什么……打蟑螂而已。" },
+        { "speaker": "石神", "text": "……打死了吗？" }
+      ],
+      "choices": [
+        { "text": "向石神坦白，求他帮忙", "tag": "分支 · 改变命运",
+          "effects": { "flags": ["asked_ishigami"], "state": { "trust": 2 } }, "goto": "ch01_030" },
+        { "text": "关上门，自己想办法", "tag": "谨慎",
+          "effects": { "state": { "suspicion": 1 } }, "goto": "ch01_025" }
+      ]
+    },
+    "ch01_025": {
+      "bg": "bg_yasuko_apt_night",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "旁白", "text": "她关上了门。可尸体就在暖桌旁，她的手不住地发抖。" },
+        { "speaker": "靖子", "text": "（怎么办……我到底该怎么办？）" }
+      ],
+      "choices": [
+        { "text": "报警，就说是正当防卫", "goto": "ch01_be_panic" },
+        { "text": "深呼吸，先把尸体藏起来", "tag": "谨慎",
+          "effects": { "state": { "suspicion": 2, "resolve": 1 } }, "goto": "ch01_040" }
+      ]
+    },
+    "ch01_be_panic": {
+      "bg": "bg_yasuko_apt_night",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "旁白", "text": "她颤抖着拨通了 110。" },
+        { "speaker": "旁白", "text": "然而，前夫脖子上清晰的勒痕、母女俩慌乱矛盾的口供……正当防卫的主张，没能站得住脚。" },
+        { "speaker": "旁白", "text": "美里的人生，在十四岁这年，蒙上了再也抹不去的阴影。" }
+      ],
+      "ending": { "id": "BE_call_police", "title": "结局 · 慌乱的代价", "type": "bad" }
+    },
+    "ch01_030": {
+      "bg": "bg_yasuko_apt_night",
+      "cg": "cg_ishigami_examines_body",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "旁白", "text": "石神走进来，平静地反锁了门。他蹲下，单膝跪地，掀开盖在尸体上的东西。" },
+        { "speaker": "石神", "text": "暖桌的电线……勒痕的角度。他右手上有抓痕——靠你一个人，是压不住他的。是两个人，对吧。" },
+        { "speaker": "靖子", "text": "老师，你……为什么……" },
+        { "speaker": "石神", "text": "不必说了。接下来，照我说的做。所有的事——交给我来算。" }
+      ],
+      "onEnter": { "state": { "trust": 1, "resolve": 1 }, "flags": ["ishigami_plan"], "clues": ["movie_tickets"] },
+      "next": "ch01_031"
+    },
+    "ch01_031": {
+      "bg": "bg_ishigami_apt_night",
+      "pov": "ishigami",
+      "lines": [
+        { "speaker": "旁白", "text": "那一夜，隔着一墙，石神在堆满数学书的房间里，写下了一整套天衣无缝的计划。" },
+        { "speaker": "石神", "text": "（只要把问题设计得足够难，就没有人能解开。哪怕是警察，哪怕是……他。）" },
+        { "speaker": "旁白", "text": "三张电影票根，一份精确到分钟的不在场证明。这是他能为她做的——全部。" }
+      ],
+      "onEnter": { "clues": ["math_notebook"] },
+      "next": "ch02_001"
+    },
+    "ch01_040": {
+      "bg": "bg_yasuko_apt_night",
+      "pov": "yasuko",
+      "lines": [
+        { "speaker": "旁白", "text": "她咬牙把尸体拖进里屋，用毯子盖住。可破绽，远比她想象的多。" },
+        { "speaker": "旁白", "text": "几天后，警察就找上了门……（独自一人，这条路凶多吉少。）" }
+      ],
+      "onEnter": { "flags": ["no_ishigami"] },
+      "next": "ch02_001"
+    }
+  }
+}

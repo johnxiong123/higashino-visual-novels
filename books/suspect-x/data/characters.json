@@ -1,0 +1,16 @@
+[
+  { "id": "ishigami", "name": "石神哲哉", "role": "数学教师", "portrait": null,
+    "bio": "矮壮、面无表情的高中数学老师，传说中的天才。暗恋隔壁的靖子。" },
+  { "id": "yasuko", "name": "花冈靖子", "role": "便当店员", "portrait": null,
+    "bio": "美丽而疲惫的单亲母亲，在天亭便当店工作。" },
+  { "id": "misato", "name": "花冈美里", "role": "中学生", "portrait": null,
+    "bio": "靖子的女儿，国中二年级，羽毛球社。怕生。" },
+  { "id": "yukawa", "name": "汤川学", "role": "物理学副教授", "portrait": null,
+    "bio": "绰号「伽利略」，石神大学时代的劲敌。冷静睿智。" },
+  { "id": "kusanagi", "name": "草薙俊平", "role": "刑警", "portrait": null,
+    "bio": "警视厅搜查一课刑警，汤川的同窗。目光执拗。" },
+  { "id": "togashi", "name": "富坚慎二", "role": "前夫", "portrait": null,
+    "bio": "靖子的前夫，纠缠不休的卑劣男人。" },
+  { "id": "kudo", "name": "工藤邦明", "role": "印刷公司老板", "portrait": null,
+    "bio": "靖子陪酒时代的爱慕者，时髦体面。" }
+]
