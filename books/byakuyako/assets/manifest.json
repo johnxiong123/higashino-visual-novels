@@ -1,0 +1,172 @@
+{
+  "images": {
+    "bg_ch01_osaka_ruins_rain_1973": {
+      "src": "assets/images/bg_ch01_osaka_ruins_rain_1973.webp",
+      "label": "bg_ch01_osaka_ruins_rain_1973"
+    },
+    "bg_ch01_library_papercut_1973": {
+      "src": "assets/images/bg_ch01_library_papercut_1973.webp",
+      "label": "bg_ch01_library_papercut_1973"
+    },
+    "bg_ch02_gas_room_1974": {
+      "src": "assets/images/bg_ch02_gas_room_1974.webp",
+      "label": "bg_ch02_gas_room_1974"
+    },
+    "bg_ch03_school_corridor_1977": {
+      "src": "assets/images/bg_ch03_school_corridor_1977.webp",
+      "label": "bg_ch03_school_corridor_1977"
+    },
+    "bg_ch04_university_rose_garden_1981": {
+      "src": "assets/images/bg_ch04_university_rose_garden_1981.webp",
+      "label": "bg_ch04_university_rose_garden_1981"
+    },
+    "bg_ch04_pirate_computer_room_1983": {
+      "src": "assets/images/bg_ch04_pirate_computer_room_1983.webp",
+      "label": "bg_ch04_pirate_computer_room_1983"
+    },
+    "bg_ch05_takamiya_home_1987": {
+      "src": "assets/images/bg_ch05_takamiya_home_1987.webp",
+      "label": "bg_ch05_takamiya_home_1987"
+    },
+    "bg_ch06_statute_office_1988": {
+      "src": "assets/images/bg_ch06_statute_office_1988.webp",
+      "label": "bg_ch06_statute_office_1988"
+    },
+    "bg_ch07_ry_boutique_1991": {
+      "src": "assets/images/bg_ch07_ry_boutique_1991.webp",
+      "label": "bg_ch07_ry_boutique_1991"
+    },
+    "bg_ch07_imaeda_office_1991": {
+      "src": "assets/images/bg_ch07_imaeda_office_1991.webp",
+      "label": "bg_ch07_imaeda_office_1991"
+    },
+    "bg_ch08_noriko_pharmacy_1992": {
+      "src": "assets/images/bg_ch08_noriko_pharmacy_1992.webp",
+      "label": "bg_ch08_noriko_pharmacy_1992"
+    },
+    "bg_ch09_ry_atrium_christmas_1992": {
+      "src": "assets/images/bg_ch09_ry_atrium_christmas_1992.webp",
+      "label": "bg_ch09_ry_atrium_christmas_1992"
+    },
+    "cg_ch01_vent_investigation_1973": {
+      "src": "assets/images/cg_ch01_vent_investigation_1973.webp",
+      "label": "cg_ch01_vent_investigation_1973"
+    },
+    "cg_ch02_library_book_1974": {
+      "src": "assets/images/cg_ch02_library_book_1974.webp",
+      "label": "cg_ch02_library_book_1974"
+    },
+    "cg_ch03_mask_reflection_1978": {
+      "src": "assets/images/cg_ch03_mask_reflection_1978.webp",
+      "label": "cg_ch03_mask_reflection_1978"
+    },
+    "cg_ch04_eriko_aftermath_1982": {
+      "src": "assets/images/cg_ch04_eriko_aftermath_1982.webp",
+      "label": "cg_ch04_eriko_aftermath_1982"
+    },
+    "cg_ch05_wiretap_discovery_1987": {
+      "src": "assets/images/cg_ch05_wiretap_discovery_1987.webp",
+      "label": "cg_ch05_wiretap_discovery_1987"
+    },
+    "cg_ch06_statute_wall_1988": {
+      "src": "assets/images/cg_ch06_statute_wall_1988.webp",
+      "label": "cg_ch06_statute_wall_1988"
+    },
+    "cg_ch07_three_case_files_1991": {
+      "src": "assets/images/cg_ch07_three_case_files_1991.webp",
+      "label": "cg_ch07_three_case_files_1991"
+    },
+    "cg_ch08_noriko_warm_table_1992": {
+      "src": "assets/images/cg_ch08_noriko_warm_table_1992.webp",
+      "label": "cg_ch08_noriko_warm_table_1992"
+    },
+    "cg_ch08_papercut_couple_1992": {
+      "src": "assets/images/cg_ch08_papercut_couple_1992.webp",
+      "label": "cg_ch08_papercut_couple_1992"
+    },
+    "cg_ch09_fall_shadow_1992": {
+      "src": "assets/images/cg_ch09_fall_shadow_1992.webp",
+      "label": "cg_ch09_fall_shadow_1992"
+    },
+    "icon_scissors_1973": {
+      "src": "assets/images/cover_icons/icon_scissors_1973.webp",
+      "label": "icon_scissors_1973"
+    },
+    "icon_million_cash": {
+      "src": "assets/images/cover_icons/icon_million_cash.webp",
+      "label": "icon_million_cash"
+    },
+    "icon_vent_duct": {
+      "src": "assets/images/cover_icons/icon_vent_duct.webp",
+      "label": "icon_vent_duct"
+    },
+    "icon_lighter": {
+      "src": "assets/images/cover_icons/icon_lighter.webp",
+      "label": "icon_lighter"
+    },
+    "icon_papercut_boy": {
+      "src": "assets/images/cover_icons/icon_papercut_boy.webp",
+      "label": "icon_papercut_boy"
+    },
+    "icon_gone_with_wind_book": {
+      "src": "assets/images/cover_icons/icon_gone_with_wind_book.webp",
+      "label": "icon_gone_with_wind_book"
+    },
+    "icon_gas_heater": {
+      "src": "assets/images/cover_icons/icon_gas_heater.webp",
+      "label": "icon_gas_heater"
+    },
+    "icon_pawn_ledger": {
+      "src": "assets/images/cover_icons/icon_pawn_ledger.webp",
+      "label": "icon_pawn_ledger"
+    },
+    "icon_tsukiko_file": {
+      "src": "assets/images/cover_icons/icon_tsukiko_file.webp",
+      "label": "icon_tsukiko_file"
+    },
+    "icon_nude_photos_envelope": {
+      "src": "assets/images/cover_icons/icon_nude_photos_envelope.webp",
+      "label": "icon_nude_photos_envelope"
+    },
+    "icon_pirated_disks": {
+      "src": "assets/images/cover_icons/icon_pirated_disks.webp",
+      "label": "icon_pirated_disks"
+    },
+    "icon_wiretap_noise": {
+      "src": "assets/images/cover_icons/icon_wiretap_noise.webp",
+      "label": "icon_wiretap_noise"
+    },
+    "icon_forged_cards": {
+      "src": "assets/images/cover_icons/icon_forged_cards.webp",
+      "label": "icon_forged_cards"
+    },
+    "icon_matsuura_missing": {
+      "src": "assets/images/cover_icons/icon_matsuura_missing.webp",
+      "label": "icon_matsuura_missing"
+    },
+    "icon_statute_calendar": {
+      "src": "assets/images/cover_icons/icon_statute_calendar.webp",
+      "label": "icon_statute_calendar"
+    },
+    "icon_shrimp_goby": {
+      "src": "assets/images/cover_icons/icon_shrimp_goby.webp",
+      "label": "icon_shrimp_goby"
+    },
+    "icon_ry_logo": {
+      "src": "assets/images/cover_icons/icon_ry_logo.webp",
+      "label": "icon_ry_logo"
+    },
+    "icon_assault_mo": {
+      "src": "assets/images/cover_icons/icon_assault_mo.webp",
+      "label": "icon_assault_mo"
+    },
+    "icon_cyanide_log": {
+      "src": "assets/images/cover_icons/icon_cyanide_log.webp",
+      "label": "icon_cyanide_log"
+    },
+    "icon_papercut_couple": {
+      "src": "assets/images/cover_icons/icon_papercut_couple.webp",
+      "label": "icon_papercut_couple"
+    }
+  }
+}

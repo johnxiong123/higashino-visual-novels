@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "id": "ch05",
+    "title": "第五章 · 完美的婚姻",
+    "defaultPov": "makoto"
+  },
+  "start": "ch05_001",
+  "nodes": {
+    "ch05_001": {
+      "bg": "bg_ch05_takamiya_home_1987",
+      "pov": "makoto",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "高宫诚与雪穗的婚姻像样板间：整洁、体面，没有一件物品属于偶然。"
+        },
+        {
+          "speaker": "诚",
+          "text": "我住在这里，却总觉得只是被允许进入。"
+        }
+      ],
+      "onEnter": {
+        "povUnlock": [
+          "makoto"
+        ]
+      },
+      "next": "ch05_002"
+    },
+    "ch05_002": {
+      "bg": "bg_ch05_takamiya_home_1987",
+      "pov": "makoto",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "电话线里偶尔出现极轻的回声。每当诚提起千都留，回声便像另一口呼吸。"
+        }
+      ],
+      "next": "ch05_003"
+    },
+    "ch05_003": {
+      "bg": "bg_ch05_takamiya_home_1987",
+      "pov": "makoto",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "诚握着听筒，决定要不要拆开那只过分整齐的电话柜。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "彻查电话的异响",
+          "tag": "真相 +1",
+          "effects": {
+            "state": {
+              "truth": 1
+            },
+            "clues": [
+              "wiretap_noise"
+            ]
+          },
+          "goto": "ch05_004"
+        },
+        {
+          "text": "不再追问，只想尽快解脱",
+          "tag": "错过线索",
+          "effects": {
+            "flags": [
+              "wiretap_missed"
+            ]
+          },
+          "goto": "ch05_005"
+        }
+      ]
+    },
+    "ch05_004": {
+      "bg": "bg_ch05_takamiya_home_1987",
+      "pov": "makoto",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "柜后有一段重新包过的线，手法干净得不像临时起意。"
+        },
+        {
+          "speaker": "诚",
+          "text": "不是我多心。有人一直坐在我们的谈话里。"
+        }
+      ],
+      "cg": "cg_ch05_wiretap_discovery_1987",
+      "next": "ch05_006"
+    },
+    "ch05_005": {
+      "bg": "bg_ch05_takamiya_home_1987",
+      "pov": "makoto",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "诚把听筒放回原位。那一点杂音从此再没有出现。"
+        }
+      ],
+      "next": "ch05_006"
+    },
+    "ch05_006": {
+      "bg": "bg_ch05_takamiya_home_1987",
+      "pov": "makoto",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "银行随后发现一批伪造提款卡。技术路径与早年的电脑生意隐约重合。"
+        }
+      ],
+      "onEnter": {
+        "clues": [
+          "forged_cards"
+        ]
+      },
+      "next": "ch05_007"
+    },
+    "ch05_007": {
+      "bg": "bg_ch05_takamiya_home_1987",
+      "pov": "makoto",
+      "lines": [
+        {
+          "speaker": "千都留",
+          "text": "我收到没有署名的警告。它知道我的住址，也知道我们见面的时间。"
+        },
+        {
+          "speaker": "诚",
+          "text": "我第一次明白，婚姻之外也有一道看不见的围墙。"
+        }
+      ],
+      "next": "ch05_008"
+    },
+    "ch05_008": {
+      "bg": "bg_ch05_takamiya_home_1987",
+      "pov": "makoto",
+      "lines": [
+        {
+          "speaker": "雪穗",
+          "text": "如果你想离开，我不会阻止。但条件要写得清清楚楚。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "她像在完成一笔没有情绪的商业交割。"
+        }
+      ],
+      "next": "ch05_009"
+    },
+    "ch05_009": {
+      "bg": "bg_ch05_takamiya_home_1987",
+      "pov": "makoto",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "离婚手续办完那天，诚在玻璃上看见一个远去的男性倒影。转身时，街上已经没人。"
+        }
+      ],
+      "next": "ch05_010"
+    },
+    "ch05_010": {
+      "bg": "bg_ch05_takamiya_home_1987",
+      "pov": "makoto",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "样板间恢复整齐，像这段婚姻从未发生。"
+        }
+      ],
+      "next": "ch06_001"
+    }
+  }
+}

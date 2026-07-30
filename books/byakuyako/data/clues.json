@@ -1,0 +1,142 @@
+[
+  {
+    "id": "scissors_1973",
+    "title": "剪刀创口",
+    "chapter": "第一章",
+    "icon": "icon_scissors_1973",
+    "desc": "死者胸口留下的特殊创口，与十九年后的终局遥相呼应。"
+  },
+  {
+    "id": "million_cash",
+    "title": "未被取走的一百万",
+    "chapter": "第一章",
+    "icon": "icon_million_cash",
+    "desc": "巨款仍在现场，劫财动机因此站不住脚。"
+  },
+  {
+    "id": "vent_duct",
+    "title": "通风管",
+    "chapter": "第一章",
+    "icon": "icon_vent_duct",
+    "desc": "狭窄得只容孩子通过的废楼通道。"
+  },
+  {
+    "id": "lighter",
+    "title": "打火机",
+    "chapter": "第一章",
+    "icon": "icon_lighter",
+    "desc": "属于西本文代，却出现在不该出现的位置。"
+  },
+  {
+    "id": "papercut_boy",
+    "title": "剪纸的少年",
+    "chapter": "第一章",
+    "icon": "icon_papercut_boy",
+    "desc": "图书馆角落里沉默剪纸的桐原家独子。"
+  },
+  {
+    "id": "gone_with_wind",
+    "title": "反复借阅的旧书",
+    "chapter": "第二章",
+    "icon": "icon_gone_with_wind_book",
+    "desc": "雪穗一次次借走同一本旧小说，像在练习成为另一个人。"
+  },
+  {
+    "id": "gas_heater",
+    "title": "煤气炉",
+    "chapter": "第二章",
+    "icon": "icon_gas_heater",
+    "desc": "文代死亡现场唯一持续运转的东西。"
+  },
+  {
+    "id": "pawn_ledger",
+    "title": "当铺账簿",
+    "chapter": "第二章",
+    "icon": "icon_pawn_ledger",
+    "desc": "松浦经手的暗账，把旧案与后来的金钱流向连在一起。"
+  },
+  {
+    "id": "tsukiko_file",
+    "title": "都子案卷宗",
+    "chapter": "第三章",
+    "icon": "icon_tsukiko_file",
+    "desc": "无指纹、无目击者、完美不在场证明，后来又会出现的手法。"
+  },
+  {
+    "id": "nude_photos",
+    "title": "密封照片袋",
+    "chapter": "第四章",
+    "icon": "icon_nude_photos_envelope",
+    "desc": "被密封保存的伤害证据，拍摄者冷静得近乎机械。"
+  },
+  {
+    "id": "pirated_disks",
+    "title": "盗版软盘",
+    "chapter": "第四章",
+    "icon": "icon_pirated_disks",
+    "desc": "早期电脑生意的货物，也是亮司取得资金与技术的路径。"
+  },
+  {
+    "id": "wiretap_noise",
+    "title": "电话里的杂音",
+    "chapter": "第五章",
+    "icon": "icon_wiretap_noise",
+    "desc": "家用电话线路上极轻的异响，指向专业窃听。"
+  },
+  {
+    "id": "forged_cards",
+    "title": "伪造提款卡",
+    "chapter": "第五章",
+    "icon": "icon_forged_cards",
+    "desc": "技术远超街头犯罪的复制卡。"
+  },
+  {
+    "id": "matsuura_missing",
+    "title": "松浦勇失踪",
+    "chapter": "第六章",
+    "icon": "icon_matsuura_missing",
+    "desc": "最后一个知道当年隐情的人突然从所有记录中消失。"
+  },
+  {
+    "id": "statute_calendar",
+    "title": "时效倒数手帐",
+    "chapter": "第六章",
+    "icon": "icon_statute_calendar",
+    "desc": "笹垣逐日划去的日期，最终停在追诉时效的墙前。"
+  },
+  {
+    "id": "shrimp_goby",
+    "title": "枪虾与虾虎鱼",
+    "chapter": "第六章",
+    "icon": "icon_shrimp_goby",
+    "desc": "一方挖洞、一方警戒的共生关系，像极了两个从不同框的人。"
+  },
+  {
+    "id": "ry_logo",
+    "title": "R&Y 店标",
+    "chapter": "第七章",
+    "icon": "icon_ry_logo",
+    "desc": "两个字母组成的店标，是事业招牌，也像两个人的暗号。"
+  },
+  {
+    "id": "assault_mo",
+    "title": "三起案件的同一手法",
+    "chapter": "第七章",
+    "icon": "icon_assault_mo",
+    "desc": "今枝把三份卷宗并排后发现的重复结构。"
+  },
+  {
+    "id": "cyanide_log",
+    "title": "青酸钾出入记录",
+    "chapter": "第八章",
+    "icon": "icon_cyanide_log",
+    "desc": "药局台账中无法解释的缺口。"
+  },
+  {
+    "id": "papercut_couple",
+    "title": "手牵手的剪纸",
+    "chapter": "第八章",
+    "icon": "icon_papercut_couple",
+    "desc": "亮司唯一留下的白日想象，也可能成为他走向黎明的证据。"
+  }
+]

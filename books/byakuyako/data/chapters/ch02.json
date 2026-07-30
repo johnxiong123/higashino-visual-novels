@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "id": "ch02",
+    "title": "第二章 · 煤气的味道",
+    "defaultPov": "sasagaki"
+  },
+  "start": "ch02_001",
+  "nodes": {
+    "ch02_001": {
+      "bg": "bg_ch02_gas_room_1974",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "数月后，西本文代死在自家煤气炉旁。门窗紧闭，没有打斗。"
+        },
+        {
+          "speaker": "同僚",
+          "text": "事故，或者自杀。旧案的嫌疑人自己退场了。"
+        }
+      ],
+      "onEnter": {
+        "clues": [
+          "gas_heater"
+        ]
+      },
+      "next": "ch02_002"
+    },
+    "ch02_002": {
+      "bg": "bg_ch02_gas_room_1974",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "笹垣",
+          "text": "她连女儿第二天的便当都准备好了。一个决定赴死的人，会这样做吗？"
+        },
+        {
+          "speaker": "旁白",
+          "text": "回答他的只有仍残留在房间里的甜腻气味。"
+        }
+      ],
+      "next": "ch02_003"
+    },
+    "ch02_003": {
+      "bg": "bg_ch02_gas_room_1974",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "结案会议上，白板被擦得只剩一道灰线。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "坚持文代之死存在他杀疑点",
+          "tag": "真相 +1",
+          "effects": {
+            "state": {
+              "truth": 1
+            },
+            "flags": [
+              "sasagaki_obsessed"
+            ]
+          },
+          "goto": "ch02_004"
+        },
+        {
+          "text": "接受事故结论，把疑问留在私人笔记",
+          "tag": "沉默",
+          "effects": {
+            "flags": [
+              "accepted_accident"
+            ]
+          },
+          "goto": "ch02_005"
+        }
+      ]
+    },
+    "ch02_004": {
+      "bg": "bg_ch02_gas_room_1974",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "上司",
+          "text": "没有证据，就不能拿直觉替代结论。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "笹垣把被退回的报告折好，放进自己的手帐。"
+        }
+      ],
+      "next": "ch02_006"
+    },
+    "ch02_005": {
+      "bg": "bg_ch02_gas_room_1974",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "公章落下，案件归档。笹垣却在日期旁画了一个没有封口的圆。"
+        }
+      ],
+      "next": "ch02_006"
+    },
+    "ch02_006": {
+      "bg": "bg_ch01_library_papercut_1973",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "文代的女儿被唐泽礼子收养，改名唐泽雪穗。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "她来图书馆归还一本借过许多次的旧小说，背影安静得没有重量。"
+        }
+      ],
+      "cg": "cg_ch02_library_book_1974",
+      "onEnter": {
+        "clues": [
+          "gone_with_wind"
+        ],
+        "state": {
+          "bond": 1
+        }
+      },
+      "next": "ch02_007"
+    },
+    "ch02_007": {
+      "bg": "bg_ch01_library_papercut_1973",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "礼子",
+          "text": "过去的事不必再提。她今后会成为一个全新的人。"
+        },
+        {
+          "speaker": "笹垣",
+          "text": "人可以换名字，痕迹却不会自己消失。"
+        }
+      ],
+      "next": "ch02_008"
+    },
+    "ch02_008": {
+      "bg": "bg_ch02_gas_room_1974",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "当铺账本也被送进旧案柜。松浦勇的名字躺在最不起眼的一页。"
+        }
+      ],
+      "onEnter": {
+        "clues": [
+          "pawn_ledger"
+        ]
+      },
+      "next": "ch02_009"
+    },
+    "ch02_009": {
+      "bg": "bg_ch02_gas_room_1974",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "案件冷却。两个孩子从此不再出现在同一张调查表上。"
+        }
+      ],
+      "next": "ch03_001"
+    }
+  }
+}

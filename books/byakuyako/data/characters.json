@@ -1,0 +1,107 @@
+[
+  {
+    "id": "ryoji",
+    "name": "桐原亮司",
+    "role": "当铺独子",
+    "portrait": null,
+    "bio": "总在他人视野边缘行动的人，只在影子间章短暂成为操作视角。"
+  },
+  {
+    "id": "yukiho",
+    "name": "唐泽雪穗",
+    "role": "精品店主",
+    "portrait": null,
+    "bio": "举止完美、从不让旁观者看见内心的女人。"
+  },
+  {
+    "id": "sasagaki",
+    "name": "笹垣润三",
+    "role": "刑警",
+    "portrait": null,
+    "bio": "追查废楼命案十九年的刑警，也是全篇最稳定的观察锚点。"
+  },
+  {
+    "id": "yosuke",
+    "name": "桐原洋介",
+    "role": "当铺老板",
+    "portrait": null,
+    "bio": "1973 年废楼命案的死者，一切秘密的起点。"
+  },
+  {
+    "id": "fumiyo",
+    "name": "西本文代",
+    "role": "嫌疑人",
+    "portrait": null,
+    "bio": "雪穗的生母，在案件冷却前死于煤气事故。"
+  },
+  {
+    "id": "matsuura",
+    "name": "松浦勇",
+    "role": "当铺伙计",
+    "portrait": null,
+    "bio": "经手暗账并知道旧案内情，后来突然失踪。"
+  },
+  {
+    "id": "reiko",
+    "name": "唐泽礼子",
+    "role": "养母",
+    "portrait": null,
+    "bio": "收养雪穗，并把她培养成无可挑剔的淑女。"
+  },
+  {
+    "id": "eriko",
+    "name": "川岛江利子",
+    "role": "雪穗友人",
+    "portrait": null,
+    "bio": "曾把雪穗当作最亲密的朋友，也最早感到那副假面的寒意。"
+  },
+  {
+    "id": "kazunari",
+    "name": "筱冢一成",
+    "role": "药业公司继承人",
+    "portrait": null,
+    "bio": "把数次看似无关的伤害连接起来的人。"
+  },
+  {
+    "id": "yasuharu",
+    "name": "筱冢康晴",
+    "role": "一成堂兄",
+    "portrait": null,
+    "bio": "雪穗后来选择接近的对象。"
+  },
+  {
+    "id": "makoto",
+    "name": "高宫诚",
+    "role": "雪穗前夫",
+    "portrait": null,
+    "bio": "在完美婚姻中逐渐意识到自己只是布景。"
+  },
+  {
+    "id": "chizuru",
+    "name": "三泽千都留",
+    "role": "诚的恋人",
+    "portrait": null,
+    "bio": "试图靠近诚，却被无形的压力逼退。"
+  },
+  {
+    "id": "imaeda",
+    "name": "今枝直巳",
+    "role": "私家侦探",
+    "portrait": null,
+    "bio": "把三起案件摆上同一张桌子，离真相只差一步。"
+  },
+  {
+    "id": "noriko",
+    "name": "栗原典子",
+    "role": "药剂师",
+    "portrait": null,
+    "bio": "给了化名生活的亮司一小块不带条件的安静。"
+  },
+  {
+    "id": "tomohiko",
+    "name": "园村友彦",
+    "role": "亮司同伙",
+    "portrait": null,
+    "bio": "参与早期电脑生意，见过亮司如何把自己藏进影子。"
+  }
+]
