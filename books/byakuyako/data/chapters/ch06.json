@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "id": "ch06",
+    "title": "第六章 · 时效之墙",
+    "defaultPov": "sasagaki"
+  },
+  "start": "ch06_001",
+  "nodes": {
+    "ch06_001": {
+      "bg": "bg_ch06_statute_office_1988",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "十五年期限逼近。笹垣把旧案照片从柜底全部取出。"
+        },
+        {
+          "speaker": "笹垣",
+          "text": "时间不是结论，只是法律允许我们追到这里。"
+        }
+      ],
+      "onEnter": {
+        "clues": [
+          "statute_calendar"
+        ]
+      },
+      "next": "ch06_002"
+    },
+    "ch06_002": {
+      "bg": "bg_ch06_statute_office_1988",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "墙上的日期越来越少，证人却一个接一个消失。"
+        }
+      ],
+      "cg": "cg_ch06_statute_wall_1988",
+      "next": "ch06_003"
+    },
+    "ch06_003": {
+      "bg": "bg_ch06_statute_office_1988",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "松浦勇的住处已经清空，租金却由匿名汇款补到月底。"
+        },
+        {
+          "speaker": "笹垣",
+          "text": "有人不是让他逃走，而是在替他擦掉离开的声音。"
+        }
+      ],
+      "onEnter": {
+        "clues": [
+          "matsuura_missing"
+        ]
+      },
+      "next": "ch06_004"
+    },
+    "ch06_004": {
+      "bg": "bg_ch06_statute_office_1988",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "同僚",
+          "text": "你说那两个人像什么？"
+        },
+        {
+          "speaker": "笹垣",
+          "text": "像枪虾和虾虎鱼。一个在暗处挖洞，一个在光里警戒。"
+        }
+      ],
+      "onEnter": {
+        "clues": [
+          "shrimp_goby"
+        ]
+      },
+      "next": "ch06_005"
+    },
+    "ch06_005": {
+      "bg": "bg_ch06_statute_office_1988",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "时效归零日，笹垣把警察手册与私人笔记并排放在桌上。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "退休后以私人身份继续追查",
+          "tag": "真相 +1",
+          "effects": {
+            "state": {
+              "truth": 1
+            },
+            "flags": [
+              "beyond_limits"
+            ]
+          },
+          "goto": "ch06_006"
+        },
+        {
+          "text": "承认败给时间，让旧案留在档案里",
+          "tag": "直达结局",
+          "effects": {
+            "flags": [
+              "gave_up"
+            ]
+          },
+          "goto": "ch09_unsolved"
+        }
+      ]
+    },
+    "ch06_006": {
+      "bg": "bg_ch06_statute_office_1988",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "笹垣",
+          "text": "从今天起，我没有权限。但也没有人能命令我停止怀疑。"
+        }
+      ],
+      "next": "ch06_007"
+    },
+    "ch06_007": {
+      "bg": "bg_ch06_statute_office_1988",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "他复印三份关键卷宗，把原件放回柜中，副本装进旧旅行袋。"
+        }
+      ],
+      "next": "ch06_008"
+    },
+    "ch06_008": {
+      "bg": "bg_ch06_statute_office_1988",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "一条来自东京的消息出现：雪穗正在筹备自己的精品店。"
+        }
+      ],
+      "next": "ch06_009"
+    },
+    "ch06_009": {
+      "bg": "bg_ch06_statute_office_1988",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "笹垣",
+          "text": "当名字不断变化，就去找不会变的手法。"
+        }
+      ],
+      "next": "ch06_010"
+    },
+    "ch06_010": {
+      "bg": "bg_ch06_statute_office_1988",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "他关掉办公室的灯，第一次以普通人的身份继续这场调查。"
+        }
+      ],
+      "next": "ch07_001"
+    }
+  }
+}

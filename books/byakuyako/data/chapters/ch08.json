@@ -1,0 +1,228 @@
+{
+  "meta": {
+    "id": "ch08",
+    "title": "第八章 · 白夜里走路的人",
+    "defaultPov": "noriko"
+  },
+  "start": "ch08_001",
+  "nodes": {
+    "ch08_001": {
+      "bg": "bg_ch08_noriko_pharmacy_1992",
+      "pov": "noriko",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "栗原典子的药局在夜里只留一盏小灯。秋吉雄一总在关门前来帮忙。"
+        },
+        {
+          "speaker": "典子",
+          "text": "他沉默，却从不让沉默变成负担。"
+        }
+      ],
+      "onEnter": {
+        "povUnlock": [
+          "noriko"
+        ]
+      },
+      "next": "ch08_002"
+    },
+    "ch08_002": {
+      "bg": "bg_ch08_noriko_pharmacy_1992",
+      "pov": "noriko",
+      "lines": [
+        {
+          "speaker": "典子",
+          "text": "你像是一直走在没有天亮的路上。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "男人没有回答，只把两只茶杯推到灯下相隔最远的位置。"
+        }
+      ],
+      "cg": "cg_ch08_noriko_warm_table_1992",
+      "next": "ch08_003"
+    },
+    "ch08_003": {
+      "bg": "bg_ch08_noriko_pharmacy_1992",
+      "pov": "noriko",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "典子决定如何面对这段始终没有来历的关系。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "追问他的过去，并记住每个停顿",
+          "tag": "微光 +1 · 真相 +1",
+          "effects": {
+            "state": {
+              "glimmer": 1,
+              "truth": 1
+            },
+            "flags": [
+              "noriko_asked"
+            ]
+          },
+          "goto": "ch08_004"
+        },
+        {
+          "text": "不问，只陪他坐到灯熄灭",
+          "tag": "微光 +2",
+          "effects": {
+            "state": {
+              "glimmer": 2
+            },
+            "flags": [
+              "noriko_stayed"
+            ]
+          },
+          "goto": "ch08_005"
+        }
+      ]
+    },
+    "ch08_004": {
+      "bg": "bg_ch08_noriko_pharmacy_1992",
+      "pov": "noriko",
+      "lines": [
+        {
+          "speaker": "典子",
+          "text": "你真正的名字，不是秋吉雄一，对吗？"
+        },
+        {
+          "speaker": "旁白",
+          "text": "他移开视线。这个停顿后来成为笹垣证词链里缺失的一秒。"
+        }
+      ],
+      "next": "ch08_006"
+    },
+    "ch08_005": {
+      "bg": "bg_ch08_noriko_pharmacy_1992",
+      "pov": "noriko",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "典子没有索取答案。那一晚，亮司第一次在一段关系里不必完成任务。"
+        }
+      ],
+      "next": "ch08_006"
+    },
+    "ch08_006": {
+      "bg": "bg_ch08_noriko_pharmacy_1992",
+      "pov": "noriko",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "清点药品时，典子发现台账少了一格，青酸钾的数量对不上。"
+        }
+      ],
+      "onEnter": {
+        "clues": [
+          "cyanide_log"
+        ]
+      },
+      "next": "ch08_007"
+    },
+    "ch08_007": {
+      "bg": "bg_ch08_noriko_pharmacy_1992",
+      "pov": "noriko",
+      "lines": [
+        {
+          "speaker": "典子",
+          "text": "我想相信你。但相信不该要求我假装没看见。"
+        }
+      ],
+      "next": "ch08_008"
+    },
+    "ch08_008": {
+      "bg": "bg_ch08_noriko_pharmacy_1992",
+      "pov": "ryoji",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "影子间章。亮司独自坐在工作台前，剪下一对牵手的人形。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "没有内心独白，只有纸边落下的细碎声音。"
+        }
+      ],
+      "next": "ch08_009"
+    },
+    "ch08_009": {
+      "bg": "bg_ch08_noriko_pharmacy_1992",
+      "pov": "ryoji",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "他把剪纸放在灯下。接下来只剩一个动作。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "把剪纸留给典子",
+          "tag": "微光 +2",
+          "effects": {
+            "state": {
+              "glimmer": 2
+            },
+            "flags": [
+              "papercut_kept"
+            ],
+            "clues": [
+              "papercut_couple"
+            ]
+          },
+          "goto": "ch08_010"
+        },
+        {
+          "text": "把剪纸烧掉",
+          "tag": "共生 +1",
+          "effects": {
+            "state": {
+              "bond": 1
+            },
+            "flags": [
+              "papercut_burned"
+            ]
+          },
+          "goto": "ch08_011"
+        }
+      ]
+    },
+    "ch08_010": {
+      "bg": "bg_ch08_noriko_pharmacy_1992",
+      "pov": "ryoji",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "剪纸被压在药局账本下。两个人形手牵着手，站在不存在的太阳里。"
+        }
+      ],
+      "cg": "cg_ch08_papercut_couple_1992",
+      "next": "ch08_012"
+    },
+    "ch08_011": {
+      "bg": "bg_ch08_noriko_pharmacy_1992",
+      "pov": "ryoji",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "火光只亮了一瞬。灰烬冷却后，他把桌面擦得没有痕迹。"
+        }
+      ],
+      "next": "ch08_012"
+    },
+    "ch08_012": {
+      "bg": "bg_ch08_noriko_pharmacy_1992",
+      "pov": "noriko",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "圣诞将近。笹垣的电话与 R&Y 新店邀请函在同一天到达。"
+        }
+      ],
+      "next": "ch09_001"
+    }
+  }
+}

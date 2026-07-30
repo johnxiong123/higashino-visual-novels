@@ -1,0 +1,107 @@
+{
+  "id": "byakuyako",
+  "title": "白夜行",
+  "author": "东野圭吾",
+  "cover": "assets/images/bg_ch09_ry_atrium_christmas_1992.webp",
+  "theme": "theme.css",
+  "mark": "白",
+  "tagline": "只是想在有光的地方行走",
+  "quote": "天空始终没有太阳，于是他们把彼此当成了光。",
+  "start": "ch01_001",
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "第一章 · 废楼",
+      "start": "ch01_001",
+      "bgm": "main"
+    },
+    {
+      "id": "ch02",
+      "title": "第二章 · 煤气的味道",
+      "start": "ch02_001",
+      "bgm": "main"
+    },
+    {
+      "id": "ch03",
+      "title": "第三章 · 少女的假面",
+      "start": "ch03_001",
+      "bgm": "main"
+    },
+    {
+      "id": "ch04",
+      "title": "第四章 · 蔷薇与荆棘",
+      "start": "ch04_001",
+      "bgm": "main"
+    },
+    {
+      "id": "ch05",
+      "title": "第五章 · 完美的婚姻",
+      "start": "ch05_001",
+      "bgm": "main"
+    },
+    {
+      "id": "ch06",
+      "title": "第六章 · 时效之墙",
+      "start": "ch06_001",
+      "bgm": "main"
+    },
+    {
+      "id": "ch07",
+      "title": "第七章 · R&Y",
+      "start": "ch07_001",
+      "bgm": "main"
+    },
+    {
+      "id": "ch08",
+      "title": "第八章 · 白夜里走路的人",
+      "start": "ch08_001",
+      "bgm": "main"
+    },
+    {
+      "id": "ch09",
+      "title": "终章 · 雪穗不回头",
+      "start": "ch09_001",
+      "bgm": "main"
+    }
+  ],
+  "vars": [
+    {
+      "key": "truth",
+      "label": "真相拼图",
+      "color": "#4f7ea3",
+      "init": 0,
+      "max": 10
+    },
+    {
+      "key": "bond",
+      "label": "共生",
+      "color": "#96394a",
+      "init": 0,
+      "max": 10
+    },
+    {
+      "key": "glimmer",
+      "label": "微光",
+      "color": "#c9a961",
+      "init": 0,
+      "max": 10
+    },
+    {
+      "key": "crack",
+      "label": "假面裂痕",
+      "color": "#aeb9c4",
+      "init": 0,
+      "max": 10
+    }
+  ],
+  "initialState": {
+    "povUnlocked": [
+      "sasagaki"
+    ]
+  },
+  "features": {
+    "clues": true,
+    "flowchart": true,
+    "pov": true
+  }
+}
