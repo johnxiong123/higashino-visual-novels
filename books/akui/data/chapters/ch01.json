@@ -1,0 +1,121 @@
+{
+  "meta": { "id": "ch01", "title": "第一章 · 事件之章", "defaultPov": "nonoguchi" },
+  "start": "ch01_001",
+  "nodes": {
+    "ch01_001": {
+      "bg": "bg_ch01_nonoguchi_study_1996",
+      "pov": "nonoguchi",
+      "lines": [
+        { "speaker": "手记", "text": "这是我对日高邦彦遇害前后所作的记录。写下它，只为让事实不被混乱覆盖。" },
+        { "speaker": "旁白", "text": "稿纸格线安静地等着。第一句话已经替读者选好了观看方向。" }
+      ],
+      "next": "ch01_002"
+    },
+    "ch01_002": {
+      "bg": "bg_ch01_hidaka_garden_1996",
+      "pov": "nonoguchi",
+      "lines": [
+        { "speaker": "手记", "text": "日高家即将迁往温哥华。庭院边堆着打包好的行李，邻居却仍为一只死去的猫登门争执。" }
+      ],
+      "onEnter": { "clues": ["vancouver_eve"] },
+      "next": "ch01_003"
+    },
+    "ch01_003": {
+      "bg": "bg_ch01_nonoguchi_study_1996",
+      "pov": "nonoguchi",
+      "lines": [
+        { "speaker": "旁白", "text": "你准备在手记里写下邻猫之死。该给读者留下怎样的日高？" }
+      ],
+      "choices": [
+        { "text": "详写指控，让冷酷成为开篇", "tag": "剧本 +1", "effects": { "state": { "script": 1 }, "flags": ["cat_slandered"], "clues": ["cat_account"] }, "goto": "ch01_004" },
+        { "text": "只记下争执，不替警方下结论", "tag": "克制", "effects": { "clues": ["cat_account"] }, "goto": "ch01_005" }
+      ]
+    },
+    "ch01_004": {
+      "bg": "bg_ch01_nonoguchi_study_1996",
+      "pov": "nonoguchi",
+      "lines": [
+        { "speaker": "手记", "text": "我把邻居的怀疑写得很完整，仿佛日高的沉默本身就是承认。" },
+        { "speaker": "旁白", "text": "墨迹干透后，一种性格已经先于死讯被写进读者心里。" }
+      ],
+      "next": "ch01_006"
+    },
+    "ch01_005": {
+      "bg": "bg_ch01_nonoguchi_study_1996",
+      "pov": "nonoguchi",
+      "lines": [
+        { "speaker": "手记", "text": "邻居因猫的死亡前来理论。日高没有承认，争执也没有结论。" },
+        { "speaker": "旁白", "text": "你留下空白。空白仍会让读者自己填进偏见。" }
+      ],
+      "next": "ch01_006"
+    },
+    "ch01_006": {
+      "bg": "bg_ch01_hidaka_study_1996",
+      "pov": "nonoguchi",
+      "lines": [
+        { "speaker": "手记", "text": "藤尾美弥子随后来访。她反对日高在《禁猎地》中使用亡兄的经历。" },
+        { "speaker": "手记", "text": "日高没有改变作品的打算。那场会面不愉快地结束了。" }
+      ],
+      "choices": [
+        { "text": "只记录会面结果", "tag": "手记", "goto": "ch01_007" },
+        { "text": "补写美弥子为何反对取材", "tag": "细节", "goto": "ch01_006_note" }
+      ]
+    },
+    "ch01_006_note": { "bg": "bg_ch01_hidaka_study_1996", "pov": "nonoguchi", "lines": [{ "speaker": "手记", "text": "她认为作品把亡者的经历交给了陌生读者，也让家属再次成为被议论的对象。" }], "next": "ch01_007" },
+    "ch01_007": {
+      "bg": "bg_ch01_hidaka_garden_1996",
+      "pov": "nonoguchi",
+      "lines": [
+        { "speaker": "手记", "text": "离开前，我与日高约定晚些时候再来。理惠也会在外出后返回。" },
+        { "speaker": "旁白", "text": "庭院里没有风。樱树投下一道沉默的影子。" }
+      ],
+      "next": "ch01_008"
+    },
+    "ch01_008": {
+      "bg": "bg_ch01_hidaka_study_1996",
+      "pov": "nonoguchi",
+      "lines": [
+        { "speaker": "手记", "text": "晚上，屋内没有回应。我与理惠会合，重新进入书房。" }
+      ],
+      "cg": "cg_ch01_study_discovery_1996",
+      "onEnter": { "state": { "script": 1 } },
+      "next": "ch01_009"
+    },
+    "ch01_009": {
+      "bg": "bg_ch01_hidaka_study_1996",
+      "pov": "nonoguchi",
+      "lines": [
+        { "speaker": "理惠", "text": "请叫警察。不要碰这里的任何东西。" },
+        { "speaker": "手记", "text": "日高倒在书房里。现实线中的他，从此只剩物品、作品和别人的话。" }
+      ],
+      "next": "ch01_010"
+    },
+    "ch01_010": {
+      "bg": "bg_ch01_hidaka_study_1996",
+      "pov": "nonoguchi",
+      "lines": [
+        { "speaker": "加贺", "text": "老师，发现前后的经过，请按实际发生的顺序再说一遍。" },
+        { "speaker": "手记", "text": "负责询问的刑警是加贺恭一郎。我们曾在同一所学校任教。" }
+      ],
+      "onEnter": { "povUnlock": ["kaga"] },
+      "next": "ch01_011"
+    },
+    "ch01_011": {
+      "bg": "bg_ch01_nonoguchi_study_1996",
+      "pov": "nonoguchi",
+      "lines": [
+        { "speaker": "旁白", "text": "回到住处，打字机旁的稿纸仍摊着。野野口补上日高近来的争端，让事件获得一个看似自然的背景。" }
+      ],
+      "onEnter": { "state": { "script": 1 }, "flags": ["conflicts_emphasized"] },
+      "next": "ch01_012"
+    },
+    "ch01_012": {
+      "bg": "bg_ch01_nonoguchi_study_1996",
+      "pov": "nonoguchi",
+      "lines": [
+        { "speaker": "手记", "text": "我把最后一个句号写下。记录看起来完整、克制，而且正等待一个读者。" }
+      ],
+      "next": "ch02_001"
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "images": {
+    "title_keyvisual": {
+      "src": "assets/images/title_keyvisual.webp",
+      "label": "标题视觉"
+    },
+    "bg_ch01_hidaka_study_1996": {
+      "src": "assets/images/bg_ch01_hidaka_study_1996.webp",
+      "label": "日高书房"
+    },
+    "bg_ch01_hidaka_garden_1996": {
+      "src": "assets/images/bg_ch01_hidaka_garden_1996.webp",
+      "label": "日家庭院"
+    },
+    "bg_ch01_nonoguchi_study_1996": {
+      "src": "assets/images/bg_ch01_nonoguchi_study_1996.webp",
+      "label": "野野口书斋"
+    },
+    "bg_ch02_police_office_1996": {
+      "src": "assets/images/bg_ch02_police_office_1996.webp",
+      "label": "警视厅办公室"
+    },
+    "bg_ch03_detention_interview_1996": {
+      "src": "assets/images/bg_ch03_detention_interview_1996.webp",
+      "label": "拘置所面会室"
+    },
+    "bg_ch05_publisher_reception_1996": {
+      "src": "assets/images/bg_ch05_publisher_reception_1996.webp",
+      "label": "出版社会客室"
+    },
+    "bg_ch06_empty_classroom_memory": {
+      "src": "assets/images/bg_ch06_empty_classroom_memory.webp",
+      "label": "回忆中的空教室"
+    },
+    "bg_ch06_school_corridor_memory": {
+      "src": "assets/images/bg_ch06_school_corridor_memory.webp",
+      "label": "回忆中的校园走廊"
+    },
+    "bg_ch06_school_road_memory": {
+      "src": "assets/images/bg_ch06_school_road_memory.webp",
+      "label": "回忆中的上学路"
+    },
+    "bg_ch07_hospital_room_1996": {
+      "src": "assets/images/bg_ch07_hospital_room_1996.webp",
+      "label": "医院病房"
+    },
+    "cg_ch01_study_discovery_1996": {
+      "src": "assets/images/cg_ch01_study_discovery_1996.webp",
+      "label": "书房发现"
+    },
+    "cg_ch03_arrest_1996": {
+      "src": "assets/images/cg_ch03_arrest_1996.webp",
+      "label": "逮捕"
+    },
+    "cg_ch04_vhs_evidence_1996": {
+      "src": "assets/images/cg_ch04_vhs_evidence_1996.webp",
+      "label": "录像带证物"
+    },
+    "cg_ch05_forgery_comparison_1996": {
+      "src": "assets/images/cg_ch05_forgery_comparison_1996.webp",
+      "label": "赝品对照"
+    },
+    "cg_ch05_miyako_protest_1996": {
+      "src": "assets/images/cg_ch05_miyako_protest_1996.webp",
+      "label": "美弥子抗议"
+    },
+    "cg_ch06_photo_back_memory": {
+      "src": "assets/images/cg_ch06_photo_back_memory.webp",
+      "label": "照片背面"
+    },
+    "cg_ch07_hospital_truth_1996": {
+      "src": "assets/images/cg_ch07_hospital_truth_1996.webp",
+      "label": "病房真相"
+    },
+    "cg_ch07_school_road_true_ending": {
+      "src": "assets/images/cg_ch07_school_road_true_ending.webp",
+      "label": "真结局上学路"
+    },
+    "icon_cat_account": {
+      "src": "assets/images/cover_icons/icon_cat_account.webp",
+      "label": "猫之死的记述"
+    },
+    "icon_vancouver_eve": {
+      "src": "assets/images/cover_icons/icon_vancouver_eve.webp",
+      "label": "温哥华前夜"
+    },
+    "icon_paperweight_cord": {
+      "src": "assets/images/cover_icons/icon_paperweight_cord.webp",
+      "label": "镇纸与电话线"
+    },
+    "icon_night_manuscript": {
+      "src": "assets/images/cover_icons/icon_night_manuscript.webp",
+      "label": "案发夜的稿件"
+    },
+    "icon_written_for_readers": {
+      "src": "assets/images/cover_icons/icon_written_for_readers.webp",
+      "label": "写给读者的文章"
+    },
+    "icon_video_tape": {
+      "src": "assets/images/cover_icons/icon_video_tape.webp",
+      "label": "庭院录像带"
+    },
+    "icon_copy_notebooks": {
+      "src": "assets/images/cover_icons/icon_copy_notebooks.webp",
+      "label": "手抄笔记本"
+    },
+    "icon_hatsumi_photo": {
+      "src": "assets/images/cover_icons/icon_hatsumi_photo.webp",
+      "label": "初美的照片"
+    },
+    "icon_apron": {
+      "src": "assets/images/cover_icons/icon_apron.webp",
+      "label": "围裙"
+    },
+    "icon_cancer_note": {
+      "src": "assets/images/cover_icons/icon_cancer_note.webp",
+      "label": "诊断记录"
+    },
+    "icon_kinryochi": {
+      "src": "assets/images/cover_icons/icon_kinryochi.webp",
+      "label": "禁猎地"
+    },
+    "icon_forgery_flaw": {
+      "src": "assets/images/cover_icons/icon_forgery_flaw.webp",
+      "label": "赝品的破绽"
+    },
+    "icon_tsugakuro": {
+      "src": "assets/images/cover_icons/icon_tsugakuro.webp",
+      "label": "上学路"
+    },
+    "icon_pyramid": {
+      "src": "assets/images/cover_icons/icon_pyramid.webp",
+      "label": "霸凌金字塔"
+    },
+    "icon_fujio_photo": {
+      "src": "assets/images/cover_icons/icon_fujio_photo.webp",
+      "label": "翻扣的照片"
+    },
+    "icon_kept_secret": {
+      "src": "assets/images/cover_icons/icon_kept_secret.webp",
+      "label": "被守住的秘密"
+    },
+    "icon_kaga_chalk": {
+      "src": "assets/images/cover_icons/icon_kaga_chalk.webp",
+      "label": "加贺的教鞭"
+    },
+    "icon_nameless_malice": {
+      "src": "assets/images/cover_icons/icon_nameless_malice.webp",
+      "label": "无法定名的恶意"
+    }
+  }
+}

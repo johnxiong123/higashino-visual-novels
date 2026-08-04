@@ -1,0 +1,63 @@
+{
+  "meta": { "id": "ch07", "title": "终章 · 真相之章", "defaultPov": "kaga" },
+  "start": "ch07_001",
+  "nodes": {
+    "ch07_001": { "bg": "bg_ch07_hospital_room_1996", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "手术前的病房。野野口背对门口，窗边放着一叠已经写完的纸。" }], "next": "ch07_002" },
+    "ch07_002": {
+      "bg": "bg_ch07_hospital_room_1996", "pov": "kaga",
+      "lines": [{ "speaker": "旁白", "text": "加贺把调查材料放在病床旁。证据是否足以越过野野口写好的动机，将决定这次谈话能走多远。" }],
+      "branches": [
+        { "requires": { "flags": ["ghost_disproved"] }, "goto": "ch07_003" },
+        { "requires": {}, "goto": "ch07_015" }
+      ]
+    },
+    "ch07_003": { "bg": "bg_ch07_hospital_room_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "录像带是后来拍的，旧稿是照已出版小说逆向誊抄，初美的遗物也不能证明你编造的关系。" }, { "speaker": "加贺", "text": "你安排这些证物，不是为了脱罪，而是要世人相信日高靠剽窃成名、靠威胁控制朋友。" }, { "speaker": "野野口", "text": "这仍然只是你的另一种写法。" }], "cg": "cg_ch07_hospital_truth_1996", "choices": [{ "text": "先拆录像带的时间", "tag": "影像", "goto": "ch07_004" }, { "text": "先拆旧稿的书写顺序", "tag": "稿纸", "goto": "ch07_003_notebooks" }] },
+    "ch07_003_notebooks": { "bg": "bg_ch07_hospital_room_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "纸张可以很旧，文字却会留下书写顺序。你的笔记是在出版之后才拥有那些故事。" }], "next": "ch07_004" },
+    "ch07_004": {
+      "bg": "bg_ch07_hospital_room_1996", "pov": "kaga",
+      "lines": [{ "speaker": "旁白", "text": "加贺可以保持刑警的距离，也可以解释自己为何不肯停在合理的动机上。" }],
+      "choices": [
+        { "text": "坦白自己任教时没能阻止霸凌升级", "tag": "执念 +1 · 真意 +1", "effects": { "state": { "obsession": 1, "motive": 1 }, "flags": ["kaga_teacher_shared"], "clues": ["kaga_chalk"] }, "goto": "ch07_004_shared" },
+        { "text": "保持刑警距离，只陈述调查结果", "tag": "克制", "effects": { "clues": ["kaga_chalk"] }, "goto": "ch07_006" }
+      ]
+    },
+    "ch07_004_shared": { "bg": "bg_ch07_hospital_room_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "我也曾站在讲台上，把正在升级的伤害误读成学生间能够自行平息的矛盾。那次失败让我不能把这里的动机写成一句冲动。" }], "next": "ch07_006" },
+    "ch07_005": { "bg": "bg_ch06_empty_classroom_memory", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "我任教时，也把学生之间的伤害误读成能够自行平息的矛盾。后来有人带着刀走进毕业后的校园。" }, { "speaker": "旁白", "text": "他没有把这段失败写成英雄的起点，只把它当作这次不能再停下的理由。" }], "next": "ch07_007" },
+    "ch07_006": {
+      "bg": "bg_ch07_hospital_room_1996", "pov": "kaga",
+      "lines": [{ "speaker": "加贺", "text": "校园往事不替任何人减轻责任。它只证明你伪造的动机遮住了什么。" }],
+      "branches": [
+        { "requires": { "flags": ["photo_found"], "vars": { "motive": { "gte": 7 } } }, "goto": "ch07_006_true_gate" },
+        { "requires": {}, "goto": "ch07_014" }
+      ]
+    },
+    "ch07_006_true_gate": {
+      "bg": "bg_ch07_hospital_room_1996", "pov": "kaga",
+      "lines": [{ "speaker": "旁白", "text": "照片的保管链与完整走访把调查送到最后一层；加贺自己的执念，决定他是否先说起那段讲台往事。" }],
+      "branches": [
+        { "requires": { "flags": ["kaga_teacher_shared"], "vars": { "obsession": { "gte": 3 } } }, "goto": "ch07_005" },
+        { "requires": {}, "goto": "ch07_007" }
+      ]
+    },
+    "ch07_007": {
+      "bg": "bg_ch07_hospital_room_1996", "pov": "kaga",
+      "lines": [{ "speaker": "加贺", "text": "日高曾陪你上学，帮你离开藤尾那群人，成年后又替你联系出版社。那些帮助没有进入你的手记。" }],
+      "next": "ch07_008"
+    },
+    "ch07_008": {
+      "bg": "bg_ch07_hospital_room_1996", "pov": "kaga",
+      "lines": [{ "speaker": "旁白", "text": "最后的陈述还剩一项：那份被日高守住的秘密。" }],
+      "choices": [
+        { "text": "说出全部：他知道，却从未公开", "tag": "全部真相", "effects": { "flags": ["full_truth_spoken"] }, "goto": "ch07_009" },
+        { "text": "只陈述证据链，不触碰照片", "tag": "证据", "effects": { "flags": ["evidence_only"] }, "goto": "ch07_010" }
+      ]
+    },
+    "ch07_009": { "bg": "bg_ch07_hospital_room_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "那张照片落到日高手里后，他没有交给任何人，也没有让《禁猎地》指向你。你杀死的，正是替你守住秘密的人。" }, { "speaker": "旁白", "text": "野野口把身体转向窗户。稿纸没有再响。" }], "next": "ch07_011" },
+    "ch07_010": { "bg": "bg_ch07_hospital_room_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "证物足以证明代笔、胁迫与婚外情都是你安排的叙述。法庭会看到完整材料。" }], "next": "ch07_011" },
+    "ch07_011": { "bg": "bg_ch07_hospital_room_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "日高曾陪你上学，帮你离开藤尾那群人，成年后又替你联系出版社。你把每一次帮助都变成了自己的屈辱。" }, { "speaker": "加贺", "text": "当伪造的理由全部被拿走，剩下的并不是一个更漂亮的理由，而是你不肯承认的恶意。" }], "onEnter": { "clues": ["nameless_malice"] }, "next": "ch07_012" },
+    "ch07_012": { "bg": "bg_ch07_hospital_room_1996", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "卷宗来到最后一页。朱笔写满动机栏，却没有替任何恶意减轻重量。" }], "next": "ch07_013" },
+    "ch07_013": { "bg": "bg_ch06_school_road_memory", "cg": "cg_ch07_school_road_true_ending", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "晨光照在旧街区。两个少年沿上学路向前，一个曾经绕路来等另一个。善意没有阻止恶意，却终于不再由杀人者独自解释。" }], "ending": { "id": "TE_akui" } },
+    "ch07_014": { "bg": "bg_ch06_empty_classroom_memory", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "代笔剧本被朱线划去，动机栏仍是一片空白。加贺合上卷宗，井底没有回声。" }], "ending": { "id": "ME_naibottom" } },
+    "ch07_015": { "bg": "bg_ch01_nonoguchi_study_1996", "pov": "nonoguchi", "lines": [{ "speaker": "旁白", "text": "一份完整、动人的手记被装订成册。野野口受到审判，日高却在另一种叙述里再次死去。" }], "ending": { "id": "BE_script" } }
+  }
+}

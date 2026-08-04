@@ -1,0 +1,48 @@
+{
+  "meta": { "id": "ch06", "title": "第六章 · 过去之章", "defaultPov": "kaga" },
+  "start": "ch06_001",
+  "nodes": {
+    "ch06_001": { "bg": "bg_ch06_empty_classroom_memory", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "旧校的教室已经换过桌椅。加贺只询问成年人，让未成年人的旧事停留在口述与卷宗里。" }], "next": "ch06_002" },
+    "ch06_002": { "bg": "bg_ch06_school_corridor_memory", "pov": "kaga", "lines": [{ "speaker": "旧校教师", "text": "藤尾是那群人的核心。有人跟随，有人沉默，也有人为避免被欺负而加入他们。" }], "onEnter": { "clues": ["pyramid"] }, "choices": [{ "text": "从施暴核心开始画关系图", "tag": "核心", "goto": "ch06_003" }, { "text": "先问那些始终沉默的同学", "tag": "旁观", "goto": "ch06_002_silence" }] },
+    "ch06_002_silence": { "bg": "bg_ch06_school_corridor_memory", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "多年后的证词仍带着回避。沉默者记得谁发号施令，也记得谁替那群人传话。" }], "next": "ch06_003" },
+    "ch06_003": {
+      "bg": "bg_ch06_school_corridor_memory", "pov": "kaga",
+      "lines": [{ "speaker": "旁白", "text": "证言把野野口从单纯受害者的位置移开。你要继续追问哪一层？" }],
+      "choices": [
+        { "text": "追问他如何从受害者变成附和者", "tag": "真意 +2", "effects": { "state": { "motive": 2 }, "flags": ["pyramid_traced"] }, "goto": "ch06_004" },
+        { "text": "只记录藤尾是主要施暴者", "tag": "概括", "effects": { "state": { "motive": 1 } }, "goto": "ch06_005" }
+      ]
+    },
+    "ch06_004": { "bg": "bg_ch06_empty_classroom_memory", "pov": "kaga", "lines": [{ "speaker": "旧校教师", "text": "野野口把别人的注意引向日高，也曾配合那群人。可日高后来仍帮助他脱离那个圈子。" }], "next": "ch06_006" },
+    "ch06_005": { "bg": "bg_ch06_empty_classroom_memory", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "卷宗留下一个整齐的主犯，却没有说明其他人如何在金字塔里移动。" }], "next": "ch06_006" },
+    "ch06_006": { "bg": "bg_ch06_school_road_memory", "pov": "kaga", "lines": [{ "speaker": "旧邻居", "text": "野野口有一阵不肯上学。日高每天绕路来等他，两个人再一起走。" }], "onEnter": { "clues": ["tsugakuro"] }, "next": "ch06_007" },
+    "ch06_007": {
+      "bg": "bg_ch06_school_road_memory", "pov": "kaga",
+      "lines": [{ "speaker": "旁白", "text": "同一段陪伴，在不同人口中有两种含义。你怎样理解？" }],
+      "choices": [
+        { "text": "核对日高是否长期帮助野野口", "tag": "真意 +2", "effects": { "state": { "motive": 2 }, "flags": ["kindness_corrobated"] }, "goto": "ch06_008" },
+        { "text": "把它视为普通同学往来", "tag": "略过", "effects": { "state": { "motive": 1 } }, "goto": "ch06_008" }
+      ]
+    },
+    "ch06_008": { "bg": "bg_ch06_school_road_memory", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "野野口后来把这份帮助说成多管闲事。善意没有消除自卑，反而可能成为反复照见失败的镜子。" }], "next": "ch06_009" },
+    "ch06_009": {
+      "bg": "bg_ch06_empty_classroom_memory", "pov": "kaga",
+      "lines": [{ "speaker": "旁白", "text": "走访提到一张记录旧事的照片。它涉及未成年受害者，只能封存。是否继续确认它的下落？" }],
+      "choices": [
+        { "text": "调阅照片，只核对背面与保管记录", "tag": "真意 +2", "effects": { "state": { "motive": 2 }, "flags": ["photo_found"], "clues": ["fujio_photo"] }, "goto": "ch06_010" },
+        { "text": "不再撕开受害者旧伤，改以口述确认", "tag": "真意 +1", "effects": { "state": { "motive": 1 }, "flags": ["photo_withheld"] }, "goto": "ch06_011" }
+      ]
+    },
+    "ch06_010": { "bg": "bg_ch06_empty_classroom_memory", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "照片始终翻扣。加贺只确认保管链：日高拿到后从未公开，也没有在作品里暴露野野口。" }], "cg": "cg_ch06_photo_back_memory", "onEnter": { "clues": ["kept_secret"] }, "next": "ch06_012" },
+    "ch06_011": { "bg": "bg_ch06_school_corridor_memory", "pov": "kaga", "lines": [{ "speaker": "旧校教师", "text": "日高知道一些事，却从没有向外说。至少这一点，旧同学们都能确认。" }], "onEnter": { "clues": ["kept_secret"] }, "next": "ch06_012" },
+    "ch06_012": {
+      "bg": "bg_ch06_school_corridor_memory", "pov": "kaga",
+      "lines": [{ "speaker": "旁白", "text": "最后一组证言说明：成年后的日高仍为野野口介绍出版机会。你如何归纳这段关系？" }],
+      "choices": [
+        { "text": "把帮助、嫉妒与恶意放在同一条线上", "tag": "真意 +2", "effects": { "state": { "motive": 2 }, "flags": ["malice_pattern_seen"] }, "goto": "ch06_013" },
+        { "text": "只记录双方文学成就的差距", "tag": "真意 +1", "effects": { "state": { "motive": 1 } }, "goto": "ch06_013" }
+      ]
+    },
+    "ch06_013": { "bg": "bg_ch07_hospital_room_1996", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "走访材料与野野口的手记彼此冲突。它们能否推翻现成的动机，取决于此前保留下来的证据链。" }], "next": "ch07_001" }
+  }
+}

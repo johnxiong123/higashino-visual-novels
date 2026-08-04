@@ -1,0 +1,37 @@
+{
+  "meta": { "id": "ch04", "title": "第四章 · 告白之章", "defaultPov": "nonoguchi" },
+  "start": "ch04_001",
+  "nodes": {
+    "ch04_001": { "bg": "bg_ch01_nonoguchi_study_1996", "pov": "nonoguchi", "lines": [{ "speaker": "手记", "text": "我承认杀人。现在我要写下的，是日高怎样夺走我的作品与人生。" }], "onEnter": { "state": { "script": 1 } }, "next": "ch04_002" },
+    "ch04_002": { "bg": "bg_ch01_nonoguchi_study_1996", "pov": "nonoguchi", "lines": [{ "speaker": "手记", "text": "旧笔记本里的小说构想据说早于日高的成名作。纸张与墨迹看起来已经保存多年。" }], "onEnter": { "clues": ["copy_notebooks"], "state": { "script": 1 } }, "next": "ch04_003" },
+    "ch04_003": { "bg": "bg_ch01_nonoguchi_study_1996", "pov": "nonoguchi", "lines": [{ "speaker": "手记", "text": "我把自己写成被迫代笔的人，把日高写成凭威胁夺取作品的人。" }, { "speaker": "旁白", "text": "一本本旧稿正在替这段关系制造年代。" }], "choices": [{ "text": "强调旧纸与旧封面", "tag": "年代", "goto": "ch04_004" }, { "text": "强调构想与出版作品的对应", "tag": "作品", "goto": "ch04_003_books" }] },
+    "ch04_003_books": { "bg": "bg_ch01_nonoguchi_study_1996", "pov": "nonoguchi", "lines": [{ "speaker": "手记", "text": "每一册出版书都能在旧本子里找到一个更粗糙的影子，仿佛创作顺序天然如此。" }], "next": "ch04_004" },
+    "ch04_004": { "bg": "bg_ch01_hidaka_garden_1996", "pov": "nonoguchi", "lines": [{ "speaker": "手记", "text": "录像带拍下我持刀从庭院潜入。它被解释成多年前的未遂案，也是日高用来胁迫我的把柄。" }], "cg": "cg_ch04_vhs_evidence_1996", "onEnter": { "clues": ["video_tape"], "state": { "script": 1 } }, "next": "ch04_005" },
+    "ch04_005": { "bg": "bg_ch01_nonoguchi_study_1996", "pov": "nonoguchi", "lines": [{ "speaker": "手记", "text": "初美的照片、围裙与未成行的旅行安排，组成另一条没有活证人的线。" }], "onEnter": { "clues": ["hatsumi_photo", "apron"], "state": { "script": 1 } }, "next": "ch04_006" },
+    "ch04_006": {
+      "bg": "bg_ch01_nonoguchi_study_1996", "pov": "nonoguchi",
+      "lines": [{ "speaker": "旁白", "text": "手记把代笔、胁迫与初美之死绑成一个核心，让复仇显得不可避免。" }],
+      "onEnter": { "state": { "script": 1 }, "flags": ["ghostwriter_claim", "hatsumi_claim"] },
+      "next": "ch04_007"
+    },
+    "ch04_007": { "bg": "bg_ch01_nonoguchi_study_1996", "pov": "nonoguchi", "lines": [{ "speaker": "手记", "text": "我写下一个足以被同情的犯人：被夺走文字、爱情与未来，只剩绝症的人。" }], "onEnter": { "clues": ["cancer_note"] }, "next": "ch04_008" },
+    "ch04_008": { "bg": "bg_ch02_police_office_1996", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "第二份手记被媒体概括成一个完整剧本。日高的作品与名誉开始在死后坍塌。" }], "onEnter": { "povUnlock": ["kaga"], "state": { "script": 1 } }, "next": "ch04_009" },
+    "ch04_009": {
+      "bg": "bg_ch02_police_office_1996", "pov": "kaga",
+      "lines": [{ "speaker": "旁白", "text": "上级要求按现有动机移送。你如何回应？" }],
+      "choices": [
+        { "text": "采信代笔与胁迫说，先完成结案", "tag": "剧本 +2", "effects": { "state": { "script": 2 }, "flags": ["case_closed_early"] }, "goto": "ch04_010" },
+        { "text": "顶住压力，继续查手记之外的证人", "tag": "执念 +1", "effects": { "state": { "obsession": 1 }, "flags": ["case_kept_open"] }, "goto": "ch04_011" }
+      ]
+    },
+    "ch04_010": { "bg": "bg_ch02_police_office_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "材料足够移送，但我无法解释：一个已经认罪的人，为什么还要如此精确地安排自己的动机？" }], "next": "ch04_012" },
+    "ch04_011": { "bg": "bg_ch02_police_office_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "只要有一件证物不是自然留下，而是为了被发现而放置，这份动机就仍是一部作品。" }], "next": "ch04_012" },
+    "ch04_012": {
+      "bg": "bg_ch02_police_office_1996", "pov": "kaga",
+      "lines": [{ "speaker": "旁白", "text": "加贺重读手记，把那种不适纳入案件，并追查每件证物被发现的顺序。" }],
+      "onEnter": { "state": { "obsession": 1 }, "flags": ["placement_suspected"] },
+      "next": "ch04_013"
+    },
+    "ch04_013": { "bg": "bg_ch05_publisher_reception_1996", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "就在结论几乎定型时，藤尾美弥子的抗议把《禁猎地》重新送到桌面。" }], "next": "ch05_001" }
+  }
+}

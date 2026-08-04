@@ -1,0 +1,31 @@
+{
+  "meta": { "id": "ch03", "title": "第三章 · 解决之章", "defaultPov": "kaga" },
+  "start": "ch03_001",
+  "nodes": {
+    "ch03_001": { "bg": "bg_ch03_detention_interview_1996", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "加贺把电话、稿件与手记摆成一条时间线。每件证据单独都不完整，叠在一起却只剩一个位置。" }], "next": "ch03_002" },
+    "ch03_002": { "bg": "bg_ch03_detention_interview_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "案发夜电脑里的稿件不是日高写的。你把自己的稿件存入他的电脑，让它替你证明他仍活着。" }], "choices": [{ "text": "先出示电话重拨记录", "tag": "通话", "goto": "ch03_003" }, { "text": "先出示编辑的文体判断", "tag": "稿件", "goto": "ch03_002_editor" }] },
+    "ch03_002_editor": { "bg": "bg_ch03_detention_interview_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "编辑确认换行与形式不同。稿件从日高电脑发出，不等于稿件由日高写成。" }], "next": "ch03_003" },
+    "ch03_003": { "bg": "bg_ch03_detention_interview_1996", "pov": "kaga", "lines": [{ "speaker": "野野口", "text": "这只是推测。你们还没有证明那份稿件来自我。" }, { "speaker": "加贺", "text": "磁盘在你的文字处理机旁。编辑也辨认出它不是日高的文体。" }], "next": "ch03_004" },
+    "ch03_004": {
+      "bg": "bg_ch03_detention_interview_1996", "pov": "kaga",
+      "lines": [{ "speaker": "旁白", "text": "收网前，加贺必须决定用什么方式迫使这份叙述停笔。" }],
+      "choices": [
+        { "text": "重演案发夜，让时间线自己坍塌", "tag": "查证 +1", "effects": { "state": { "proof": 1 }, "flags": ["timeline_rebuilt"] }, "goto": "ch03_005" },
+        { "text": "直接摊牌，观察他如何改写说法", "tag": "执念 +1", "effects": { "state": { "obsession": 1 }, "flags": ["challenge_recorded"] }, "goto": "ch03_006" }
+      ]
+    },
+    "ch03_005": { "bg": "bg_ch03_detention_interview_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "你先准备稿件，再利用通话与电脑制造时间差。每一步都需要你知道警方会怎样阅读。" }], "next": "ch03_007" },
+    "ch03_006": { "bg": "bg_ch03_detention_interview_1996", "pov": "kaga", "lines": [{ "speaker": "野野口", "text": "既然你已经决定答案，再多一份解释又有什么用？" }, { "speaker": "旁白", "text": "他的语气不像被识破，更像在等待下一幕。" }], "next": "ch03_007" },
+    "ch03_007": { "bg": "bg_ch03_detention_interview_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "你杀了日高邦彦。" }, { "speaker": "野野口", "text": "是。我承认。" }], "cg": "cg_ch03_arrest_1996", "onEnter": { "flags": ["killer_revealed"] }, "next": "ch03_008" },
+    "ch03_008": { "bg": "bg_ch03_detention_interview_1996", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "凶手在故事中段被确认。野野口交代了犯罪行为，却把动机留成空白。" }], "next": "ch03_009" },
+    "ch03_009": { "bg": "bg_ch03_detention_interview_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "为什么？" }, { "speaker": "野野口", "text": "把它写成一时冲动就好。动机没有追究的价值。" }], "next": "ch03_010" },
+    "ch03_010": {
+      "bg": "bg_ch03_detention_interview_1996", "pov": "kaga",
+      "lines": [{ "speaker": "旁白", "text": "认罪看似结案。加贺仍逐项复核证物，并记下野野口拒答动机时的每一句话。" }],
+      "onEnter": { "state": { "proof": 1 }, "flags": ["confession_audited", "motive_silence_noted"] },
+      "next": "ch03_011"
+    },
+    "ch03_011": { "bg": "bg_ch03_detention_interview_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "他没有试图脱罪。那份手记要保护的，或许不是凶手，而是另一个故事。" }], "next": "ch03_012" },
+    "ch03_012": { "bg": "bg_ch02_police_office_1996", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "四天后，第二份手记送到加贺手中。认罪之后，野野口开始解释自己为什么非杀日高不可。" }], "onEnter": { "state": { "script": 1 } }, "next": "ch04_001" }
+  }
+}

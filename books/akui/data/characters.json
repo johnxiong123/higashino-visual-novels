@@ -1,0 +1,12 @@
+[
+  { "id": "nonoguchi", "name": "野野口修", "role": "儿童文学作家", "portrait": null, "desc": "案发记录的执笔者，也是最懂得怎样安排读者的人。" },
+  { "id": "hidaka", "name": "日高邦彦", "role": "畅销作家", "portrait": null, "desc": "在书房遇害，又在死后被一份叙述重新塑形。" },
+  { "id": "kaga", "name": "加贺恭一郎", "role": "刑警", "portrait": null, "desc": "野野口任教时期的旧同事，从文章的文体开始怀疑。" },
+  { "id": "rie", "name": "日高理惠", "role": "日高后妻", "portrait": null, "desc": "与野野口共同发现尸体，坚持丈夫不是被传闻描绘的人。" },
+  { "id": "hatsumi", "name": "日高初美", "role": "日高前妻（故人）", "portrait": null, "desc": "因交通事故去世，遗物与照片后来被写进伪造的动机。" },
+  { "id": "miyako", "name": "藤尾美弥子", "role": "藤尾正哉之妹", "portrait": null, "desc": "因《禁猎地》取材自兄长经历而向日高提出抗议。" },
+  { "id": "fujio", "name": "藤尾正哉", "role": "旧同学（故人）", "portrait": null, "desc": "校园霸凌群体的核心，也是《禁猎地》人物原型。" },
+  { "id": "editor_n", "name": "野野口的编辑", "role": "童书编辑", "portrait": null, "desc": "案发当晚与野野口通话，提供不在场证明的一环。" },
+  { "id": "editor_h", "name": "日高的编辑", "role": "文艺编辑", "portrait": null, "desc": "辨认案发夜收到的稿件，并指出文体与排版差异。" },
+  { "id": "teacher", "name": "旧校教师", "role": "走访对象", "portrait": null, "desc": "从沉默多年的校园记忆里补齐两名少年的关系。" }
+]
