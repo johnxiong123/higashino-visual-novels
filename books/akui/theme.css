@@ -1,0 +1,163 @@
+/* 墨与稿纸：泛黄纸面、墨黑层次、朱批红，以及只在回忆线出现的褪色樱。 */
+:root {
+  --bg: #181613;
+  --stage: #201d19;
+  --panel: #2b2723;
+  --panel-2: #35302a;
+  --ink: #e6ddc6;
+  --muted: #b7ae9b;
+  --faint: #7d7a72;
+  --line: rgba(230, 221, 198, .12);
+  --line-2: rgba(230, 221, 198, .22);
+  --amber: #a63c2e;
+  --gold: #b88963;
+  --gold-bright: #f0e6ce;
+  --gold-line: rgba(166, 60, 46, .48);
+  --glass: rgba(31, 27, 23, .76);
+  --font-serif: 'Songti SC', 'STSong', Georgia, 'Noto Serif SC', 'SimSun', serif;
+  --accent: #a63c2e;
+  --branch: #b88963;
+  --danger: #b44738;
+  --info: #6d8184;
+  --radius: 3px;
+  --theme-color-001: #100e0c;
+  --theme-color-002: rgba(74, 65, 54, .50);
+  --theme-color-003: #e6ddc6;
+  --theme-color-004: rgba(74, 65, 54, .60);
+  --theme-color-005: #302a24;
+  --theme-color-006: #211d19;
+  --theme-color-007: #15120f;
+  --theme-color-008: rgba(9, 7, 5, .72);
+  --theme-color-009: #382721;
+  --theme-color-010: #241c19;
+  --theme-color-011: #120d0b;
+  --theme-color-012: #c9bfa8;
+  --theme-color-013: rgba(10, 7, 5, .72);
+  --theme-color-014: rgba(24, 20, 16, .84);
+  --theme-color-015: rgba(24, 20, 16, 0);
+  --theme-color-016: rgba(52, 45, 38, .94);
+  --theme-color-017: rgba(20, 16, 13, .97);
+  --theme-color-018: rgba(166, 60, 46, .15);
+  --theme-color-019: rgba(0, 0, 0, .52);
+  --theme-color-020: #a63c2e;
+  --theme-color-021: rgba(166, 60, 46, .64);
+  --theme-color-022: #080604;
+  --theme-color-023: rgba(184, 137, 99, .20);
+  --theme-color-024: rgba(230, 221, 198, .14);
+  --theme-color-025: rgba(47, 41, 35, .88);
+  --theme-color-026: rgba(28, 23, 19, .94);
+  --theme-color-027: #eee4cc;
+  --theme-color-028: rgba(230, 221, 198, .07);
+  --theme-color-029: rgba(70, 61, 51, .94);
+  --theme-color-030: rgba(55, 35, 27, .95);
+  --theme-color-031: #fffaf0;
+  --theme-color-032: rgba(166, 60, 46, .18);
+  --theme-color-033: rgba(34, 28, 23, .92);
+  --theme-color-034: rgba(230, 221, 198, .09);
+  --theme-color-035: rgba(0, 0, 0, .58);
+  --theme-color-036: #2c2721;
+  --theme-color-037: rgba(0, 0, 0, .43);
+  --theme-color-038: #f2e8d0;
+  --theme-color-039: rgba(0, 0, 0, .34);
+  --theme-color-040: rgba(230, 221, 198, .52);
+  --theme-color-041: rgba(52, 44, 36, .76);
+  --theme-color-042: rgba(29, 24, 20, .85);
+  --theme-color-043: rgba(166, 60, 46, .72);
+  --theme-color-044: #18130f;
+  --theme-color-045: rgba(67, 56, 46, .92);
+  --theme-color-046: rgba(25, 20, 16, .96);
+  --theme-color-047: #e3d8bf;
+  --theme-color-048: rgba(46, 38, 31, .64);
+  --theme-color-049: rgba(24, 19, 15, .84);
+  --theme-color-050: rgba(28, 22, 18, .88);
+  --theme-color-051: rgba(184, 137, 99, .42);
+  --theme-color-052: rgba(166, 60, 46, .62);
+  --theme-color-053: rgba(18, 14, 11, .72);
+  --theme-color-054: rgba(0, 0, 0, .62);
+  --theme-color-055: #3b332b;
+  --theme-color-056: #806f5d;
+  --theme-color-057: #625447;
+  --theme-color-058: #b7a68e;
+  --theme-color-059: #342d26;
+  --theme-color-060: #211c17;
+  --theme-color-061: #1b1713;
+  --theme-color-062: #f0e7d2;
+  --theme-color-063: rgba(0, 0, 0, .90);
+  --theme-color-064: rgba(49, 41, 34, .74);
+  --theme-color-065: rgba(27, 22, 18, .84);
+  --theme-color-066: #e6ddc6;
+  --theme-color-067: rgba(71, 60, 50, .84);
+  --theme-color-068: rgba(46, 39, 32, .88);
+  --theme-color-069: rgba(91, 60, 42, .90);
+  --theme-color-070: rgba(68, 57, 47, .94);
+  --theme-color-071: rgba(166, 60, 46, .27);
+  --theme-color-072: rgba(39, 32, 26, .64);
+  --theme-color-073: #c9bda4;
+  --theme-color-074: rgba(18, 14, 11, .58);
+  --theme-color-075: #f4ead3;
+  --theme-color-076: rgba(0, 0, 0, .86);
+  --theme-color-077: rgba(230, 221, 198, .05);
+  --theme-color-078: rgba(230, 221, 198, .62);
+  --theme-color-079: rgba(48, 40, 33, .80);
+  --theme-color-080: rgba(25, 20, 16, .87);
+  --theme-color-081: rgba(255, 249, 236, .04);
+  --theme-color-082: rgba(230, 221, 198, .32);
+  --theme-color-083: rgba(94, 79, 65, .92);
+  --theme-color-084: rgba(68, 57, 47, .96);
+  --theme-color-085: rgba(230, 221, 198, .42);
+  --theme-color-086: rgba(201, 163, 163, .16);
+  --theme-color-087: rgba(166, 60, 46, .24);
+  --theme-color-088: rgba(0, 0, 0, .28);
+  --theme-color-089: rgba(230, 221, 198, .14);
+  --theme-color-090: rgba(184, 137, 99, .12);
+  --theme-color-091: rgba(15, 11, 9, .75);
+  --theme-color-092: rgba(45, 37, 30, .98);
+  --theme-color-093: rgba(25, 20, 16, .98);
+  --theme-color-094: #eee4cc;
+  --theme-color-095: rgba(53, 44, 36, .92);
+  --theme-color-096: rgba(30, 24, 19, .94);
+  --theme-color-097: rgba(74, 62, 51, .94);
+  --theme-color-098: rgba(63, 39, 31, .96);
+  --theme-color-099: rgba(92, 77, 63, .96);
+  --theme-color-100: rgba(69, 58, 48, .97);
+  --theme-color-101: #8f7863;
+  --theme-color-102: rgba(0, 0, 0, .32);
+  --theme-color-103: rgba(74, 62, 51, .52);
+  --theme-color-104: rgba(46, 38, 31, .90);
+  --theme-color-105: rgba(26, 21, 17, .95);
+  --theme-color-106: #d5c4a3;
+  --theme-color-107: #c9a3a3;
+  --theme-color-108: rgba(96, 35, 30, .94);
+  --theme-color-109: rgba(57, 20, 18, .96);
+  --theme-color-110: #b94b3c;
+  --theme-color-111: rgba(61, 51, 42, .82);
+}
+
+#viewport::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 200;
+  pointer-events: none;
+  opacity: .16;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 27px, rgba(230, 221, 198, .035) 28px 29px),
+    repeating-linear-gradient(90deg, transparent 0 27px, rgba(166, 60, 46, .025) 28px 29px),
+    radial-gradient(circle at 18% 14%, rgba(230, 221, 198, .07), transparent 32%);
+  mix-blend-mode: screen;
+}
+
+.seal {
+  border-radius: 1px;
+  background: linear-gradient(145deg, #b84c3d, #7d211b 58%, #2c1410);
+  box-shadow: 0 0 18px rgba(166, 60, 46, .28);
+}
+
+.seal span {
+  color: #f3e5cc;
+  text-shadow: 0 1px 0 rgba(50, 12, 8, .9);
+}
+
+.title-brand, .chapter-label, .panel-section-label { letter-spacing: .18em; }
+.choice, .dlg-box, .title-item, .overlay-card { border-radius: 2px; backdrop-filter: blur(8px) saturate(.72); }
+.title-divider::before { background: linear-gradient(90deg, #a63c2e, rgba(166, 60, 46, .08)); }

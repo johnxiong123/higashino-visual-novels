@@ -1,0 +1,50 @@
+{
+  "meta": { "id": "ch05", "title": "第五章 · 烟幕之章", "defaultPov": "kaga" },
+  "start": "ch05_001",
+  "nodes": {
+    "ch05_001": { "bg": "bg_ch05_publisher_reception_1996", "pov": "kaga", "lines": [{ "speaker": "美弥子", "text": "我反对的是《禁猎地》使用了哥哥的经历，不是因为日高没有能力写它。" }], "cg": "cg_ch05_miyako_protest_1996", "next": "ch05_002" },
+    "ch05_002": { "bg": "bg_ch05_publisher_reception_1996", "pov": "kaga", "lines": [{ "speaker": "美弥子", "text": "那本书有只有亲历那段校园生活的人才知道的结构。你们却把它也归给了野野口。" }], "choices": [{ "text": "先重读作品中的校园结构", "tag": "文本", "goto": "ch05_003" }, { "text": "先核对美弥子登门抗议的经过", "tag": "证言", "goto": "ch05_002_visit" }] },
+    "ch05_002_visit": { "bg": "bg_ch05_publisher_reception_1996", "pov": "kaga", "lines": [{ "speaker": "美弥子", "text": "我在他移居前登门，只要求他正视取材给家属造成的伤害。那不是关于代笔的争执。" }], "next": "ch05_003" },
+    "ch05_003": {
+      "bg": "bg_ch05_publisher_reception_1996", "pov": "kaga",
+      "lines": [{ "speaker": "旁白", "text": "这场抗议可以被视为遗族纠缠，也可以成为重读全部作品的入口。" }],
+      "choices": [
+        { "text": "按遗族纠纷登记，不改变结论", "tag": "略过", "effects": { "flags": ["miyako_dismissed"] }, "goto": "ch05_004" },
+        { "text": "认真重读《禁猎地》并核对取材", "tag": "查证 +2", "effects": { "state": { "proof": 2 }, "flags": ["kinryochi_read"], "clues": ["kinryochi"] }, "goto": "ch05_005" }
+      ]
+    },
+    "ch05_004": { "bg": "bg_ch02_police_office_1996", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "《禁猎地》回到书架。代笔说继续以完整、动人的形状占据卷宗。" }], "next": "ch05_006" },
+    "ch05_005": { "bg": "bg_ch02_police_office_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "作品中的观察不像转述。若它来自日高本人，野野口声称的全面代笔就出现裂缝。" }], "next": "ch05_006" },
+    "ch05_006": {
+      "bg": "bg_ch02_police_office_1996", "pov": "kaga",
+      "lines": [{ "speaker": "旁白", "text": "稿纸上重新出现第一章的句子。加贺用朱线标出作者替读者添加的判断。" }],
+      "branches": [
+        { "requires": { "flags": ["cat_slandered"] }, "goto": "ch05_006_cat_review" },
+        { "requires": {}, "goto": "ch05_006_plain_review" }
+      ]
+    },
+    "ch05_006_cat_review": { "bg": "bg_ch02_police_office_1996", "pov": "kaga", "lines": [{ "speaker": "手记原句", "text": "我把邻居的怀疑写得很完整，仿佛日高的沉默本身就是承认。" }, { "speaker": "加贺", "text": "删去评价，事实只剩一场没有结论的争执。" }], "next": "ch05_006_hand" },
+    "ch05_006_plain_review": { "bg": "bg_ch02_police_office_1996", "pov": "kaga", "lines": [{ "speaker": "手记原句", "text": "邻居因猫的死亡前来理论。日高没有承认，争执也没有结论。" }, { "speaker": "加贺", "text": "文字克制，位置却不克制。开篇仍在暗示读者先怀疑死者。" }], "next": "ch05_006_hand" },
+    "ch05_006_hand": { "bg": "bg_ch02_police_office_1996", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "加贺注意到野野口中指上的厚茧。他惯用打字机，却在近期进行了大量手写。" }], "next": "ch05_007" },
+    "ch05_007": {
+      "bg": "bg_ch02_police_office_1996", "pov": "kaga",
+      "lines": [{ "speaker": "旁白", "text": "旧笔记本与已出版作品并排放在桌上。加贺比对改名、改句与出版文本的对应关系。" }],
+      "onEnter": { "state": { "proof": 2 }, "flags": ["notebooks_compared"] },
+      "next": "ch05_008"
+    },
+    "ch05_008": { "bg": "bg_ch02_police_office_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "这些不是作品变成小说的过程，而是出版小说被逆向改写成草稿的过程。" }], "cg": "cg_ch05_forgery_comparison_1996", "onEnter": { "clues": ["forgery_flaw"] }, "next": "ch05_009" },
+    "ch05_009": { "bg": "bg_ch02_police_office_1996", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "旧纸只能证明本子存在得早；字迹、修改顺序与手上的茧证明文字来自近期。" }], "next": "ch05_010" },
+    "ch05_010": {
+      "bg": "bg_ch02_police_office_1996", "pov": "kaga",
+      "lines": [{ "speaker": "加贺", "text": "烟火师傅辨认出的童年访客只有日高；录像里的樱树影子也属于较近的庭院。所有证物都在逆向制造过去。" }],
+      "branches": [
+        { "requires": { "flags": ["kinryochi_read", "close_reading"], "notFlags": ["case_closed_early"], "vars": { "proof": { "gte": 7 } } }, "goto": "ch05_011" },
+        { "requires": { "flags": ["kinryochi_read", "close_reading"], "vars": { "proof": { "gte": 7 }, "obsession": { "gte": 2 } } }, "goto": "ch05_011" },
+        { "requires": {}, "goto": "ch05_012" }
+      ]
+    },
+    "ch05_011": { "bg": "bg_ch02_police_office_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "录像、旧稿、初美的遗物与婚外情都不是动机的证据，而是为一个动机搭建的布景。" }], "onEnter": { "flags": ["ghost_disproved"] }, "next": "ch05_013" },
+    "ch05_012": { "bg": "bg_ch02_police_office_1996", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "证物之间仍有疑点，却不足以推翻公众已经接受的代笔故事。" }], "next": "ch05_013" },
+    "ch05_013": { "bg": "bg_ch06_empty_classroom_memory", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "若代笔说是伪造，野野口真正想藏起来的东西，只能在他与日高共同的过去。" }], "next": "ch06_001" }
+  }
+}

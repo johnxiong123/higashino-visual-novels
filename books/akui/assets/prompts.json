@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "book": "akui",
+  "generatedAt": "2026-08-04",
+  "generator": "built-in image generation",
+  "output": {
+    "format": "webp",
+    "quality": 82,
+    "sceneAspectRatio": "16:9",
+    "clueAspectRatio": "3:4"
+  },
+  "style": {
+    "name": "墨与稿纸",
+    "prefix": "Cinematic semi-realistic anime visual-novel illustration, muted ink-and-paper palette, aged manuscript paper cream tones and deep ink blacks, sparse vermilion-red accents, overcast mid-1990s Tokyo atmosphere, quiet oppressive stillness, tactile paper fibers, dry ink grain, subtle film grain.",
+    "suffix": "High detail, atmospheric, somber restrained mood, key-visual quality, no readable text, no logo, no watermark.",
+    "palette": {
+      "paperCream": "#e6ddc6",
+      "inkBlack": "#2b2723",
+      "leadGray": "#7d7a72",
+      "vermilion": "#a63c2e",
+      "fadedCherryMemoryOnly": "#c9a3a3"
+    },
+    "globalConstraints": [
+      "人物只用背影、剪影或侧写，不出现可辨认正脸",
+      "日高邦彦在现实线不出现正脸或遗体",
+      "校园回忆只呈现安全日常或符号化空景，不呈现暴力、伤害或不当未成年人画面",
+      "猫之死不出画面，遗体和伤口不出画面",
+      "画面内不出现可读文字、品牌标识、水印或超出年代的设备"
+    ],
+    "negative": "vivid saturated colors, cheerful warmth, gore, violence in progress, visible corpse, identifiable face, celebrity likeness, modern smartphone, modern laptop, cyberpunk neon, glossy 3D render, readable text, logo, watermark"
+  },
+  "items": [
+    {
+      "id": "bg_ch01_hidaka_study_1996",
+      "category": "background",
+      "chapter": ["ch01", "ch02"],
+      "era": "1996",
+      "file": "images/bg_ch01_hidaka_study_1996.webp",
+      "prompt": "Empty book-lined private study viewed from the doorway at night; desk lamp, scattered unreadable manuscript sheets, moving boxes, paperweight and disconnected telephone cord as neutral still-life evidence; no people or deceased person; frame-within-frame composition with a calm lower dialogue area."
+    },
+    {
+      "id": "bg_ch01_hidaka_garden_1996",
+      "category": "background",
+      "chapter": ["ch01"],
+      "era": "1996",
+      "file": "images/bg_ch01_hidaka_garden_1996.webp",
+      "prompt": "Empty garden and exterior of a Tokyo writer's house on an overcast evening; narrow path, still shrubs and relocation boxes faintly visible beyond a window; windless and gray; no people, animals or violence."
+    },
+    {
+      "id": "bg_ch01_nonoguchi_study_1996",
+      "category": "background",
+      "chapter": ["ch01", "ch04"],
+      "era": "1996",
+      "file": "images/bg_ch01_nonoguchi_study_1996.webp",
+      "prompt": "Empty modest apartment study of an adult children's author; desk, fountain pen, grid manuscript sheets, stacked books, cassette recorder, dark window and one cold desk lamp; manuscript overlay and ink-blot vignette; no person or reflection."
+    },
+    {
+      "id": "bg_ch02_police_office_1996",
+      "category": "background",
+      "chapter": ["ch02", "ch03", "ch05"],
+      "era": "1996",
+      "file": "images/bg_ch02_police_office_1996.webp",
+      "prompt": "Empty after-hours Tokyo police investigative office; metal desks, paper files, corded telephones, desk lamps, analog clock and rain-gray windows; methodical and airless, period-accurate to 1996."
+    },
+    {
+      "id": "bg_ch03_detention_interview_1996",
+      "category": "background",
+      "chapter": ["ch03", "ch04", "ch07"],
+      "era": "1996",
+      "file": "images/bg_ch03_detention_interview_1996.webp",
+      "prompt": "Empty Japanese detention-center interview room with thick partition glass, fixed stools, telephone handsets, metal door and blank institutional walls; symmetrical, fluorescent and emotionally austere."
+    },
+    {
+      "id": "bg_ch05_publisher_reception_1996",
+      "category": "background",
+      "chapter": ["ch05"],
+      "era": "1996",
+      "file": "images/bg_ch05_publisher_reception_1996.webp",
+      "prompt": "Empty Japanese publishing-house reception room with low table, plain sofas, books with unreadable spines, ashtray, folders, frosted-glass door and overcast window; formal, still and faintly adversarial."
+    },
+    {
+      "id": "bg_ch06_empty_classroom_memory",
+      "category": "background",
+      "chapter": ["ch06"],
+      "era": "约1970年代中期回忆",
+      "file": "images/bg_ch06_empty_classroom_memory.webp",
+      "prompt": "Empty period Japanese middle-school classroom in late overcast afternoon; rows of wooden desks, one slightly displaced chair and one closed school bag; symbolize remembered exclusion without people, conflict, damage or violence."
+    },
+    {
+      "id": "bg_ch06_school_corridor_memory",
+      "category": "background",
+      "chapter": ["ch06"],
+      "era": "约1970年代中期回忆",
+      "file": "images/bg_ch06_school_corridor_memory.webp",
+      "prompt": "Empty period Japanese middle-school corridor with reverse-light perspective, closed classroom doors, shoe lockers and worn polished floor; symbolic and unresolved, never threatening; no minors or people."
+    },
+    {
+      "id": "bg_ch06_school_road_memory",
+      "category": "background",
+      "chapter": ["ch06", "ch07"],
+      "era": "约1970年代中期回忆",
+      "file": "images/bg_ch06_school_road_memory.webp",
+      "prompt": "Empty older Japanese residential school route at pale dawn; tiled roofs, utility poles, mist, worn pavement and distant school-gate geometry; limited faded-cherry haze, no people or modern vehicles."
+    },
+    {
+      "id": "bg_ch07_hospital_room_1996",
+      "category": "background",
+      "chapter": ["ch07"],
+      "era": "1996",
+      "file": "images/bg_ch07_hospital_room_1996.webp",
+      "prompt": "Empty modest Japanese hospital room with one bed turned away, privacy curtain, bedside table, case folder and overcast window; pale, final and controlled; no patient, procedure or medical crisis."
+    },
+    {
+      "id": "cg_ch01_study_discovery_1996",
+      "category": "cg",
+      "chapter": ["ch01"],
+      "era": "1996",
+      "file": "images/cg_ch01_study_discovery_1996.webp",
+      "prompt": "Doorway dossier viewpoint into the study; exactly two adult investigators as small back silhouettes; desk-lamp evidence and moving boxes; deceased person completely absent; non-sensational procedural framing.",
+      "source": "approved ZEN-14 LookDev"
+    },
+    {
+      "id": "cg_ch03_arrest_1996",
+      "category": "cg",
+      "chapter": ["ch03"],
+      "era": "1996",
+      "file": "images/cg_ch03_arrest_1996.webp",
+      "prompt": "Restrained apartment-doorway arrest after the alibi collapses; exactly three adults, suspect centered with back to viewer and two investigators in side/back silhouettes; gray dawn, no struggle, weapon or visible face."
+    },
+    {
+      "id": "cg_ch04_vhs_evidence_1996",
+      "category": "cg",
+      "chapter": ["ch04"],
+      "era": "1996",
+      "file": "images/cg_ch04_vhs_evidence_1996.webp",
+      "prompt": "CRT television and VHS deck in a dim interview room; grainy analog footage shows one tiny adult back silhouette climbing a garden wall; no face, timestamp, action violence or modern screen."
+    },
+    {
+      "id": "cg_ch05_forgery_comparison_1996",
+      "category": "cg",
+      "chapter": ["ch05"],
+      "era": "1996",
+      "file": "images/cg_ch05_forgery_comparison_1996.webp",
+      "prompt": "Top-down forensic still life comparing handwritten notebooks with already published novels; abstract unreadable pages and sparse vermilion marks expose that the notebooks were copied afterward; no hands or people."
+    },
+    {
+      "id": "cg_ch05_miyako_protest_1996",
+      "category": "cg",
+      "chapter": ["ch05"],
+      "era": "1996",
+      "file": "images/cg_ch05_miyako_protest_1996.webp",
+      "prompt": "Dignified adult woman presents a marked-up novel and closed family file across a low reception-room table to an adult investigator; exactly two adults in side/back silhouette, calm but firm, no confrontation or faces."
+    },
+    {
+      "id": "cg_ch06_photo_back_memory",
+      "category": "cg",
+      "chapter": ["ch06"],
+      "era": "1996 evidence / historical memory",
+      "file": "images/cg_ch06_photo_back_memory.webp",
+      "prompt": "A single old photograph lies strictly face-down on an archival folder beside white evidence gloves; only blank aged backing, curled corners and a paperclip are visible; the image and subject remain completely private."
+    },
+    {
+      "id": "cg_ch07_hospital_truth_1996",
+      "category": "cg",
+      "chapter": ["ch07"],
+      "era": "1996",
+      "file": "images/cg_ch07_hospital_truth_1996.webp",
+      "prompt": "Final hospital conversation between two adult men; patient sits facing away and detective stands at respectful distance in side/back silhouette; both faces hidden, no medical crisis, pale overcast finality."
+    },
+    {
+      "id": "cg_ch07_school_road_true_ending",
+      "category": "cg",
+      "chapter": ["ch07"],
+      "era": "约1970年代中期回忆",
+      "file": "images/cg_ch07_school_road_true_ending.webp",
+      "prompt": "Exactly two Japanese middle-school boys safely walking to school side by side in an older neighborhood, shown from behind at respectful middle distance; faded-cherry dawn, no faces, conflict, distress or inappropriate depiction.",
+      "source": "approved ZEN-14 LookDev"
+    },
+    {
+      "id": "icon_cat_account",
+      "category": "clue",
+      "chapter": ["ch01"],
+      "era": "1996",
+      "file": "images/cover_icons/icon_cat_account.webp",
+      "prompt": "Fountain pen beside one blank manuscript sheet carrying only an abstract black paw-print ink symbol; the cat is never shown; one tiny vermilion editorial slash."
+    },
+    {
+      "id": "icon_vancouver_eve",
+      "category": "clue",
+      "chapter": ["ch01"],
+      "era": "1996",
+      "file": "images/cover_icons/icon_vancouver_eve.webp",
+      "prompt": "Closed period travel suitcase with a blank luggage tag and folded unmarked map; no flags, destination text or people."
+    },
+    {
+      "id": "icon_paperweight_cord",
+      "category": "clue",
+      "chapter": ["ch02"],
+      "era": "1996",
+      "file": "images/cover_icons/icon_paperweight_cord.webp",
+      "prompt": "Heavy round desk paperweight beside a coiled disconnected landline telephone cord, arranged as neutral nonviolent evidence."
+    },
+    {
+      "id": "icon_night_manuscript",
+      "category": "clue",
+      "chapter": ["ch02"],
+      "era": "1996",
+      "file": "images/cover_icons/icon_night_manuscript.webp",
+      "prompt": "Stack of unreadable manuscript pages beside a period output tray and abstract analog desk clock; no legible numerals or writing."
+    },
+    {
+      "id": "icon_written_for_readers",
+      "category": "clue",
+      "chapter": ["ch02"],
+      "era": "1996",
+      "file": "images/cover_icons/icon_written_for_readers.webp",
+      "prompt": "Unreadable typed manuscript page with blank margin, bookmark and red proofreader pencil, suggesting deliberate reader awareness without words."
+    },
+    {
+      "id": "icon_video_tape",
+      "category": "clue",
+      "chapter": ["ch04"],
+      "era": "1996",
+      "file": "images/cover_icons/icon_video_tape.webp",
+      "prompt": "Black VHS cassette and plain unmarked case with an abstract analog scan-noise band and one tiny vermilion record dot."
+    },
+    {
+      "id": "icon_copy_notebooks",
+      "category": "clue",
+      "chapter": ["ch04"],
+      "era": "1996",
+      "file": "images/cover_icons/icon_copy_notebooks.webp",
+      "prompt": "Two closed handwritten notebooks tied with dark string beside one plain published book, all covers blank, with a tiny comparison mark."
+    },
+    {
+      "id": "icon_hatsumi_photo",
+      "category": "clue",
+      "chapter": ["ch04"],
+      "era": "1996",
+      "file": "images/cover_icons/icon_hatsumi_photo.webp",
+      "prompt": "Small framed photograph turned fully face-down so only its aged cardboard back and stand appear, beside a dried neutral flower; no image or person visible."
+    },
+    {
+      "id": "icon_apron",
+      "category": "clue",
+      "chapter": ["ch04"],
+      "era": "1996",
+      "file": "images/cover_icons/icon_apron.webp",
+      "prompt": "Carefully folded vintage kitchen apron in a shallow archive box, rendered as respectful neutral evidence."
+    },
+    {
+      "id": "icon_cancer_note",
+      "category": "clue",
+      "chapter": ["ch04"],
+      "era": "1996",
+      "file": "images/cover_icons/icon_cancer_note.webp",
+      "prompt": "Sealed period medical-document envelope with only an abstract hospital cross beside an unlabeled medicine bottle; no patient or readable text."
+    },
+    {
+      "id": "icon_kinryochi",
+      "category": "clue",
+      "chapter": ["ch05"],
+      "era": "1996",
+      "file": "images/cover_icons/icon_kinryochi.webp",
+      "prompt": "Closed literary novel with a fully blank worn cover, archival complaint folder and vermilion bookmark, suggesting contested authorship without words."
+    },
+    {
+      "id": "icon_forgery_flaw",
+      "category": "clue",
+      "chapter": ["ch05"],
+      "era": "1996",
+      "file": "images/cover_icons/icon_forgery_flaw.webp",
+      "prompt": "Layered manuscript sheets with abstract unreadable ink bands and visibly conflicting page order, crossed by sparse vermilion proofreader lines."
+    },
+    {
+      "id": "icon_tsugakuro",
+      "category": "clue",
+      "chapter": ["ch06"],
+      "era": "约1970年代中期回忆",
+      "file": "images/cover_icons/icon_tsugakuro.webp",
+      "prompt": "Two simple vintage Japanese school bags side by side at the start of a lightly sketched residential path; safe everyday symbolism and limited faded-cherry dawn haze."
+    },
+    {
+      "id": "icon_pyramid",
+      "category": "clue",
+      "chapter": ["ch06"],
+      "era": "约1970年代中期回忆",
+      "file": "images/cover_icons/icon_pyramid.webp",
+      "prompt": "Abstract three-tier pyramid assembled from blank gray school desk nameplates, upper tier casting shadow over lower tiers; no names or figures."
+    },
+    {
+      "id": "icon_fujio_photo",
+      "category": "clue",
+      "chapter": ["ch06"],
+      "era": "1996 evidence / historical memory",
+      "file": "images/cover_icons/icon_fujio_photo.webp",
+      "prompt": "Old photograph placed strictly face-down, showing only blank aged backing, curled corners and one paperclip; reveal absolutely no image or subject."
+    },
+    {
+      "id": "icon_kept_secret",
+      "category": "clue",
+      "chapter": ["ch06"],
+      "era": "1996 evidence / historical memory",
+      "file": "images/cover_icons/icon_kept_secret.webp",
+      "prompt": "Sealed plain archive envelope held shut by dark ribbon beside a blank closed novel, symbolizing a secret deliberately protected."
+    },
+    {
+      "id": "icon_kaga_chalk",
+      "category": "clue",
+      "chapter": ["ch07"],
+      "era": "教师往事回忆",
+      "file": "images/cover_icons/icon_kaga_chalk.webp",
+      "prompt": "Worn wooden teacher's pointer and one piece of white chalk laid across a blank blackboard eraser; period-appropriate, nonviolent and without students."
+    },
+    {
+      "id": "icon_nameless_malice",
+      "category": "clue",
+      "chapter": ["ch07"],
+      "era": "1996",
+      "file": "images/cover_icons/icon_nameless_malice.webp",
+      "prompt": "Deep black circular ink well with one irregular black drop and a blank evidence label turned face-down; a sparse vermilion ring suggests nameless malice without weapons or violent imagery."
+    },
+    {
+      "id": "title_keyvisual",
+      "category": "cover",
+      "chapter": ["title"],
+      "era": "timeless manuscript motif",
+      "file": "images/title_keyvisual.webp",
+      "prompt": "Stack of aged manuscript sheets on a dark writer's desk; top page carries one heavy vermilion proofreading slash over a blank field, beside a capped fountain pen, closed case folder and ink well; still life only, with central negative space for HTML title overlay."
+    }
+  ],
+  "contactSheets": [
+    {
+      "file": "contact-sheets/akui-backgrounds-contact-sheet.png",
+      "order": "filename ascending, 2 columns × 5 rows"
+    },
+    {
+      "file": "contact-sheets/akui-cg-contact-sheet.png",
+      "order": "filename ascending, 2 columns × 4 rows"
+    },
+    {
+      "file": "contact-sheets/akui-clues-contact-sheet.png",
+      "order": [
+        "icon_apron", "icon_cancer_note", "icon_cat_account", "icon_copy_notebooks", "icon_forgery_flaw", "icon_fujio_photo",
+        "icon_hatsumi_photo", "icon_kaga_chalk", "icon_kept_secret", "icon_kinryochi", "icon_nameless_malice", "icon_night_manuscript",
+        "icon_paperweight_cord", "icon_pyramid", "icon_tsugakuro", "icon_vancouver_eve", "icon_video_tape", "icon_written_for_readers"
+      ]
+    }
+  ]
+}
