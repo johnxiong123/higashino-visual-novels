@@ -6,14 +6,18 @@ import { fileURLToPath } from 'node:url';
 import { configureBook } from '../engine/book.js';
 import { GameState } from '../engine/state.js';
 import { evalCondition } from '../engine/conditions.js';
+import { assertBookExists, parseBookArg } from './book-arg.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
-const bookFlag = args.find((arg) => arg.startsWith('--book='));
-const bookIndex = args.indexOf('--book');
-const bookId = bookFlag?.slice('--book='.length) || (bookIndex >= 0 ? args[bookIndex + 1] : null);
+let bookId;
 
-if (!/^[a-z0-9][a-z0-9-]*$/.test(bookId || '')) {
+try {
+  bookId = parseBookArg(args);
+  if (!bookId) throw new Error('缺少 --book');
+  assertBookExists(root, bookId);
+} catch (error) {
+  console.error(`✗ ${error.message}`);
   console.error('用法：node scripts/validate-story.mjs --book <slug>');
   process.exit(2);
 }
