@@ -1,0 +1,18 @@
+{
+  "meta": { "id": "ch04", "title": "第四章 · 钟表店的狗", "defaultPov": "genichi" },
+  "start": "ch04_001",
+  "nodes": {
+    "ch04_001": { "bg": "bg_ch04_terada_clockshop", "pov": "genichi", "lines": [{ "speaker": "旁白", "text": "寺田玄一修表时不喜欢旁人催问。加贺偏偏盯上了他每日带狗出门的那段时间。" }], "onEnter": { "povUnlock": ["genichi"], "state": { "pressure": 1 } }, "next": "ch04_002" },
+    "ch04_002": { "bg": "bg_ch04_hamacho_park", "pov": "genichi", "lines": [{ "speaker": "玄一", "text": "我只是在平常的路上碰见峯子。没有别的事。" }], "onEnter": { "clues": ["dog_walk"] }, "next": "ch04_003" },
+    "ch04_003": { "bg": "bg_ch04_hamacho_park", "pov": "genichi", "lines": [{ "speaker": "旁白", "text": "狗熟悉的脚步没有去往他说出的地点。它在另一个路口停下，等主人拐向水天宫。" }], "choices": [{ "text": "跟着狗重走一遍", "tag": "路线", "goto": "ch04_004" }, { "text": "观察玄一藏起的纸袋", "tag": "物件", "goto": "ch04_005" }] },
+    "ch04_004": { "bg": "bg_ch09_suitengu_shrine", "pov": "genichi", "lines": [{ "speaker": "旁白", "text": "真正的行程通向祈愿之所。玄一嘴上拒绝女儿的选择，脚步却替他走出了牵挂。" }], "next": "ch04_006" },
+    "ch04_005": { "bg": "bg_ch09_suitengu_shrine", "pov": "genichi", "lines": [{ "speaker": "旁白", "text": "纸袋里不是钟表零件，而是一枚给女儿的安产御守。" }], "next": "ch04_006" },
+    "ch04_006": { "bg": "bg_ch09_suitengu_shrine", "pov": "genichi", "lines": [{ "speaker": "旁白", "text": "承认谎言，就等于承认自己仍关心香苗。玄一宁愿面对刑警，也不愿先面对女儿。" }], "choices": [{ "text": "承认隐瞒了水天宫的行程", "tag": "查访 +1 · 人情 +1 · 心意 +1", "effects": { "state": { "trace": 1, "ninjo": 1, "kizuna": 1 }, "flags": ["kanae_blessed"], "clues": ["anzan_omamori"] }, "goto": "ch04_007" }, { "text": "继续坚持原来的说法", "tag": "查访 +1 · 定式 +1", "effects": { "state": { "trace": 1, "pressure": 1 }, "clues": ["anzan_omamori"] }, "goto": "ch04_008" }] },
+    "ch04_007": { "bg": "bg_ch09_suitengu_shrine", "cg": "cg_ch04_suitengu_two_figures", "pov": "genichi", "lines": [{ "speaker": "旁白", "text": "玄一说出自己在水天宫遇见峯子的经过。两个不善表达的父母，在同一处替孩子祈愿。" }], "next": "ch04_009" },
+    "ch04_008": { "bg": "bg_ch04_hamacho_park", "pov": "genichi", "lines": [{ "speaker": "加贺", "text": "狗不会替主人编路线。您不愿说的家事，我不会写进案情；与峯子有关的行程，我必须确认。" }], "next": "ch04_009" },
+    "ch04_009": { "bg": "bg_ch04_terada_clockshop", "pov": "genichi", "lines": [{ "speaker": "旁白", "text": "峯子的最后行踪多了一站。玄一的心事也终于不再藏在散步借口里。" }], "next": "ch04_010" },
+    "ch04_010": { "bg": "bg_ch04_terada_clockshop", "pov": "genichi", "lines": [{ "speaker": "加贺", "text": "走得准的表，不代表人一定能在对的时候开口。现在还不算太晚。" }], "next": "ch04_011" },
+    "ch04_011": { "bg": "bg_ch04_terada_clockshop", "pov": "genichi", "lines": [{ "speaker": "旁白", "text": "玄一没有送客，只把女儿的号码重新翻了出来。钟摆走过一格，他仍没有按下拨号键。" }], "next": "ch04_012" },
+    "ch04_012": { "bg": "bg_ningyocho_street", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "水天宫的相遇补上峯子的行踪。另一种守望，发生在洋菓子店的玻璃柜外。" }], "next": "ch05_001" }
+  }
+}

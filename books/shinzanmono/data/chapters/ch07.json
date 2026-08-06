@@ -1,0 +1,19 @@
+{
+  "meta": { "id": "ch07", "title": "第七章 · 清扫公司的社长", "defaultPov": "naohiro" },
+  "start": "ch07_001",
+  "nodes": {
+    "ch07_001": { "bg": "bg_ch07_kiyose_office", "pov": "naohiro", "lines": [{ "speaker": "旁白", "text": "清瀬直弘的办公室里，年轻秘书与他的距离引来许多猜测。峯子也曾误解二人的关系。" }], "onEnter": { "povUnlock": ["naohiro"], "state": { "pressure": 1 } }, "next": "ch07_002" },
+    "ch07_002": { "bg": "bg_ch07_kiyose_office", "pov": "naohiro", "lines": [{ "speaker": "直弘", "text": "祐理是我早年并不知情留下的女儿。我们重逢后，我才让她来公司帮忙。" }], "onEnter": { "clues": ["secret_daughter"] }, "next": "ch07_003" },
+    "ch07_003": { "bg": "bg_ch07_kiyose_office", "cg": "cg_ch07_secret_daughter", "pov": "naohiro", "lines": [{ "speaker": "旁白", "text": "流言里的绯闻，实际是一场迟到多年的父女相认。峯子的误会却已经让她重新咨询离婚财产问题。" }], "next": "ch07_004" },
+    "ch07_004": { "bg": "bg_ch07_kiyose_office", "pov": "naohiro", "lines": [{ "speaker": "旁白", "text": "加贺没有追问不必要的私生活，而是把咨询、公司账户与税理士岸田的经手范围排在一起。" }], "choices": [{ "text": "核对峯子重新咨询的缘由", "tag": "家事", "goto": "ch07_005" }, { "text": "先核对公司资金的流向", "tag": "账目", "goto": "ch07_006" }] },
+    "ch07_005": { "bg": "bg_ch07_kiyose_office", "pov": "naohiro", "lines": [{ "speaker": "旁白", "text": "峯子误以为祐理是婚姻存续时的情人之女，才重新询问自己是否应主张权益。" }], "onEnter": { "clues": ["zaisan_memo"] }, "next": "ch07_007" },
+    "ch07_006": { "bg": "bg_ch07_kiyose_office", "pov": "naohiro", "lines": [{ "speaker": "旁白", "text": "公司资金有一处无法自然解释的缺口，长期经手账务的岸田无法再只作为旧识出现。" }], "onEnter": { "clues": ["cooked_books"] }, "next": "ch07_007" },
+    "ch07_007": { "bg": "bg_ch07_kiyose_office", "pov": "naohiro", "lines": [{ "speaker": "旁白", "text": "直弘可以把祐理身世与财产咨询一并说明，也可以只交出警方依法能取走的资料。" }], "choices": [{ "text": "说明祐理身世与峯子的误会", "tag": "查访 +2 · 人情 +1", "effects": { "state": { "trace": 2, "ninjo": 1 }, "flags": ["secret_shared"], "clues": ["zaisan_memo", "cooked_books"] }, "goto": "ch07_008" }, { "text": "只谈公司业务，不谈家事", "tag": "查访 +1 · 定式 +1", "effects": { "state": { "trace": 1, "pressure": 1 }, "clues": ["cooked_books"] }, "goto": "ch07_009" }] },
+    "ch07_008": { "bg": "bg_ch07_kiyose_office", "pov": "naohiro", "lines": [{ "speaker": "加贺", "text": "我会把父女关系留在必要范围内。我们要追的是谁害怕财务问题被重新打开。" }], "next": "ch07_010" },
+    "ch07_009": { "bg": "bg_ch07_kiyose_office", "pov": "naohiro", "lines": [{ "speaker": "旁白", "text": "资料把调查推向岸田，流言却仍占去许多时间。本厅要求尽快用现有证据收束。" }], "next": "ch07_010" },
+    "ch07_010": { "bg": "bg_ch07_kiyose_office", "pov": "naohiro", "lines": [{ "speaker": "旁白", "text": "峯子对账户的追问，可能触到了某个不能见光的资金窟窿。主案第一次出现清晰的利益方向。" }], "next": "ch07_011" },
+    "ch07_011": { "bg": "bg_ch07_kiyose_office", "pov": "naohiro", "lines": [{ "speaker": "直弘", "text": "如果她不是因为误会重新查这件事，也许就不会……" }, { "speaker": "加贺", "text": "作出伤害选择的人才负责任。不要替他把罪分给家人。" }], "next": "ch07_012" },
+    "ch07_012": { "bg": "bg_ch07_kiyose_office", "pov": "naohiro", "lines": [{ "speaker": "旁白", "text": "加贺带走依法取得的账务复印件，没有带走父女重逢的流言。" }], "next": "ch07_013" },
+    "ch07_013": { "bg": "bg_ningyocho_street", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "岸田进入视野。民艺品店关于两只独乐的记忆，将把资金动机与现场的纸绳连在一起。" }], "next": "ch08_001" }
+  }
+}

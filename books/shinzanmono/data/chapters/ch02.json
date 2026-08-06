@@ -1,0 +1,18 @@
+{
+  "meta": { "id": "ch02", "title": "第二章 · 料亭的小徒弟", "defaultPov": "shuhei" },
+  "start": "ch02_001",
+  "nodes": {
+    "ch02_001": { "bg": "bg_ch02_matsuya_zashiki", "pov": "shuhei", "lines": [{ "speaker": "旁白", "text": "料亭的座敷刚收拾好，加贺便问起一盒被动过手脚的人形烧。修平知道，那不是一桩凶案的开端。" }], "onEnter": { "povUnlock": ["shuhei"], "state": { "pressure": 1 } }, "next": "ch02_002" },
+    "ch02_002": { "bg": "bg_ch02_matsuya_zashiki", "pov": "shuhei", "lines": [{ "speaker": "旁白", "text": "芥末被塞进点心，是店里大人之间一场不体面的报复。点心几经转手，才与峯子的住处发生联系。" }], "onEnter": { "clues": ["wasabi_yaki"] }, "next": "ch02_003" },
+    "ch02_003": { "bg": "bg_ch02_matsuya_zashiki", "pov": "shuhei", "lines": [{ "speaker": "修平", "text": "只要我说是自己胡闹，女将就不会被警察追问。" }], "choices": [{ "text": "回想点心盒经手的顺序", "tag": "指纹", "goto": "ch02_004" }, { "text": "先问加贺究竟知道多少", "tag": "试探", "goto": "ch02_005" }] },
+    "ch02_004": { "bg": "bg_ch02_matsuya_zashiki", "pov": "shuhei", "lines": [{ "speaker": "旁白", "text": "盒子上的接触痕迹与口供并不相配。有人碰过点心，有人只是被误以为碰过。" }], "next": "ch02_006" },
+    "ch02_005": { "bg": "bg_ch02_matsuya_zashiki", "pov": "shuhei", "lines": [{ "speaker": "加贺", "text": "我想知道点心如何离开这里，不想替任何人的家事定罪。" }], "next": "ch02_006" },
+    "ch02_006": { "bg": "bg_ch02_matsuya_zashiki", "pov": "shuhei", "lines": [{ "speaker": "旁白", "text": "替大人扛下一切，或把看见的经过原样说出。修平攥紧围裙边。" }], "choices": [{ "text": "把点心如何转手原样说出", "tag": "查访 +1 · 人情 +1", "effects": { "state": { "trace": 1, "ninjo": 1 }, "flags": ["shuhei_spoke"], "clues": ["three_prints"] }, "goto": "ch02_007" }, { "text": "把责任揽到自己身上", "tag": "人情 +1", "effects": { "state": { "ninjo": 1 }, "clues": ["three_prints"] }, "goto": "ch02_008" }] },
+    "ch02_007": { "bg": "bg_ch02_matsuya_zashiki", "pov": "shuhei", "lines": [{ "speaker": "旁白", "text": "原样陈述拆开了家庭纠葛与命案。芥末点心是一条歧路，也是一面照见关系的镜子。" }], "next": "ch02_009" },
+    "ch02_008": { "bg": "bg_ch02_matsuya_zashiki", "pov": "shuhei", "lines": [{ "speaker": "加贺", "text": "替人着想并没有错。只是虚假的证词，可能把你想保护的人推到更危险的地方。" }], "next": "ch02_009" },
+    "ch02_009": { "bg": "bg_ch02_matsuya_zashiki", "cg": "cg_ch02_wasabi_table", "pov": "shuhei", "lines": [{ "speaker": "旁白", "text": "点心盒被重新摆上桌。它不再像凶器，只剩一家人难以启齿的失衡。" }], "next": "ch02_010" },
+    "ch02_010": { "bg": "bg_ch02_matsuya_zashiki", "pov": "shuhei", "lines": [{ "speaker": "旁白", "text": "加贺排除了由点心延伸出的误判，也记下峯子与甜食之间的不协调。" }], "next": "ch02_011" },
+    "ch02_011": { "bg": "bg_ch02_matsuya_zashiki", "pov": "shuhei", "lines": [{ "speaker": "修平", "text": "我原以为替人顶下来，就是帮忙。" }, { "speaker": "加贺", "text": "愿意保护别人很难得。下次别让谎话替你决定后果。" }], "next": "ch02_012" },
+    "ch02_012": { "bg": "bg_ningyocho_street", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "离开料亭时，加贺把一件事划掉，又把峯子最后几次购物圈了出来。" }], "next": "ch03_001" }
+  }
+}

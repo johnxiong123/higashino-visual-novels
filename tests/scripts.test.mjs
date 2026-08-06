@@ -48,6 +48,20 @@ run('validate-story 校验 akui 并覆盖全部结局', 'node', [
   assert.match(result.stdout, /✓ 作品契约、引用、文件与可达路线全部有效/);
 });
 
+run('validate-story 校验 shinzanmono 并覆盖全部结局', 'node', [
+  'scripts/validate-story.mjs',
+  '--book',
+  'shinzanmono',
+], (result) => {
+  assert.equal(result.status, 0);
+  assert.match(result.stdout, /作品: 新参者 \(shinzanmono\)/);
+  assert.match(result.stdout, /结局: .*TE_shinzanmono/);
+  assert.match(result.stdout, /结局: .*ME_chosho/);
+  assert.match(result.stdout, /结局: .*BE_yosomono/);
+  assert.match(result.stdout, /（3\/3）/);
+  assert.match(result.stdout, /✓ 作品契约、引用、文件与可达路线全部有效/);
+});
+
 function playAkui(choiceIndexes = {}) {
   const base = join(root, 'books/akui');
   const book = JSON.parse(readFileSync(join(base, 'book.json'), 'utf8'));
@@ -108,6 +122,74 @@ assert.ok(teRoute.visited.includes('ch07_008'), 'TE 应进入真正动机陈述'
 assert.ok(teRoute.visited.includes('ch07_005'), 'TE 高执念路线应解锁教鞭间章');
 passed += 3;
 console.log('  ✓ akui 的 BE / ME / TE 保持三层真相边界');
+
+function playShinzanmono(choiceIndexes = {}) {
+  const base = join(root, 'books/shinzanmono');
+  const book = JSON.parse(readFileSync(join(base, 'book.json'), 'utf8'));
+  configureBook(book, 'books/shinzanmono/');
+  const chapters = Object.fromEntries(book.chapters.map(({ id }) => [
+    id,
+    JSON.parse(readFileSync(join(base, `data/chapters/${id}.json`), 'utf8')),
+  ]));
+  const nodes = new Map(Object.values(chapters).flatMap(({ nodes: chapterNodes }) => Object.entries(chapterNodes)));
+  const state = new GameState();
+  const visited = [];
+  let nodeId = book.start;
+
+  while (nodeId) {
+    const node = nodes.get(nodeId);
+    assert.ok(node, `路线节点存在：${nodeId}`);
+    visited.push(nodeId);
+    state.applyEffects(node.onEnter);
+    if (node.ending) return { ending: node.ending.id, visited, state };
+    if (node.branches?.length) {
+      nodeId = (node.branches.find((branch) => evalCondition(branch.requires, state))
+        || node.branches.at(-1)).goto;
+      continue;
+    }
+    if (node.choices?.length) {
+      const choices = node.choices.filter((choice) => evalCondition(choice.requires, state));
+      const choice = choices[choiceIndexes[nodeId] ?? 0];
+      assert.ok(choice, `路线选择存在：${nodeId}`);
+      state.applyEffects(choice.effects);
+      nodeId = choice.goto;
+      continue;
+    }
+    nodeId = node.next;
+  }
+  throw new Error('路线未抵达结局');
+}
+
+const shinzanmonoTe = playShinzanmono();
+assert.equal(shinzanmonoTe.ending, 'TE_shinzanmono');
+assert.equal(shinzanmonoTe.state.hasFlag('cord_evidence'), true);
+assert.equal(shinzanmonoTe.state.hasFlag('motive_chain'), true);
+
+const shinzanmonoMe = playShinzanmono({
+  ch01_007: 1,
+  ch03_006: 1,
+  ch04_006: 1,
+  ch05_006: 1,
+  ch06_007: 1,
+});
+assert.equal(shinzanmonoMe.ending, 'ME_chosho');
+assert.equal(shinzanmonoMe.state.hasFlag('cord_evidence'), true);
+assert.equal(shinzanmonoMe.state.hasFlag('motive_chain'), false);
+
+const shinzanmonoBe = playShinzanmono({
+  ch01_007: 1,
+  ch02_006: 1,
+  ch03_006: 1,
+  ch04_006: 1,
+  ch05_006: 1,
+  ch06_007: 1,
+  ch07_007: 1,
+  ch08_006: 1,
+});
+assert.equal(shinzanmonoBe.ending, 'BE_yosomono');
+assert.equal(shinzanmonoBe.state.hasFlag('cord_evidence'), false);
+passed += 3;
+console.log('  ✓ shinzanmono 的 BE / ME / TE 可从头游玩并保持证据、人情双闸门');
 
 run('sync-manifest 对 suspect-x 幂等', 'node', [
   'scripts/sync-manifest.mjs',

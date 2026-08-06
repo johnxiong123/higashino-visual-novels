@@ -1,0 +1,19 @@
+{
+  "meta": { "id": "ch08", "title": "第八章 · 民艺品店的客人", "defaultPov": "shopkeeper" },
+  "start": "ch08_001",
+  "nodes": {
+    "ch08_001": { "bg": "bg_ch08_hozuki_folkcraft", "pov": "shopkeeper", "lines": [{ "speaker": "旁白", "text": "民艺品店主记得岸田。他先后接触过两只来源不同的独乐，看似相同，配绳的结构却不同。" }], "onEnter": { "povUnlock": ["shopkeeper"], "state": { "pressure": 1 } }, "next": "ch08_002" },
+    "ch08_002": { "bg": "bg_ch08_hozuki_folkcraft", "cg": "cg_ch08_top_and_cord", "pov": "shopkeeper", "lines": [{ "speaker": "旁白", "text": "独乐与配绳放在柜台上。细小的错配，只有熟悉这种玩具的人才会觉得不自然。" }], "onEnter": { "clues": ["missing_string"] }, "next": "ch08_003" },
+    "ch08_003": { "bg": "bg_ch08_hozuki_folkcraft", "pov": "shopkeeper", "lines": [{ "speaker": "店主", "text": "岸田只是给孩子买玩具。把这种小事告诉警察，真能和命案有关吗？" }], "choices": [{ "text": "比较两种绳的编法与磨损", "tag": "结构", "goto": "ch08_004" }, { "text": "核对两只独乐的来源顺序", "tag": "来源", "goto": "ch08_005" }] },
+    "ch08_004": { "bg": "bg_ch08_hozuki_folkcraft", "pov": "shopkeeper", "lines": [{ "speaker": "旁白", "text": "一根适合某只独乐的绳，出现在了另一只独乐旁。错配本身就是一段被掩盖的行动。" }], "next": "ch08_006" },
+    "ch08_005": { "bg": "bg_ch08_hozuki_folkcraft", "pov": "shopkeeper", "lines": [{ "speaker": "旁白", "text": "第一次取得与后来补买的独乐来自不同地方，岸田却想让它们看起来像同一次购买。" }], "next": "ch08_006" },
+    "ch08_006": { "bg": "bg_ch08_hozuki_folkcraft", "pov": "shopkeeper", "lines": [{ "speaker": "旁白", "text": "店主可以把违和感完整告诉加贺，也可以把它当成无关紧要的顾客隐私。" }], "choices": [{ "text": "说明两只独乐与两种配绳的错位", "tag": "查访 +2 · 关键物证", "effects": { "state": { "trace": 2 }, "flags": ["cord_evidence"], "clues": ["toyshop_theft", "second_koma"] }, "goto": "ch08_007" }, { "text": "只确认岸田来过，不谈细节", "tag": "保留", "goto": "ch08_008" }] },
+    "ch08_007": { "bg": "bg_ch08_hozuki_folkcraft", "pov": "shopkeeper", "lines": [{ "speaker": "加贺", "text": "重要的不是玩具值多少钱，而是谁必须用第二只独乐遮住第一只的去向。" }], "next": "ch08_010" },
+    "ch08_008": { "bg": "bg_ch08_hozuki_folkcraft", "pov": "shopkeeper", "lines": [{ "speaker": "旁白", "text": "加贺转而用此前走访与来源记录补证。积累足够时，绕路仍能回到同一处错配。" }], "branches": [{ "requires": { "vars": { "trace": { "gte": 6 } } }, "goto": "ch08_009" }, { "requires": {}, "goto": "ch08_011" }] },
+    "ch08_009": { "bg": "bg_ch08_hozuki_folkcraft", "pov": "shopkeeper", "lines": [{ "speaker": "旁白", "text": "不同来源记录与绳的结构相互印证，纸绳来路终于合拢。" }], "onEnter": { "flags": ["cord_evidence"], "clues": ["toyshop_theft", "second_koma"] }, "next": "ch08_010" },
+    "ch08_010": { "bg": "bg_ch08_hozuki_folkcraft", "pov": "shopkeeper", "lines": [{ "speaker": "旁白", "text": "纸绳把岸田从财务关系人推到直接嫌疑人。警方还需要回答：他为什么要替换独乐，又替谁遮掩资金。" }], "next": "ch08_012" },
+    "ch08_011": { "bg": "bg_ch08_hozuki_folkcraft", "pov": "shopkeeper", "lines": [{ "speaker": "旁白", "text": "细节没有被保留下来，现有调查无法完成物证闭环。结案压力开始吞没有限的时间。" }], "next": "ch08_012" },
+    "ch08_012": { "bg": "bg_ch08_hozuki_folkcraft", "pov": "shopkeeper", "lines": [{ "speaker": "旁白", "text": "加贺向店主道谢，只带走可以进入证据链的记录。暖帘外，本厅的车已经停在街口。" }], "next": "ch08_013" },
+    "ch08_013": { "bg": "bg_ningyocho_street", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "终章开始。玩家第一次以加贺的视角，把八户人家的言语重新排成一条通往岸田的路。" }], "next": "ch09_001" }
+  }
+}
