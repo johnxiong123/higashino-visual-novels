@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "id": "ch01",
+    "title": "第一章 · 废楼",
+    "defaultPov": "sasagaki"
+  },
+  "start": "ch01_001",
+  "nodes": {
+    "ch01_001": {
+      "bg": "bg_ch01_osaka_ruins_rain_1973",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "1973 年，大阪。雨水沿着废弃大楼裸露的钢筋往下滴。"
+        },
+        {
+          "speaker": "笹垣",
+          "text": "死者是桐原当铺老板。钱没少，入口却像从里面打开。"
+        }
+      ],
+      "onEnter": {
+        "clues": [
+          "scissors_1973",
+          "million_cash"
+        ]
+      },
+      "next": "ch01_002"
+    },
+    "ch01_002": {
+      "bg": "bg_ch01_osaka_ruins_rain_1973",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "勘查灯扫过积水、脚印和一面布满灰尘的墙。"
+        },
+        {
+          "speaker": "笹垣",
+          "text": "成人能走的路都留下了痕迹。也许我们找错了尺度。"
+        }
+      ],
+      "next": "ch01_003"
+    },
+    "ch01_003": {
+      "bg": "bg_ch01_osaka_ruins_rain_1973",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "通风口与当铺账本同时摆到笹垣面前。时间只够先追一条线。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "测量通风管，追查另一条出入口",
+          "tag": "真相 +1",
+          "effects": {
+            "state": {
+              "truth": 1
+            },
+            "clues": [
+              "vent_duct"
+            ]
+          },
+          "goto": "ch01_004"
+        },
+        {
+          "text": "查一百万的来源与当铺暗账",
+          "tag": "账本",
+          "effects": {
+            "clues": [
+              "pawn_ledger"
+            ]
+          },
+          "goto": "ch01_005"
+        }
+      ]
+    },
+    "ch01_004": {
+      "bg": "bg_ch01_osaka_ruins_rain_1973",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "笹垣",
+          "text": "宽度只够一个孩子。不是密室，只是大人没想过自己进不去的路。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "手电光停在管壁一道新鲜擦痕上。"
+        }
+      ],
+      "cg": "cg_ch01_vent_investigation_1973",
+      "next": "ch01_006"
+    },
+    "ch01_005": {
+      "bg": "bg_ch01_osaka_ruins_rain_1973",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "账页上有几笔被反复描重的数字，经手人都是松浦勇。"
+        },
+        {
+          "speaker": "笹垣",
+          "text": "钱不是被忘在现场，而是根本不属于凶手的目的。"
+        }
+      ],
+      "next": "ch01_006"
+    },
+    "ch01_006": {
+      "bg": "bg_ch01_osaka_ruins_rain_1973",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "西本文代接受询问时始终低着头。她的打火机却被证物袋送进来。"
+        },
+        {
+          "speaker": "文代",
+          "text": "我去过当铺。这不代表我去过废楼。"
+        }
+      ],
+      "onEnter": {
+        "clues": [
+          "lighter"
+        ]
+      },
+      "next": "ch01_007"
+    },
+    "ch01_007": {
+      "bg": "bg_ch01_library_papercut_1973",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "线索把笹垣带到公共图书馆。窗边坐着一个十一岁的少年。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "他没有抬头，只让剪刀在折纸上缓慢移动。"
+        }
+      ],
+      "onEnter": {
+        "clues": [
+          "papercut_boy"
+        ]
+      },
+      "next": "ch01_008"
+    },
+    "ch01_008": {
+      "bg": "bg_ch01_library_papercut_1973",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "笹垣",
+          "text": "你父亲出事那天，在哪里？"
+        },
+        {
+          "speaker": "旁白",
+          "text": "少年把剪好的黑色人影夹进书里，只指了指借阅台。"
+        }
+      ],
+      "next": "ch01_009"
+    },
+    "ch01_009": {
+      "bg": "bg_ch01_osaka_ruins_rain_1973",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "证词彼此咬合，却没有一块真正落在凶手身上。"
+        },
+        {
+          "speaker": "笹垣",
+          "text": "这个案子里，有人在替另一个人守住出口。"
+        }
+      ],
+      "next": "ch01_010"
+    },
+    "ch01_010": {
+      "bg": "bg_ch01_osaka_ruins_rain_1973",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "雨没有停。废楼在天亮前变成一块洗不干净的灰色。"
+        }
+      ],
+      "next": "ch02_001"
+    }
+  }
+}

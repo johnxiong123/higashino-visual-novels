@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "id": "ch07",
+    "title": "第七章 · R&Y",
+    "defaultPov": "imaeda"
+  },
+  "start": "ch07_001",
+  "nodes": {
+    "ch07_001": {
+      "bg": "bg_ch07_ry_boutique_1991",
+      "pov": "imaeda",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "1991 年，R&Y 精品店开业。镜墙只映出衣架与冷白灯光。"
+        },
+        {
+          "speaker": "今枝",
+          "text": "成功来得很完整，完整得像有人提前删过底稿。"
+        }
+      ],
+      "onEnter": {
+        "povUnlock": [
+          "imaeda"
+        ],
+        "clues": [
+          "ry_logo"
+        ]
+      },
+      "next": "ch07_002"
+    },
+    "ch07_002": {
+      "bg": "bg_ch07_ry_boutique_1991",
+      "pov": "imaeda",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "继女美佳遭遇与旧案相似的伤害。叙事停在事后的空店与封存卷宗，不呈现过程。"
+        }
+      ],
+      "onEnter": {
+        "state": {
+          "crack": 1
+        }
+      },
+      "next": "ch07_003"
+    },
+    "ch07_003": {
+      "bg": "bg_ch07_imaeda_office_1991",
+      "pov": "imaeda",
+      "lines": [
+        {
+          "speaker": "一成",
+          "text": "我需要你查三件事。都子、江利子、美佳。"
+        },
+        {
+          "speaker": "今枝",
+          "text": "如果手法相同，受益者也相同，调查就不再是猜测。"
+        }
+      ],
+      "next": "ch07_004"
+    },
+    "ch07_004": {
+      "bg": "bg_ch07_imaeda_office_1991",
+      "pov": "imaeda",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "三只密封卷宗在台灯下排成一线，受害者的影像始终没有被展示。"
+        }
+      ],
+      "cg": "cg_ch07_three_case_files_1991",
+      "onEnter": {
+        "clues": [
+          "assault_mo"
+        ]
+      },
+      "next": "ch07_005"
+    },
+    "ch07_005": {
+      "bg": "bg_ch07_imaeda_office_1991",
+      "pov": "imaeda",
+      "lines": [
+        {
+          "speaker": "今枝",
+          "text": "有人跟着我。今晚必须决定，是先保全资料，还是继续摸到源头。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "连夜备份笔记并寄给一成",
+          "tag": "真相 +2",
+          "effects": {
+            "state": {
+              "truth": 2
+            },
+            "flags": [
+              "imaeda_notes"
+            ]
+          },
+          "goto": "ch07_006"
+        },
+        {
+          "text": "相信自己能应付，继续单线追踪",
+          "tag": "风险",
+          "effects": {
+            "flags": [
+              "imaeda_no_backup"
+            ]
+          },
+          "goto": "ch07_007"
+        }
+      ]
+    },
+    "ch07_006": {
+      "bg": "bg_ch07_imaeda_office_1991",
+      "pov": "imaeda",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "传真机吐出最后一页后，今枝把原件封进两个不同信封。"
+        }
+      ],
+      "next": "ch07_008"
+    },
+    "ch07_007": {
+      "bg": "bg_ch07_imaeda_office_1991",
+      "pov": "imaeda",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "今枝把卷宗留在上锁的抽屉里，没有人知道钥匙藏在哪里。"
+        }
+      ],
+      "next": "ch07_008"
+    },
+    "ch07_008": {
+      "bg": "bg_ch07_ry_boutique_1991",
+      "pov": "imaeda",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "调查指向一个不断更换姓名、却始终围绕雪穗出现的男人。"
+        }
+      ],
+      "next": "ch07_009"
+    },
+    "ch07_009": {
+      "bg": "bg_ch07_imaeda_office_1991",
+      "pov": "imaeda",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "今枝失联。办公室里只剩半杯冷咖啡，危险过程没有被复现。"
+        }
+      ],
+      "next": "ch07_010"
+    },
+    "ch07_010": {
+      "bg": "bg_ch07_ry_boutique_1991",
+      "pov": "ryoji",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "亮司在闭店后的玻璃外停了片刻，确认店内灯光依次熄灭。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "他没有说话，也没有进入镜头中央。"
+        }
+      ],
+      "onEnter": {
+        "state": {
+          "bond": 1
+        }
+      },
+      "next": "ch07_011"
+    },
+    "ch07_011": {
+      "bg": "bg_ch07_ry_boutique_1991",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "笹垣",
+          "text": "今枝不是终点。他只是又一块被从棋盘上拿走的拼图。"
+        }
+      ],
+      "next": "ch07_012"
+    },
+    "ch07_012": {
+      "bg": "bg_ch07_ry_boutique_1991",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "线索转向一家药局，以及在那里使用化名生活的男人。"
+        }
+      ],
+      "next": "ch08_001"
+    }
+  }
+}

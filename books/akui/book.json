@@ -1,0 +1,28 @@
+{
+  "id": "akui",
+  "title": "恶意",
+  "author": "东野圭吾",
+  "cover": "assets/images/title_keyvisual.webp",
+  "theme": "theme.css",
+  "mark": "恶",
+  "tagline": "杀死他一次，并不够",
+  "quote": "一份手记可以记录事实，也可以替恶意安排读者。",
+  "start": "ch01_001",
+  "chapters": [
+    { "id": "ch01", "title": "第一章 · 事件之章", "start": "ch01_001", "bgm": "main" },
+    { "id": "ch02", "title": "第二章 · 疑惑之章", "start": "ch02_001", "bgm": "main" },
+    { "id": "ch03", "title": "第三章 · 解决之章", "start": "ch03_001", "bgm": "main" },
+    { "id": "ch04", "title": "第四章 · 告白之章", "start": "ch04_001", "bgm": "main" },
+    { "id": "ch05", "title": "第五章 · 烟幕之章", "start": "ch05_001", "bgm": "main" },
+    { "id": "ch06", "title": "第六章 · 过去之章", "start": "ch06_001", "bgm": "main" },
+    { "id": "ch07", "title": "终章 · 真相之章", "start": "ch07_001", "bgm": "main" }
+  ],
+  "vars": [
+    { "key": "proof", "label": "查证", "color": "#4a6670", "init": 0, "max": 10 },
+    { "key": "script", "label": "剧本", "color": "#8a8074", "init": 0, "max": 10 },
+    { "key": "motive", "label": "真意", "color": "#a63c2e", "init": 0, "max": 10 },
+    { "key": "obsession", "label": "执念", "color": "#3d4a63", "init": 0, "max": 10 }
+  ],
+  "initialState": { "povUnlocked": ["nonoguchi"] },
+  "features": { "clues": true, "flowchart": true, "pov": true }
+}

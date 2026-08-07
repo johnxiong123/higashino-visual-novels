@@ -1,0 +1,138 @@
+{
+  "meta": { "id": "ch02", "title": "第二章 · 疑惑之章", "defaultPov": "kaga" },
+  "start": "ch02_001",
+  "nodes": {
+    "ch02_001": {
+      "bg": "bg_ch02_police_office_1996",
+      "pov": "kaga",
+      "lines": [
+        { "speaker": "加贺", "text": "现场的镇纸与电话线都是屋内现成物品。行动留下了临时起意的外观。" }
+      ],
+      "onEnter": { "clues": ["paperweight_cord"] },
+      "next": "ch02_002"
+    },
+    "ch02_002": {
+      "bg": "bg_ch02_police_office_1996",
+      "pov": "kaga",
+      "lines": [
+        { "speaker": "旁白", "text": "理惠与野野口的发现经过互相吻合。真正突兀的是野野口主动交来的手记。" },
+        { "speaker": "加贺", "text": "它不只是回忆。它替每个人安排了位置。" }
+      ],
+      "choices": [
+        { "text": "先画出手记的时间轴", "tag": "结构", "goto": "ch02_003" },
+        { "text": "先圈出作者替人物下的判断", "tag": "文体", "goto": "ch02_002_style" }
+      ]
+    },
+    "ch02_002_style": { "bg": "bg_ch02_police_office_1996", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "事实句之间夹着评价句。作者不断告诉读者该相信谁、厌恶谁。" }], "next": "ch02_003" },
+    "ch02_003": {
+      "bg": "bg_ch02_police_office_1996",
+      "pov": "kaga",
+      "lines": [
+        { "speaker": "旁白", "text": "你如何阅读这份手记？" }
+      ],
+      "choices": [
+        { "text": "把它当证词，先核对事实", "tag": "常规", "effects": { "flags": ["account_filed"] }, "goto": "ch02_004" },
+        { "text": "把它当作品，检查作者怎样引导读者", "tag": "查证 +1", "effects": { "state": { "proof": 1 }, "flags": ["close_reading"], "clues": ["written_for_readers"] }, "goto": "ch02_005" }
+      ]
+    },
+    "ch02_004": {
+      "bg": "bg_ch02_police_office_1996",
+      "pov": "kaga",
+      "lines": [
+        { "speaker": "加贺", "text": "时间、来访者与发现顺序都能对应。但对应得过于整齐。" }
+      ],
+      "next": "ch02_006"
+    },
+    "ch02_005": {
+      "bg": "bg_ch02_police_office_1996",
+      "pov": "kaga",
+      "lines": [
+        { "speaker": "加贺", "text": "猫、美弥子、移居前夜——所有材料都在帮助读者评价死者。证词不需要这样的构图。" }
+      ],
+      "next": "ch02_006"
+    },
+    "ch02_006": {
+      "bg": "bg_ch02_police_office_1996",
+      "pov": "kaga",
+      "lines": [{ "speaker": "旁白", "text": "加贺回到手记开篇，检查那段关于邻猫的文字如何规定读者的判断。" }],
+      "branches": [
+        { "requires": { "flags": ["cat_slandered"] }, "goto": "ch02_006_cat" },
+        { "requires": {}, "goto": "ch02_006_plain" }
+      ]
+    },
+    "ch02_006_cat": {
+      "bg": "bg_ch02_police_office_1996",
+      "pov": "kaga",
+      "lines": [{ "speaker": "加贺", "text": "你详写邻居的怀疑，仿佛日高的沉默就是承认。这不是证词需要的评价。" }],
+      "next": "ch02_006_evidence"
+    },
+    "ch02_006_plain": {
+      "bg": "bg_ch02_police_office_1996",
+      "pov": "kaga",
+      "lines": [{ "speaker": "加贺", "text": "你只写争执没有结论，却把它放在第一段。省略判断，本身也能引导判断。" }],
+      "next": "ch02_006_evidence"
+    },
+    "ch02_006_evidence": {
+      "bg": "bg_ch02_police_office_1996",
+      "pov": "kaga",
+      "lines": [
+        { "speaker": "日高的编辑", "text": "案发夜我们收到了新稿。但文体、换行和日高平日的习惯有细微差别。" },
+        { "speaker": "加贺", "text": "死者电脑里的稿件，既能证明他活着，也可能是替别人准备的时钟。" }
+      ],
+      "onEnter": { "clues": ["night_manuscript"] },
+      "next": "ch02_007"
+    },
+    "ch02_007": {
+      "bg": "bg_ch02_police_office_1996",
+      "pov": "kaga",
+      "lines": [
+        { "speaker": "旁白", "text": "电话记录里，一个号码把案发夜与加拿大连在一起；编辑部收到稿件的时刻则固定了另一端。" }
+      ],
+      "onEnter": { "state": { "proof": 1 }, "flags": ["redial_checked", "manuscript_timed"] },
+      "next": "ch02_008"
+    },
+    "ch02_008": {
+      "bg": "bg_ch02_police_office_1996",
+      "pov": "kaga",
+      "lines": [
+        { "speaker": "加贺", "text": "重拨接向温哥华。案发当日的通话顺序，与野野口声称接到日高来电的顺序冲突。" }
+      ],
+      "next": "ch02_009"
+    },
+    "ch02_009": {
+      "bg": "bg_ch02_police_office_1996",
+      "pov": "kaga",
+      "lines": [
+        { "speaker": "加贺", "text": "稿件确实从日高电脑交出，却不能证明敲下文字的人就是日高。" }
+      ],
+      "next": "ch02_010"
+    },
+    "ch02_010": {
+      "bg": "bg_ch01_nonoguchi_study_1996",
+      "pov": "kaga",
+      "lines": [
+        { "speaker": "旁白", "text": "搜查野野口住处时，警方找到保存稿件的磁盘。" },
+        { "speaker": "加贺", "text": "如果这是预谋杀人用的工具，他应该销毁；如果原稿本来就另有用途，他会留下。" }
+      ],
+      "next": "ch02_011"
+    },
+    "ch02_011": {
+      "bg": "bg_ch02_police_office_1996",
+      "pov": "kaga",
+      "lines": [
+        { "speaker": "加贺", "text": "老师问的不是死亡时间，而是警方认定的死亡时间。区别就在这里。" },
+        { "speaker": "旁白", "text": "不在场证明没有保护野野口，反而把他推回案发夜。" }
+      ],
+      "onEnter": { "flags": ["alibi_broken"] },
+      "next": "ch02_012"
+    },
+    "ch02_012": {
+      "bg": "bg_ch02_police_office_1996",
+      "pov": "kaga",
+      "lines": [
+        { "speaker": "加贺", "text": "证据足以申请进一步搜查。至于手记为什么要写给读者，答案还在作者那里。" }
+      ],
+      "next": "ch03_001"
+    }
+  }
+}

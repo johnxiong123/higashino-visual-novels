@@ -1,0 +1,222 @@
+{
+  "meta": {
+    "id": "ch04",
+    "title": "第四章 · 蔷薇与荆棘",
+    "defaultPov": "kazunari"
+  },
+  "start": "ch04_001",
+  "nodes": {
+    "ch04_001": {
+      "bg": "bg_ch04_university_rose_garden_1981",
+      "pov": "kazunari",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "大学的冬日蔷薇园里，一成第一次认真观察雪穗。"
+        },
+        {
+          "speaker": "一成",
+          "text": "她把每个人放在最合适的位置，包括她自己。"
+        }
+      ],
+      "onEnter": {
+        "povUnlock": [
+          "kazunari"
+        ]
+      },
+      "next": "ch04_002"
+    },
+    "ch04_002": {
+      "bg": "bg_ch04_university_rose_garden_1981",
+      "pov": "kazunari",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "江利子遭遇伤害后，一成只见到一只密封的证物袋。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "镜头停在朋友递来的外套与空走廊，不复现任何伤害过程。"
+        }
+      ],
+      "cg": "cg_ch04_eriko_aftermath_1982",
+      "onEnter": {
+        "clues": [
+          "nude_photos"
+        ]
+      },
+      "next": "ch04_003"
+    },
+    "ch04_003": {
+      "bg": "bg_ch04_university_rose_garden_1981",
+      "pov": "kazunari",
+      "lines": [
+        {
+          "speaker": "一成",
+          "text": "都子、江利子。两件事都替雪穗移开了障碍。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "怀疑一旦成形，礼貌就成了遮住刀口的布。"
+        }
+      ],
+      "next": "ch04_004"
+    },
+    "ch04_004": {
+      "bg": "bg_ch04_university_rose_garden_1981",
+      "pov": "kazunari",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "家族希望一成忘记丑闻，他却必须决定是否继续。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "把怀疑说出口，彻查到底",
+          "tag": "裂痕 +2",
+          "effects": {
+            "state": {
+              "crack": 2,
+              "truth": 1
+            },
+            "flags": [
+              "kazunari_doubt"
+            ]
+          },
+          "goto": "ch04_005"
+        },
+        {
+          "text": "顾及家族体面，暂时按下",
+          "tag": "退让",
+          "effects": {
+            "flags": [
+              "kazunari_withdrew"
+            ]
+          },
+          "goto": "ch04_006"
+        }
+      ]
+    },
+    "ch04_005": {
+      "bg": "bg_ch04_university_rose_garden_1981",
+      "pov": "kazunari",
+      "lines": [
+        {
+          "speaker": "一成",
+          "text": "如果每次受益的人都是同一个，巧合就不再只是巧合。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "他把两个名字写在不同纸页，避免让它们过早并排。"
+        }
+      ],
+      "next": "ch04_007"
+    },
+    "ch04_006": {
+      "bg": "bg_ch04_university_rose_garden_1981",
+      "pov": "kazunari",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "一成合上文件，却没有销毁它。怀疑被压进抽屉，等着下一次响动。"
+        }
+      ],
+      "next": "ch04_007"
+    },
+    "ch04_007": {
+      "bg": "bg_ch04_pirate_computer_room_1983",
+      "pov": "tomohiko",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "另一座城市的后屋里，亮司与友彦经营复制软件的生意。"
+        },
+        {
+          "speaker": "友彦",
+          "text": "他从不解释计划，只把每个人该做的步骤写清楚。"
+        }
+      ],
+      "onEnter": {
+        "povUnlock": [
+          "tomohiko"
+        ],
+        "clues": [
+          "pirated_disks"
+        ]
+      },
+      "next": "ch04_008"
+    },
+    "ch04_008": {
+      "bg": "bg_ch04_pirate_computer_room_1983",
+      "pov": "ryoji",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "亮司关掉最后一台电脑，把软盘按编号装箱。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "他没有独白，也没有回头，只把一只没有署名的信封放进邮筒。"
+        }
+      ],
+      "onEnter": {
+        "povUnlock": [
+          "ryoji"
+        ],
+        "state": {
+          "bond": 1
+        }
+      },
+      "next": "ch04_009"
+    },
+    "ch04_009": {
+      "bg": "bg_ch04_university_rose_garden_1981",
+      "pov": "kazunari",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "第二天，雪穗收到一笔恰好能解决困境的资金。来源无人追问。"
+        }
+      ],
+      "next": "ch04_010"
+    },
+    "ch04_010": {
+      "bg": "bg_ch04_university_rose_garden_1981",
+      "pov": "kazunari",
+      "lines": [
+        {
+          "speaker": "雪穗",
+          "text": "有些路只要走得足够从容，就不会有人怀疑方向。"
+        },
+        {
+          "speaker": "一成",
+          "text": "也可能是有人在前面替你扫掉了所有脚印。"
+        }
+      ],
+      "next": "ch04_011"
+    },
+    "ch04_011": {
+      "bg": "bg_ch04_pirate_computer_room_1983",
+      "pov": "tomohiko",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "盗版生意散去后，亮司换了名字，也换了城市。"
+        }
+      ],
+      "next": "ch04_012"
+    },
+    "ch04_012": {
+      "bg": "bg_ch04_university_rose_garden_1981",
+      "pov": "kazunari",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "冬蔷薇没有开放。枝条上的刺却保存得很好。"
+        }
+      ],
+      "next": "ch05_001"
+    }
+  }
+}

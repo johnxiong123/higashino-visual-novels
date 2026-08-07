@@ -1,0 +1,419 @@
+{
+  "style": {
+    "name": "白夜冷调",
+    "referenceAssets": [
+      "docs/image2-lookdev/byakuyako-osaka-ruins-lookdev.webp",
+      "docs/image2-lookdev/byakuyako-white-night-snow-street-lookdev.webp",
+      "docs/image2-lookdev/byakuyako-ry-christmas-window-lookdev.webp"
+    ],
+    "referenceRole": "已验收的风格参考，仅匹配半写实笔触、冷青灰色板、反光逻辑、颗粒和构图安全区，不复制具体场景或人物。",
+    "prefix": "Cinematic semi-realistic anime visual-novel illustration, painterly realism, mature Japanese mystery noir, cold desaturated blue-grey palette (#1e2a36, #6c7f8f, #dfe6ea), pale sunless light, restrained contrast, subtle film grain, Showa-to-early-Heisei Japan, original character and object design, ",
+    "suffix": ", high-detail game art, no readable text, no logo, no UI, no border, no signature, no watermark",
+    "negative": "warm cozy sunlight, cheerful saturated colors, cyberpunk neon, modern smartphones, modern vehicles, recognizable actors, front-facing portrait, duplicated people or reflections, glossy 3D render, gore",
+    "sizes": {
+      "background": "1672x941",
+      "cg": "1672x941",
+      "icon": "768x1024"
+    },
+    "compression": {
+      "format": "webp",
+      "quality": 82,
+      "backgroundMaxBytes": 307200,
+      "cgMaxBytes": 512000,
+      "iconMaxBytes": 153600
+    },
+    "composition": {
+      "background": "16:9；底部约 25% 保持低信息密度，供对话 UI 覆盖。",
+      "cg": "16:9；关键人物、证据和叙事动作不得落入底部约 25% 安全区。",
+      "icon": "3:4；单物件居中、完整可辨，深蓝灰无文字背景。"
+    },
+    "agePolicy": {
+      "ch01_ch02": "1973–74：亮司与雪穗均为 11 岁。只允许远景、环境镜头、背影或剪纸侧写；不得特写未成年人面部，不得与案发、暴力、武器、伤害或威胁成人同构图。",
+      "ch03": "1976–79：中学生阶段。仅背影、剪影或无脸倒影，服装和身形符合青少年，不成人化、不性感化。",
+      "ch04": "1980–84：大学阶段，约 18–22 岁。",
+      "ch05": "1985–89：成年早期，约 22–26 岁。",
+      "ch06_ch09": "1988–92：成年人，约 25–30 岁；仍不出正脸，亮司与雪穗不正面同框。"
+    },
+    "generationMode": "OpenAI built-in image generation；逐张生成并人工验收，风格参考为上述 3 张 LookDev。"
+  },
+  "items": [
+    {
+      "id": "bg_ch01_osaka_ruins_rain_1973",
+      "filename": "images/bg_ch01_osaka_ruins_rain_1973.webp",
+      "type": "background",
+      "chapter": "ch01",
+      "year": "1973",
+      "ageBand": "环境镜头，无未成年人",
+      "prompt": "Wide 16:9 empty investigative environment: an abandoned unfinished commercial building in Osaka on a steady rainy night in 1973; raw concrete columns, exposed stairs, rusted ventilation grilles, puddles and one weak period streetlamp; period utility poles and distant compact cars; lower quarter dark and low-detail; no people, body, weapon, blood, violence, or readable signage."
+    },
+    {
+      "id": "bg_ch01_library_papercut_1973",
+      "filename": "images/bg_ch01_library_papercut_1973.webp",
+      "type": "background",
+      "chapter": "ch01",
+      "year": "1973",
+      "ageBand": "亮司 11 岁，远景背影",
+      "prompt": "Wide 16:9 Osaka public library reading room in 1973: card catalogue, worn books, wood tables, rain-frosted windows; one very small eleven-year-old schoolboy far in the upper middle, fully clothed and seen only from behind making a simple paper cutout; lower quarter low-detail; calm environment only, no face close-up, crime, weapon, violence, injury, threatening adult, or distress."
+    },
+    {
+      "id": "bg_ch02_gas_room_1974",
+      "filename": "images/bg_ch02_gas_room_1974.webp",
+      "type": "background",
+      "chapter": "ch02",
+      "year": "1974",
+      "ageBand": "环境镜头，无未成年人",
+      "prompt": "Wide 16:9 empty modest Osaka row-house room in 1974 after investigators have left: an old unlit gas heater, enamel kettle, tatami, rain-streaked window and cold dawn light; no people, body, injury, active gas, fire, violence, or sensational detail; lower quarter uncluttered."
+    },
+    {
+      "id": "bg_ch03_school_corridor_1977",
+      "filename": "images/bg_ch03_school_corridor_1977.webp",
+      "type": "background",
+      "chapter": "ch03",
+      "year": "1977",
+      "ageBand": "雪穗约 15 岁，仅远景背影",
+      "prompt": "Wide 16:9 late-1970s Japanese middle-school corridor after rain, waxed floor reflections, shoe lockers, frosted classroom glass; one distant fifteen-year-old schoolgirl seen only from behind in a conservative period uniform, face fully hidden, no other person; emotionally cold but non-threatening; no adult styling, sensualization, violence, injury, or readable text; lower quarter low-detail."
+    },
+    {
+      "id": "bg_ch04_university_rose_garden_1981",
+      "filename": "images/bg_ch04_university_rose_garden_1981.webp",
+      "type": "background",
+      "chapter": "ch04",
+      "year": "1981",
+      "ageBand": "大学阶段，约 19 岁",
+      "prompt": "Wide 16:9 Japanese university rose garden and concrete humanities building in 1981 after light rain; bare winter rose stems, wet stone path and long window reflections; two tiny university-age silhouettes walk separately at different depths, backs only and never facing each other; no modern campus devices or readable signs; lower quarter quiet."
+    },
+    {
+      "id": "bg_ch04_pirate_computer_room_1983",
+      "filename": "images/bg_ch04_pirate_computer_room_1983.webp",
+      "type": "background",
+      "chapter": "ch04",
+      "year": "1983",
+      "ageBand": "亮司约 21 岁，环境无人",
+      "prompt": "Wide 16:9 cramped Japanese back-room computer workshop in 1983, empty: beige 8-bit microcomputers, CRT displays switched off, cassette decks, unlabeled floppy disks, dot-matrix printer and tangled period cables; blue-grey fluorescent gloom; no modern laptop, smartphone, readable software or logos; lower quarter low-detail."
+    },
+    {
+      "id": "bg_ch05_takamiya_home_1987",
+      "filename": "images/bg_ch05_takamiya_home_1987.webp",
+      "type": "background",
+      "chapter": "ch05",
+      "year": "1987",
+      "ageBand": "雪穗约 24 岁，环境无人",
+      "prompt": "Wide 16:9 immaculate upper-middle-class Japanese apartment living room in 1987, empty and emotionally sterile: lace telephone cover, corded landline, polished dark wood, glass cabinet, rainy balcony; a subtly displaced telephone jack is visible above the dialogue safe zone; no modern electronics or readable text."
+    },
+    {
+      "id": "bg_ch06_statute_office_1988",
+      "filename": "images/bg_ch06_statute_office_1988.webp",
+      "type": "background",
+      "chapter": "ch06",
+      "year": "1988",
+      "ageBand": "笹垣为成年刑警，环境无人",
+      "prompt": "Wide 16:9 empty Osaka police records office late at night in 1988: steel desks, stacked paper case files, rotary phones, ashtray, wall calendar with no readable marks, cold fluorescent tubes and one rain-dark window; atmosphere of time expiring; no modern computer or readable labels; lower quarter uncluttered."
+    },
+    {
+      "id": "bg_ch07_ry_boutique_1991",
+      "filename": "images/bg_ch07_ry_boutique_1991.webp",
+      "type": "background",
+      "chapter": "ch07",
+      "year": "1991",
+      "ageBand": "雪穗约 28 岁，环境无人",
+      "prompt": "Wide 16:9 elegant Osaka fashion boutique interior in 1991, empty: pale garments, mirrored columns, glass shelves, restrained Christmas preparation and wet street reflections; cold fluorescent whites with one tiny dark-red accent and no readable shop name; every mirror reflects only architecture, no phantom people; lower quarter low-detail."
+    },
+    {
+      "id": "bg_ch07_imaeda_office_1991",
+      "filename": "images/bg_ch07_imaeda_office_1991.webp",
+      "type": "background",
+      "chapter": "ch07",
+      "year": "1991",
+      "ageBand": "今枝为成年人，环境无人",
+      "prompt": "Wide 16:9 small private-detective office in Osaka in 1991, empty: rain-blurred blinds, metal filing cabinet, fax machine, corded phone, three sealed case folders and a camera on a desk, desk lamp off; no body, poison, weapon or readable notes; lower quarter uncluttered."
+    },
+    {
+      "id": "bg_ch08_noriko_pharmacy_1992",
+      "filename": "images/bg_ch08_noriko_pharmacy_1992.webp",
+      "type": "background",
+      "chapter": "ch08",
+      "year": "1992",
+      "ageBand": "亮司约 29 岁，环境无人",
+      "prompt": "Wide 16:9 small Japanese neighborhood pharmacy after closing in 1992, empty: period medicine drawers, balance scale, ledger, frosted glass door and cold blue night outside; a single restrained muted-gold #c9a961 desk lamp creates a tiny island of warmth without becoming cozy; no readable drug labels or modern devices; lower quarter quiet."
+    },
+    {
+      "id": "bg_ch09_ry_atrium_christmas_1992",
+      "filename": "images/bg_ch09_ry_atrium_christmas_1992.webp",
+      "type": "background",
+      "chapter": "ch09",
+      "year": "1992",
+      "ageBand": "亮司与雪穗约 29–30 岁，环境无人",
+      "prompt": "Wide 16:9 multi-level Osaka boutique atrium at Christmas in 1992, empty establishing view: escalators, pale stone, glass balustrades, cold white lights, restrained tree silhouettes and wet entrance reflections; dramatic upper-level sightlines, no body, fall, weapon or readable brand; lower quarter dark and low-detail."
+    },
+    {
+      "id": "cg_ch01_vent_investigation_1973",
+      "filename": "images/cg_ch01_vent_investigation_1973.webp",
+      "type": "cg",
+      "chapter": "ch01",
+      "year": "1973",
+      "ageBand": "无未成年人",
+      "prompt": "Wide 16:9 restrained investigative CG in the 1973 ruined building: an adult detective seen from behind kneels beside a narrow ventilation duct, flashlight grazing concrete dust and a dropped paper scrap; no child, body, blood, weapon, injury or graphic crime detail; key evidence above the lower-quarter safe zone."
+    },
+    {
+      "id": "cg_ch02_library_book_1974",
+      "filename": "images/cg_ch02_library_book_1974.webp",
+      "type": "cg",
+      "chapter": "ch02",
+      "year": "1974",
+      "ageBand": "雪穗 11 岁，仅远景背影",
+      "prompt": "Wide 16:9 non-threatening library CG in 1974: a small eleven-year-old schoolgirl, fully clothed and shown only from behind at long distance, returns a worn hardcover novel to an adult librarian behind a counter; faces indistinct, environment dominant; no crime, weapon, violence, injury, distress, threatening adult, sensualization or readable book title."
+    },
+    {
+      "id": "cg_ch03_mask_reflection_1978",
+      "filename": "images/cg_ch03_mask_reflection_1978.webp",
+      "type": "cg",
+      "chapter": "ch03",
+      "year": "1978",
+      "ageBand": "雪穗约 16 岁，仅背影/无脸倒影",
+      "prompt": "Wide 16:9 school corridor CG in 1978: a sixteen-year-old girl in a conservative period uniform stands with her back to camera before rain-dark glass; the glass reflection is only an abstract paper-cut silhouette with no facial detail and exactly one corresponding figure; emotionally uneasy but safe, no attacker, violence, injury, sexualization or adult styling."
+    },
+    {
+      "id": "cg_ch04_eriko_aftermath_1982",
+      "filename": "images/cg_ch04_eriko_aftermath_1982.webp",
+      "type": "cg",
+      "chapter": "ch04",
+      "year": "1982",
+      "ageBand": "江利子为大学生，约 20 岁",
+      "prompt": "Wide 16:9 restrained aftermath CG in a university corridor in 1982: an adult university woman, fully clothed, sits from behind beneath a window while a trusted adult female friend places a coat around her shoulders; no attacker, nudity, photographs, injury, violence, sexual detail or visible faces; dignity-focused composition, figures above the lower safe zone."
+    },
+    {
+      "id": "cg_ch05_wiretap_discovery_1987",
+      "filename": "images/cg_ch05_wiretap_discovery_1987.webp",
+      "type": "cg",
+      "chapter": "ch05",
+      "year": "1987",
+      "ageBand": "成年人物，约 24–26 岁",
+      "prompt": "Wide 16:9 suspense CG in a 1987 apartment: an adult man seen from behind lifts an old corded telephone receiver while noticing a professionally spliced wire behind the cabinet; a distant adult woman appears only as a separate silhouette reflected once in a rain-dark window, face hidden; no confrontation or duplicated reflection."
+    },
+    {
+      "id": "cg_ch06_statute_wall_1988",
+      "filename": "images/cg_ch06_statute_wall_1988.webp",
+      "type": "cg",
+      "chapter": "ch06",
+      "year": "1988",
+      "ageBand": "笹垣为成年刑警",
+      "prompt": "Wide 16:9 late-night 1988 police-office CG: an older adult detective seen from behind stands before a wall of case photographs turned face-down and a calendar whose dates are unreadable; his long shadow reaches a closed records cabinet; no child imagery, body, gore or readable evidence; lower safe zone clear."
+    },
+    {
+      "id": "cg_ch07_three_case_files_1991",
+      "filename": "images/cg_ch07_three_case_files_1991.webp",
+      "type": "cg",
+      "chapter": "ch07",
+      "year": "1991",
+      "ageBand": "今枝为成年人；受害者不出镜",
+      "prompt": "Wide 16:9 detective-work CG in 1991: an adult private investigator seen from behind arranges three closed, unlabeled case folders beneath one desk lamp, matching three clipped thread paths without showing victim images; period camera and fax nearby; no minors, body, violence, poison, readable text or face."
+    },
+    {
+      "id": "cg_ch08_noriko_warm_table_1992",
+      "filename": "images/cg_ch08_noriko_warm_table_1992.webp",
+      "type": "cg",
+      "chapter": "ch08",
+      "year": "1992",
+      "ageBand": "亮司与典子均为成年人，约 29 岁",
+      "prompt": "Wide 16:9 quiet 1992 kitchen-table CG: two adults around age twenty-nine sit apart, both shown only from behind or in silhouette, hands resting separately on the table with no contact; one muted-gold #c9a961 lamp is the only warmth amid cold blue night; no romance pose, face, modern object or duplicated reflection."
+    },
+    {
+      "id": "cg_ch08_papercut_couple_1992",
+      "filename": "images/cg_ch08_papercut_couple_1992.webp",
+      "type": "cg",
+      "chapter": "ch08",
+      "year": "1992",
+      "ageBand": "亮司约 29 岁，仅手部与成人背影",
+      "prompt": "Wide 16:9 symbolic 1992 CG: adult hands place a delicate hand-holding paper-cut couple on a dark tabletop; the adult maker is only a distant back silhouette, no face; the paper figures are simple graphic silhouettes under one restrained gold glimmer, with cold blue-grey darkness around them; no child, weapon, blood or readable text."
+    },
+    {
+      "id": "cg_ch09_fall_shadow_1992",
+      "filename": "images/cg_ch09_fall_shadow_1992.webp",
+      "type": "cg",
+      "chapter": "ch09",
+      "year": "1992",
+      "ageBand": "亮司与雪穗约 29–30 岁，均为成人剪影",
+      "prompt": "Wide 16:9 climactic but non-graphic 1992 boutique-atrium CG: a single adult male paper-cut shadow is suspended in a diagonal shaft of cold white light high above the floor, conveying a fall only through shadow and perspective; on an upper walkway a separate adult woman in a pale coat walks away from camera without turning; both faces invisible, no body impact, injury, blood, gore, visible weapon or duplicated person; key silhouettes above the lower safe zone."
+    },
+    {
+      "id": "icon_scissors_1973",
+      "filename": "images/cover_icons/icon_scissors_1973.webp",
+      "type": "icon",
+      "chapter": "ch01",
+      "year": "1973",
+      "ageBand": "物件",
+      "prompt": "Portrait 3:4 inventory icon: one closed pair of ordinary 1970s tailor scissors, clean and non-bloody, centered and fully visible on a plain dark blue-grey tabletop, cold soft studio light, subtle paper-cut shadow, no hands or other objects."
+    },
+    {
+      "id": "icon_million_cash",
+      "filename": "images/cover_icons/icon_million_cash.webp",
+      "type": "icon",
+      "chapter": "ch01",
+      "year": "1973",
+      "ageBand": "物件",
+      "prompt": "Portrait 3:4 inventory icon: one neat bundle of period Japanese banknotes wrapped in blank paper, denomination and text unreadable, centered on dark blue-grey felt, cold soft light, fully visible, no hands or extra objects."
+    },
+    {
+      "id": "icon_vent_duct",
+      "filename": "images/cover_icons/icon_vent_duct.webp",
+      "type": "icon",
+      "chapter": "ch01",
+      "year": "1973",
+      "ageBand": "物件",
+      "prompt": "Portrait 3:4 evidence icon: a single small rusted rectangular ventilation grille removed from 1970s concrete, centered and fully visible on a plain dark blue-grey background, cold raking light, no person, blood or debris clutter."
+    },
+    {
+      "id": "icon_lighter",
+      "filename": "images/cover_icons/icon_lighter.webp",
+      "type": "icon",
+      "chapter": "ch01",
+      "year": "1973",
+      "ageBand": "物件",
+      "prompt": "Portrait 3:4 inventory icon: one worn 1970s metal pocket lighter, closed and unlit, centered on dark blue-grey felt, cold soft light, blank surface without brand or text, no hand or flame."
+    },
+    {
+      "id": "icon_papercut_boy",
+      "filename": "images/cover_icons/icon_papercut_boy.webp",
+      "type": "icon",
+      "chapter": "ch01",
+      "year": "1973",
+      "ageBand": "象征物，不表现真人未成年人",
+      "prompt": "Portrait 3:4 symbolic evidence icon: one simple black paper-cut silhouette of a seated schoolboy, clearly handmade and flat rather than a real child, centered on pale cold paper over a dark blue-grey background, no face, weapon, violence or text."
+    },
+    {
+      "id": "icon_gone_with_wind_book",
+      "filename": "images/cover_icons/icon_gone_with_wind_book.webp",
+      "type": "icon",
+      "chapter": "ch02",
+      "year": "1974",
+      "ageBand": "物件",
+      "prompt": "Portrait 3:4 inventory icon: one worn 1970s library hardcover novel with a completely blank cloth cover and a small blank checkout card, centered and fully visible on dark blue-grey felt, no readable title, author or logo."
+    },
+    {
+      "id": "icon_gas_heater",
+      "filename": "images/cover_icons/icon_gas_heater.webp",
+      "type": "icon",
+      "chapter": "ch02",
+      "year": "1974",
+      "ageBand": "物件",
+      "prompt": "Portrait 3:4 evidence icon: one compact 1970s Japanese gas heater, switched off with no flame or fumes, centered and fully visible on a plain dark blue-grey background, cold soft light, no person, injury or readable markings."
+    },
+    {
+      "id": "icon_pawn_ledger",
+      "filename": "images/cover_icons/icon_pawn_ledger.webp",
+      "type": "icon",
+      "chapter": "ch02",
+      "year": "1974",
+      "ageBand": "物件",
+      "prompt": "Portrait 3:4 inventory icon: one worn clothbound pawnshop ledger partly open, internal rows suggested but entirely unreadable, centered on dark blue-grey felt, cold desk light, no hands, money or logo."
+    },
+    {
+      "id": "icon_tsukiko_file",
+      "filename": "images/cover_icons/icon_tsukiko_file.webp",
+      "type": "icon",
+      "chapter": "ch03",
+      "year": "1977",
+      "ageBand": "物件，不展示未成年人",
+      "prompt": "Portrait 3:4 evidence icon: one closed 1970s police case folder tied with cotton tape, every label blank and no photographs visible, centered on dark blue-grey felt, cold soft light, no person, injury or readable text."
+    },
+    {
+      "id": "icon_nude_photos_envelope",
+      "filename": "images/cover_icons/icon_nude_photos_envelope.webp",
+      "type": "icon",
+      "chapter": "ch04",
+      "year": "1982",
+      "ageBand": "物件，不展示人物或照片内容",
+      "prompt": "Portrait 3:4 evidence icon: one sealed plain photographic envelope beside two face-down blank instant-photo backs, no image content visible, centered on dark blue-grey felt, cold soft light, no nudity, person, handwriting or readable text."
+    },
+    {
+      "id": "icon_pirated_disks",
+      "filename": "images/cover_icons/icon_pirated_disks.webp",
+      "type": "icon",
+      "chapter": "ch04",
+      "year": "1983",
+      "ageBand": "物件",
+      "prompt": "Portrait 3:4 inventory icon: three period-correct early-1980s floppy disks in plain unmarked sleeves, centered and fully visible on dark blue-grey felt, cold soft light, no computer, hand, brand or readable label."
+    },
+    {
+      "id": "icon_wiretap_noise",
+      "filename": "images/cover_icons/icon_wiretap_noise.webp",
+      "type": "icon",
+      "chapter": "ch05",
+      "year": "1987",
+      "ageBand": "物件",
+      "prompt": "Portrait 3:4 evidence icon: one small 1980s telephone-line listening device with coiled wire and modular adapter, centered and fully visible on a plain dark blue-grey background, no brand, hand, text or modern wireless parts."
+    },
+    {
+      "id": "icon_forged_cards",
+      "filename": "images/cover_icons/icon_forged_cards.webp",
+      "type": "icon",
+      "chapter": "ch05",
+      "year": "1987",
+      "ageBand": "物件",
+      "prompt": "Portrait 3:4 evidence icon: two generic blank 1980s magnetic-stripe bank cards slightly overlapped, no numbers, names, logos or text, centered on dark blue-grey felt under cold soft light."
+    },
+    {
+      "id": "icon_matsuura_missing",
+      "filename": "images/cover_icons/icon_matsuura_missing.webp",
+      "type": "icon",
+      "chapter": "ch06",
+      "year": "1989",
+      "ageBand": "象征物，不展示真人",
+      "prompt": "Portrait 3:4 symbolic evidence icon: one empty black paper-cut silhouette has been removed from a row, leaving a pale human-shaped absence on dark blue-grey paper; abstract adult symbolism only, no real face, body, violence or text."
+    },
+    {
+      "id": "icon_statute_calendar",
+      "filename": "images/cover_icons/icon_statute_calendar.webp",
+      "type": "icon",
+      "chapter": "ch06",
+      "year": "1988",
+      "ageBand": "物件",
+      "prompt": "Portrait 3:4 evidence icon: one small 1988-style desk calendar with all dates and writing intentionally blurred and unreadable, several blank pages crossed by dark pencil strokes, centered on dark blue-grey felt, no logos or hands."
+    },
+    {
+      "id": "icon_shrimp_goby",
+      "filename": "images/cover_icons/icon_shrimp_goby.webp",
+      "type": "icon",
+      "chapter": "ch06",
+      "year": "1988",
+      "ageBand": "象征物",
+      "prompt": "Portrait 3:4 symbolic inventory icon: a restrained scientific-style paper-cut silhouette of one pistol shrimp beside one goby fish at a shared burrow entrance, cold blue-grey paper layers, centered and fully visible, no labels or text."
+    },
+    {
+      "id": "icon_ry_logo",
+      "filename": "images/cover_icons/icon_ry_logo.webp",
+      "type": "icon",
+      "chapter": "ch07",
+      "year": "1991",
+      "ageBand": "物件",
+      "prompt": "Portrait 3:4 evidence icon: one elegant late-1980s boutique shopping-bag tag with two abstract intertwined ribbon shapes suggesting a paired initial motif but containing no actual letters, words or brand, centered on dark blue-grey felt with a tiny dark-red accent."
+    },
+    {
+      "id": "icon_assault_mo",
+      "filename": "images/cover_icons/icon_assault_mo.webp",
+      "type": "icon",
+      "chapter": "ch07",
+      "year": "1991",
+      "ageBand": "抽象案件关系，不展示受害者",
+      "prompt": "Portrait 3:4 evidence icon: three closed blank case folders linked by one thin dark-red thread in a clean triangular arrangement, centered on dark blue-grey felt, no photographs, people, violence, handwriting or readable labels."
+    },
+    {
+      "id": "icon_cyanide_log",
+      "filename": "images/cover_icons/icon_cyanide_log.webp",
+      "type": "icon",
+      "chapter": "ch08",
+      "year": "1992",
+      "ageBand": "物件",
+      "prompt": "Portrait 3:4 evidence icon: one closed pharmacy inventory ledger with a single blank index tab missing, all writing unreadable, centered on dark blue-grey felt under cold light with one faint muted-gold edge; no chemical container, poison symbol or hand."
+    },
+    {
+      "id": "icon_papercut_couple",
+      "filename": "images/cover_icons/icon_papercut_couple.webp",
+      "type": "icon",
+      "chapter": "ch08",
+      "year": "1992",
+      "ageBand": "象征物，成人剪影",
+      "prompt": "Portrait 3:4 symbolic inventory icon: one delicate black paper-cut silhouette of an adult man and adult woman holding hands beneath a simple paper sun, clearly flat handmade paper rather than real people, centered on cold pale paper with one muted-gold glimmer, no faces or text."
+    }
+  ]
+}

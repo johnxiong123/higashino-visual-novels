@@ -1,0 +1,20 @@
+[
+  { "id": "cat_account", "title": "猫之死的记述", "chapter": "第一章", "icon": "icon_cat_account", "desc": "手记开篇对邻猫死亡的归责，为读者预先规定了日高的形象。" },
+  { "id": "vancouver_eve", "title": "温哥华前夜", "chapter": "第一章", "icon": "icon_vancouver_eve", "desc": "日高夫妇即将移居加拿大，装箱与告别让案发夜显得格外仓促。" },
+  { "id": "paperweight_cord", "title": "镇纸与电话线", "chapter": "第二章", "icon": "icon_paperweight_cord", "desc": "现场的两件日常物品成了凶器，显示行动带有临时性。" },
+  { "id": "night_manuscript", "title": "案发夜的稿件", "chapter": "第二章", "icon": "icon_night_manuscript", "desc": "日高死后，电脑中的连载稿仍成为时间线的关键支点。" },
+  { "id": "written_for_readers", "title": "写给读者的文章", "chapter": "第二章", "icon": "icon_written_for_readers", "desc": "这份记录有完整构图与评价，像作品，不像未经整理的证词。" },
+  { "id": "video_tape", "title": "庭院录像带", "chapter": "第四章", "icon": "icon_video_tape", "desc": "录像试图证明旧日未遂案，庭院樱树的影子却暴露了拍摄时间。" },
+  { "id": "copy_notebooks", "title": "手抄笔记本", "chapter": "第四章", "icon": "icon_copy_notebooks", "desc": "旧本子里的所谓原稿，与日高已发表作品存在异常对应。" },
+  { "id": "hatsumi_photo", "title": "初美的照片", "chapter": "第四章", "icon": "icon_hatsumi_photo", "desc": "照片与风景照被并置，制造出一段没有证人的关系。" },
+  { "id": "apron", "title": "围裙", "chapter": "第四章", "icon": "icon_apron", "desc": "初美遗物出现在野野口家中，来源却可能是整理遗物时被取走。" },
+  { "id": "cancer_note", "title": "诊断记录", "chapter": "第四章", "icon": "icon_cancer_note", "desc": "绝症缩短了野野口的未来，也放大了公众对其自白的同情。" },
+  { "id": "kinryochi", "title": "《禁猎地》", "chapter": "第五章", "icon": "icon_kinryochi", "desc": "日高以藤尾经历为原型的小说，引出被烟幕遮住的校园往事。" },
+  { "id": "forgery_flaw", "title": "赝品的破绽", "chapter": "第五章", "icon": "icon_forgery_flaw", "desc": "握笔形成的茧、誊抄痕迹与证人证词共同推翻代笔说。" },
+  { "id": "tsugakuro", "title": "上学路", "chapter": "第六章", "icon": "icon_tsugakuro", "desc": "日高曾主动陪伴不愿到校的野野口，友情与后来指控背道而驰。" },
+  { "id": "pyramid", "title": "霸凌金字塔", "chapter": "第六章", "icon": "icon_pyramid", "desc": "口述拼出施暴者、附和者、被迫参与者与沉默旁观者的结构。" },
+  { "id": "fujio_photo", "title": "翻扣的照片", "chapter": "第六章", "icon": "icon_fujio_photo", "desc": "照片只以背面入卷；它记录的是野野口竭力掩埋的旧事。" },
+  { "id": "kept_secret", "title": "被守住的秘密", "chapter": "第六章", "icon": "icon_kept_secret", "desc": "日高掌握旧事后没有公开，在作品中也避开了野野口。" },
+  { "id": "kaga_chalk", "title": "加贺的教鞭", "chapter": "第七章", "icon": "icon_kaga_chalk", "desc": "从教师到刑警的往事，让加贺拒绝再把霸凌归为一句相处不良。" },
+  { "id": "nameless_malice", "title": "无法定名的恶意", "chapter": "第七章", "icon": "icon_nameless_malice", "desc": "伪造的动机逐一消失后，留下的是对善意、成功与自身失败的憎恨。" }
+]

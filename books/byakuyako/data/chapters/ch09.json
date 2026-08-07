@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "id": "ch09",
+    "title": "终章 · 雪穗不回头",
+    "defaultPov": "sasagaki"
+  },
+  "start": "ch09_001",
+  "nodes": {
+    "ch09_001": {
+      "bg": "bg_ch09_ry_atrium_christmas_1992",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "1992 年圣诞节，大阪 R&Y 新店中庭。冷白灯把每个人的影子压在脚下。"
+        },
+        {
+          "speaker": "笹垣",
+          "text": "十九年了。所有名字都换过，只有剪刀、手法与守望的位置没有变。"
+        }
+      ],
+      "next": "ch09_002"
+    },
+    "ch09_002": {
+      "bg": "bg_ch09_ry_atrium_christmas_1992",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "一成带来今枝寄出的材料，典子交出台账，旧案卷宗终于与现在合在一起。"
+        }
+      ],
+      "next": "ch09_003"
+    },
+    "ch09_003": {
+      "bg": "bg_ch09_ry_atrium_christmas_1992",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "亮司出现在上层回廊。雪穗站在另一端，两人从未正面同框。"
+        },
+        {
+          "speaker": "笹垣",
+          "text": "桐原亮司。到此为止。"
+        }
+      ],
+      "next": "ch09_004"
+    },
+    "ch09_004": {
+      "bg": "bg_ch09_ry_atrium_christmas_1992",
+      "pov": "ryoji",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "亮司看向出口，又看向口袋里最后一张剪纸。没有一句话解释他的选择。"
+        }
+      ],
+      "next": "ch09_resolve"
+    },
+    "ch09_resolve": {
+      "bg": "bg_ch09_ry_atrium_christmas_1992",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "十九年的白夜在这一刻分出三条路。"
+        }
+      ],
+      "branches": [
+        {
+          "requires": {
+            "flags": [
+              "papercut_kept"
+            ],
+            "vars": {
+              "glimmer": {
+                "gte": 4
+              }
+            }
+          },
+          "goto": "ch09_dawn"
+        },
+        {
+          "requires": {
+            "flags": [
+              "beyond_limits",
+              "imaeda_notes"
+            ],
+            "vars": {
+              "truth": {
+                "gte": 7
+              }
+            }
+          },
+          "goto": "ch09_truth"
+        },
+        {
+          "goto": "ch09_unsolved"
+        }
+      ]
+    },
+    "ch09_truth": {
+      "bg": "bg_ch09_ry_atrium_christmas_1992",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "证据足以收网。亮司退向栏杆，雪穗的完美假面第一次出现裂纹。"
+        }
+      ],
+      "branches": [
+        {
+          "requires": {
+            "vars": {
+              "crack": {
+                "gte": 4
+              }
+            }
+          },
+          "goto": "ch09_confrontation"
+        },
+        {
+          "goto": "ch09_fall"
+        }
+      ]
+    },
+    "ch09_confrontation": {
+      "bg": "bg_ch09_ry_atrium_christmas_1992",
+      "pov": "kazunari",
+      "lines": [
+        {
+          "speaker": "一成",
+          "text": "我终于知道，每次站在你身边的人为什么都会失去什么。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "雪穗停了半步，随即把那道裂缝重新藏进微笑。"
+        }
+      ],
+      "next": "ch09_fall"
+    },
+    "ch09_fall": {
+      "bg": "bg_ch09_ry_atrium_christmas_1992",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "一道男性剪影从冷白光里坠下。画面没有撞击、血迹或伤口，只有剪刀落地的清响。"
+        },
+        {
+          "speaker": "笹垣",
+          "text": "雪穗，你认识这个人吗？"
+        },
+        {
+          "speaker": "雪穗",
+          "text": "我不知道。"
+        }
+      ],
+      "cg": "cg_ch09_fall_shadow_1992",
+      "next": "ch09_byakuya"
+    },
+    "ch09_byakuya": {
+      "bg": "bg_ch09_ry_atrium_christmas_1992",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "她转身走上扶梯，像一道白色影子。一次也没有回头。"
+        }
+      ],
+      "ending": {
+        "id": "TE_byakuya",
+        "title": "真结局 · 白夜行",
+        "type": "true"
+      }
+    },
+    "ch09_unsolved": {
+      "bg": "bg_ch09_ry_atrium_christmas_1992",
+      "pov": "sasagaki",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "缺失的笔记与越过时效的证据无法组成法律意义上的答案。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "R&Y 灯火通明。笹垣站在橱窗外，看着两个影子分别消失。"
+        }
+      ],
+      "ending": {
+        "id": "BE_unsolved",
+        "title": "结局 · 无人抵达的夜",
+        "type": "bad"
+      }
+    },
+    "ch09_dawn": {
+      "bg": "bg_ch09_ry_atrium_christmas_1992",
+      "pov": "ryoji",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "亮司没有走向栏杆。他把剪纸交给笹垣，随后主动伸出双手。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "他始终没有说出雪穗的名字。中庭外，真正的晨光第一次越过玻璃。"
+        }
+      ],
+      "cg": "cg_ch08_papercut_couple_1992",
+      "ending": {
+        "id": "IF_dawn",
+        "title": "IF · 黎明",
+        "type": "good"
+      }
+    }
+  }
+}

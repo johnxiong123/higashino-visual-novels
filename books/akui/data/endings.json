@@ -1,0 +1,23 @@
+[
+  {
+    "id": "TE_akui",
+    "title": "真结局 · 恶意",
+    "type": "true",
+    "summary": "证据、谎言与过去终于叠成同一份卷宗。日高守住的秘密没有替野野口洗清任何事，只照出了那份无从归因的恶意。",
+    "cg": "cg_ch07_school_road_true_ending"
+  },
+  {
+    "id": "ME_naibottom",
+    "title": "结局 · 不见底的井",
+    "type": "bad",
+    "summary": "代笔的故事被拆穿，真正的动机却没有抵达。卷宗最终留下一个空白：动机不明。",
+    "cg": null
+  },
+  {
+    "id": "BE_script",
+    "title": "结局 · 完美的剧本",
+    "type": "bad",
+    "summary": "野野口被定罪，日高的名字却被另一套故事覆盖。杀人者失去自由，也完成了他写给世人的结局。",
+    "cg": null
+  }
+]

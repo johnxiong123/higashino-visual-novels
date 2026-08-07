@@ -1,0 +1,23 @@
+[
+  {
+    "id": "TE_byakuya",
+    "title": "真结局 · 白夜行",
+    "type": "true",
+    "summary": "十九年的拼图终于合上。亮司坠下中庭，雪穗只留下一句否认，像白色影子般没有回头。",
+    "cg": "cg_ch09_fall_shadow_1992"
+  },
+  {
+    "id": "BE_unsolved",
+    "title": "结局 · 无人抵达的夜",
+    "type": "bad",
+    "summary": "时效与缺失的证据埋住了真相。灯火继续亮着，笹垣只能站在橱窗之外。",
+    "cg": null
+  },
+  {
+    "id": "IF_dawn",
+    "title": "IF · 黎明",
+    "type": "good",
+    "summary": "亮司主动走进警局，没有说出那个名字。太阳升起，而漫长的共生在此中断。",
+    "cg": "cg_ch08_papercut_couple_1992"
+  }
+]

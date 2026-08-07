@@ -1,0 +1,169 @@
+/* 白夜冷调：冷银、雾蓝与无日白；暖色只保留给“微光”。 */
+:root {
+  --bg: #111a23;
+    --stage: #101923;
+    --panel: #182430;
+    --panel-2: #1d2c39;
+    --ink: #e6edf1;
+    --muted: #9caeba;
+    --faint: #6c7f8f;
+    --line: rgba(255, 255, 255, 0.10);
+    --line-2: rgba(255, 255, 255, 0.18);
+    --amber: #7f9fb4;
+    --gold: #8fa7b8;
+    --gold-bright: #dfe6ea;
+    --gold-line: rgba(143, 167, 184, 0.45);
+    --glass: rgba(12, 16, 24, 0.66);
+    --font-serif: 'Songti SC', 'STSong', Georgia, 'Noto Serif SC', 'SimSun', serif;
+    --accent: #6f96b0;
+    --branch: #e0a13a;
+    --danger: #c0566a;
+    --info: #5aa0e0;
+    --radius: 10px;
+  --theme-color-001: #05070a;
+  --theme-color-002: rgba(54, 70, 82, 0.45);
+  --theme-color-003: #d8cdb4;
+  --theme-color-004: rgba(54, 70, 82, 0.55);
+  --theme-color-005: #1c2530;
+  --theme-color-006: #11161e;
+  --theme-color-007: #080b10;
+  --theme-color-008: rgba(0, 0, 0, 0.72);
+  --theme-color-009: #2a2230;
+  --theme-color-010: #171520;
+  --theme-color-011: #0a0810;
+  --theme-color-012: #aeb9c7;
+  --theme-color-013: rgba(0, 0, 0, 0.7);
+  --theme-color-014: rgba(6, 9, 13, 0.82);
+  --theme-color-015: rgba(6, 9, 13, 0);
+  --theme-color-016: rgba(28, 33, 42, 0.92);
+  --theme-color-017: rgba(8, 11, 16, 0.96);
+  --theme-color-018: rgba(143, 167, 184, 0.14);
+  --theme-color-019: rgba(0, 0, 0, 0.5);
+  --theme-color-020: #c0392b;
+  --theme-color-021: rgba(192, 57, 43, 0.6);
+  --theme-color-022: #000;
+  --theme-color-023: rgba(143, 167, 184, 0.18);
+  --theme-color-024: rgba(143, 167, 184, 0.15);
+  --theme-color-025: rgba(22, 26, 34, 0.86);
+  --theme-color-026: rgba(11, 14, 20, 0.92);
+  --theme-color-027: #e3eaee;
+  --theme-color-028: rgba(143, 167, 184, 0.06);
+  --theme-color-029: rgba(59, 75, 88, 0.92);
+  --theme-color-030: rgba(24, 18, 10, 0.94);
+  --theme-color-031: #fff;
+  --theme-color-032: rgba(143, 167, 184, 0.16);
+  --theme-color-033: rgba(14, 18, 26, 0.9);
+  --theme-color-034: rgba(143, 167, 184, 0.08);
+  --theme-color-035: rgba(0, 0, 0, 0.55);
+  --theme-color-036: #15212b;
+  --theme-color-037: rgba(0, 0, 0, 0.4);
+  --theme-color-038: #eef2f7;
+  --theme-color-039: rgba(0, 0, 0, 0.32);
+  --theme-color-040: rgba(223, 230, 234, 0.5);
+  --theme-color-041: rgba(22, 26, 34, 0.72);
+  --theme-color-042: rgba(11, 14, 20, 0.82);
+  --theme-color-043: rgba(192, 86, 106, 0.7);
+  --theme-color-044: #0c1018;
+  --theme-color-045: rgba(42, 51, 64, 0.9);
+  --theme-color-046: rgba(11, 14, 20, 0.95);
+  --theme-color-047: #d5e0e5;
+  --theme-color-048: rgba(16, 20, 28, 0.6);
+  --theme-color-049: rgba(9, 12, 18, 0.82);
+  --theme-color-050: rgba(11, 14, 20, 0.85);
+  --theme-color-051: rgba(143, 167, 184, 0.4);
+  --theme-color-052: rgba(192, 86, 106, 0.6);
+  --theme-color-053: rgba(5, 7, 10, 0.7);
+  --theme-color-054: rgba(0, 0, 0, 0.6);
+  --theme-color-055: #222b38;
+  --theme-color-056: #637f91;
+  --theme-color-057: #496577;
+  --theme-color-058: #91aaba;
+  --theme-color-059: #1d2733;
+  --theme-color-060: #111b24;
+  --theme-color-061: #0f1821;
+  --theme-color-062: #edf2f4;
+  --theme-color-063: rgba(0, 0, 0, 0.9);
+  --theme-color-064: rgba(20, 24, 32, 0.72);
+  --theme-color-065: rgba(10, 13, 19, 0.82);
+  --theme-color-066: #dbe5ea;
+  --theme-color-067: rgba(38, 52, 63, 0.82);
+  --theme-color-068: rgba(20, 31, 41, 0.86);
+  --theme-color-069: rgba(74, 56, 28, 0.88);
+  --theme-color-070: rgba(34, 49, 61, 0.92);
+  --theme-color-071: rgba(143, 167, 184, 0.25);
+  --theme-color-072: rgba(14, 18, 26, 0.6);
+  --theme-color-073: #b8c8d1;
+  --theme-color-074: rgba(8, 11, 16, 0.55);
+  --theme-color-075: #eef3f5;
+  --theme-color-076: rgba(0, 0, 0, 0.85);
+  --theme-color-077: rgba(143, 167, 184, 0.04);
+  --theme-color-078: rgba(223, 230, 234, 0.6);
+  --theme-color-079: rgba(22, 26, 34, 0.78);
+  --theme-color-080: rgba(9, 12, 18, 0.85);
+  --theme-color-081: rgba(255, 255, 255, 0.04);
+  --theme-color-082: rgba(223, 230, 234, 0.3);
+  --theme-color-083: rgba(72, 94, 109, 0.9);
+  --theme-color-084: rgba(38, 53, 65, 0.94);
+  --theme-color-085: rgba(223, 230, 234, 0.4);
+  --theme-color-086: rgba(255, 230, 170, 0.15);
+  --theme-color-087: rgba(143, 167, 184, 0.22);
+  --theme-color-088: rgba(0, 0, 0, 0.25);
+  --theme-color-089: rgba(223, 230, 234, 0.12);
+  --theme-color-090: rgba(143, 167, 184, 0.1);
+  --theme-color-091: rgba(4, 6, 9, 0.72);
+  --theme-color-092: rgba(20, 24, 32, 0.97);
+  --theme-color-093: rgba(11, 14, 20, 0.98);
+  --theme-color-094: #e8eef1;
+  --theme-color-095: rgba(24, 28, 36, 0.9);
+  --theme-color-096: rgba(12, 15, 21, 0.92);
+  --theme-color-097: rgba(54, 70, 82, 0.92);
+  --theme-color-098: rgba(22, 17, 10, 0.94);
+  --theme-color-099: rgba(72, 94, 109, 0.95);
+  --theme-color-100: rgba(38, 53, 65, 0.96);
+  --theme-color-101: #607b8d;
+  --theme-color-102: rgba(0, 0, 0, 0.3);
+  --theme-color-103: rgba(54, 70, 82, 0.5);
+  --theme-color-104: rgba(20, 24, 32, 0.88);
+  --theme-color-105: rgba(10, 13, 19, 0.93);
+  --theme-color-106: #cdbf9e;
+  --theme-color-107: #e9a3b0;
+  --theme-color-108: rgba(70, 28, 38, 0.92);
+  --theme-color-109: rgba(40, 16, 22, 0.94);
+  --theme-color-110: #e07a8c;
+  --theme-color-111: rgba(42, 51, 64, 0.8);
+}
+
+
+/* 剪纸式几何与雾面层次，区别于《嫌疑犯X》的描金暗玻璃。 */
+#viewport::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 200;
+  opacity: .13;
+  background:
+    repeating-linear-gradient(112deg, transparent 0 17px, rgba(223, 230, 234, .045) 18px 19px),
+    linear-gradient(180deg, rgba(223, 230, 234, .05), transparent 28%, rgba(30, 42, 54, .12));
+  mix-blend-mode: screen;
+}
+.seal {
+  border-radius: 2px;
+  transform: rotate(45deg);
+  background: linear-gradient(145deg, #dfe6ea, #6c7f8f 52%, #1e2a36);
+}
+.seal span {
+  transform: rotate(-45deg);
+  color: #f5f8fa;
+  text-shadow: 0 0 12px rgba(223, 230, 234, .7);
+}
+.title-brand, .chapter-label, .panel-section-label {
+  letter-spacing: .22em;
+}
+.choice, .dlg-box, .title-item, .overlay-card {
+  border-radius: 1px;
+  backdrop-filter: blur(10px) saturate(.7);
+}
+.title-divider::before {
+  background: linear-gradient(90deg, #dfe6ea, rgba(143, 167, 184, .12));
+}

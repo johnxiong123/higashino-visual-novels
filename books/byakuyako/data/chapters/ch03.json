@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "id": "ch03",
+    "title": "第三章 · 少女的假面",
+    "defaultPov": "eriko"
+  },
+  "start": "ch03_001",
+  "nodes": {
+    "ch03_001": {
+      "bg": "bg_ch03_school_corridor_1977",
+      "pov": "eriko",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "几年后，雪穗已是学校里最耀眼的学生。"
+        },
+        {
+          "speaker": "江利子",
+          "text": "她总能让每个人觉得，自己正被认真注视。"
+        }
+      ],
+      "onEnter": {
+        "povUnlock": [
+          "eriko"
+        ]
+      },
+      "next": "ch03_002"
+    },
+    "ch03_002": {
+      "bg": "bg_ch03_school_corridor_1977",
+      "pov": "eriko",
+      "lines": [
+        {
+          "speaker": "雪穗",
+          "text": "江利子，放学后一起去图书馆吧。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "她的笑容无懈可击，连窗上的倒影都像提前排练过。"
+        }
+      ],
+      "next": "ch03_003"
+    },
+    "ch03_003": {
+      "bg": "bg_ch03_school_corridor_1977",
+      "pov": "eriko",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "藤村都子遭遇袭击后，学校里只剩压低的议论。这里不展示伤害，只留下调查后的空走廊。"
+        },
+        {
+          "speaker": "江利子",
+          "text": "雪穗知道消息时，为什么一点也不惊讶？"
+        }
+      ],
+      "onEnter": {
+        "clues": [
+          "tsukiko_file"
+        ]
+      },
+      "next": "ch03_004"
+    },
+    "ch03_004": {
+      "bg": "bg_ch03_school_corridor_1977",
+      "pov": "eriko",
+      "lines": [
+        {
+          "speaker": "警员",
+          "text": "事发时她在读书会，老师和同学都能作证。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "完美的不在场证明让所有追问都显得失礼。"
+        }
+      ],
+      "next": "ch03_005"
+    },
+    "ch03_005": {
+      "bg": "bg_ch03_school_corridor_1977",
+      "pov": "eriko",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "江利子站在派出所门口，想起雪穗当天换过一次发带。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "告诉警察雪穗当天的反常",
+          "tag": "裂痕 +1",
+          "effects": {
+            "state": {
+              "crack": 1
+            },
+            "flags": [
+              "eriko_spoke"
+            ]
+          },
+          "goto": "ch03_006"
+        },
+        {
+          "text": "保持沉默，不背叛朋友",
+          "tag": "沉默",
+          "effects": {
+            "flags": [
+              "eriko_silent"
+            ]
+          },
+          "goto": "ch03_007"
+        }
+      ]
+    },
+    "ch03_006": {
+      "bg": "bg_ch03_school_corridor_1977",
+      "pov": "eriko",
+      "lines": [
+        {
+          "speaker": "警员",
+          "text": "我们会记录。但凭一条发带，什么也证明不了。"
+        },
+        {
+          "speaker": "旁白",
+          "text": "江利子第一次说出怀疑，也第一次失去雪穗看向她时的温度。"
+        }
+      ],
+      "next": "ch03_008"
+    },
+    "ch03_007": {
+      "bg": "bg_ch03_school_corridor_1977",
+      "pov": "eriko",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "江利子把话咽回去。雪穗挽住她的手臂，动作仍像从前一样亲密。"
+        }
+      ],
+      "next": "ch03_008"
+    },
+    "ch03_008": {
+      "bg": "bg_ch03_school_corridor_1977",
+      "pov": "eriko",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "雨后的玻璃里，少女的倒影被剪成一块没有五官的白。"
+        },
+        {
+          "speaker": "江利子",
+          "text": "我忽然不知道，身边的人究竟是谁。"
+        }
+      ],
+      "cg": "cg_ch03_mask_reflection_1978",
+      "next": "ch03_009"
+    },
+    "ch03_009": {
+      "bg": "bg_ch03_school_corridor_1977",
+      "pov": "eriko",
+      "lines": [
+        {
+          "speaker": "旁白",
+          "text": "毕业以后，她们走向不同城市。那份不安却留在江利子的记忆里。"
+        }
+      ],
+      "next": "ch04_001"
+    }
+  }
+}
