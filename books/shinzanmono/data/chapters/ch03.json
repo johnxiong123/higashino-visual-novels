@@ -1,0 +1,18 @@
+{
+  "meta": { "id": "ch03", "title": "第三章 · 瓷器店的媳妇", "defaultPov": "maki" },
+  "start": "ch03_001",
+  "nodes": {
+    "ch03_001": { "bg": "bg_ch03_yanagisawa_ceramics", "pov": "maki", "lines": [{ "speaker": "旁白", "text": "瓷器店里，麻纪与婆婆的对话总隔着一层薄釉。加贺问起麻纪曾托峯子代买的一把剪刀。" }], "onEnter": { "povUnlock": ["maki"], "state": { "pressure": 1 } }, "next": "ch03_002" },
+    "ch03_002": { "bg": "bg_ch03_yanagisawa_ceramics", "pov": "maki", "lines": [{ "speaker": "麻纪", "text": "我想给牙口变弱的婆婆买一把剪食物用的剪刀。峯子带回来的却是普通厨房剪刀。" }], "onEnter": { "clues": ["wrong_scissors"] }, "next": "ch03_003" },
+    "ch03_003": { "bg": "bg_ch03_yanagisawa_ceramics", "pov": "maki", "lines": [{ "speaker": "旁白", "text": "购物的方向被误会颠倒，原本想替人做的事变成了责怪。峯子的委托也因此显得突兀。" }], "choices": [{ "text": "从包装与用途还原委托", "tag": "物件", "goto": "ch03_004" }, { "text": "从婆媳各自记得的话还原", "tag": "口供", "goto": "ch03_005" }] },
+    "ch03_004": { "bg": "bg_ch03_yanagisawa_ceramics", "pov": "maki", "lines": [{ "speaker": "旁白", "text": "用途比品名更可靠：这把剪刀原本就要送给别人。" }], "next": "ch03_006" },
+    "ch03_005": { "bg": "bg_ch03_yanagisawa_ceramics", "pov": "maki", "lines": [{ "speaker": "旁白", "text": "两个人各自省略的一句话，正好拼成完整的托付。" }], "next": "ch03_006" },
+    "ch03_006": { "bg": "bg_ch03_yanagisawa_ceramics", "pov": "maki", "lines": [{ "speaker": "旁白", "text": "麻纪可以当面把误会说开，也可以让加贺替她传话。" }], "choices": [{ "text": "当着婆婆的面说明原委", "tag": "人情 +2 · 心意 +1", "effects": { "state": { "ninjo": 2, "kizuna": 1 }, "flags": ["inlaws_reconciled"], "clues": ["gift_list"] }, "goto": "ch03_007" }, { "text": "请加贺从中转圜", "tag": "人情 +1", "effects": { "state": { "ninjo": 1 } }, "goto": "ch03_008" }] },
+    "ch03_007": { "bg": "bg_ch03_yanagisawa_ceramics", "cg": "cg_ch03_scissors_reconciliation", "pov": "maki", "lines": [{ "speaker": "旁白", "text": "剪刀被放回柜台中央。婆媳第一次听完彼此没有说出口的后半句。" }], "next": "ch03_009" },
+    "ch03_008": { "bg": "bg_ch03_yanagisawa_ceramics", "pov": "maki", "lines": [{ "speaker": "加贺", "text": "我能转达事实，不能替你们完成那场谈话。等案子过去，请再说一次。" }], "next": "ch03_009" },
+    "ch03_009": { "bg": "bg_ch03_yanagisawa_ceramics", "pov": "maki", "lines": [{ "speaker": "旁白", "text": "剪刀服务的是柳泽家的和解。后来出现的夫妇箸与水天宫祈愿，也会各自回到真正等待它们的人。" }], "next": "ch03_010" },
+    "ch03_010": { "bg": "bg_ch03_yanagisawa_ceramics", "pov": "maki", "lines": [{ "speaker": "旁白", "text": "加贺在记录旁写下：命案以外的误会，也要各自归还给真正身处其中的人。" }], "next": "ch03_011" },
+    "ch03_011": { "bg": "bg_ch03_yanagisawa_ceramics", "pov": "maki", "lines": [{ "speaker": "麻纪", "text": "一把买错的剪刀，也值得查这么久吗？" }, { "speaker": "加贺", "text": "它解释了峯子为什么来，也解释了你们为什么互相误会。" }], "next": "ch03_012" },
+    "ch03_012": { "bg": "bg_ningyocho_street", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "剪刀留在柳泽家的故事里。下一段谎言藏在钟表店主的散步路线中。" }], "next": "ch04_001" }
+  }
+}

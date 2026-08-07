@@ -1,0 +1,22 @@
+[
+  { "id": "paper_cord", "title": "纸捻绳", "chapter": "第一章", "icon": "icon_paper_cord", "desc": "现场留下的纸绳痕迹把调查引向一件寻常玩物。" },
+  { "id": "untouched_flat", "title": "住处的遗留物", "chapter": "第一章", "icon": "icon_untouched_flat", "desc": "警方封存的住处遗留物，是后续逐户走访的起点。" },
+  { "id": "two_diagnoses", "title": "两份诊断书", "chapter": "第一章", "icon": "icon_two_diagnoses", "desc": "内容不一致的诊断材料解释了田仓为何隐瞒行程。" },
+  { "id": "wasabi_yaki", "title": "芥末人形烧", "chapter": "第二章", "icon": "icon_wasabi_yaki", "desc": "点心被做了手脚，却指向料亭内部的家庭纠葛而非投毒。" },
+  { "id": "three_prints", "title": "点心盒上的指纹", "chapter": "第二章", "icon": "icon_three_prints", "desc": "点心盒的接触痕迹帮助警方排除一条错误推断。" },
+  { "id": "wrong_scissors", "title": "买错的剪刀", "chapter": "第三章", "icon": "icon_wrong_scissors", "desc": "麻纪托峯子代买适合剪食物的剪刀，带回来的却是普通厨房剪刀。" },
+  { "id": "gift_list", "title": "各自的心意", "chapter": "第三章", "icon": "icon_gift_list", "desc": "剪刀、夫妇箸与水天宫的关怀分别指向不同的人，也各有自己的归处。" },
+  { "id": "dog_walk", "title": "散步路线", "chapter": "第四章", "icon": "icon_dog_walk", "desc": "寺田玄一说出的地点与实际路线并不一致。" },
+  { "id": "anzan_omamori", "title": "水天宫的祈愿", "chapter": "第四章", "icon": "icon_anzan_omamori", "desc": "嘴上反对女儿婚事的父亲，暗地里仍来到水天宫为她祈愿。" },
+  { "id": "showcase_gaze", "title": "玻璃柜外的注视", "chapter": "第五章", "icon": "icon_showcase_gaze", "desc": "峯子反复来到店里，目光总停在同一位店员身上。" },
+  { "id": "mistaken_lover", "title": "认错的人", "chapter": "第五章", "icon": "icon_mistaken_lover", "desc": "峯子误认了儿子的恋人，但想靠近儿子生活的心意没有错。" },
+  { "id": "meoto_bashi", "title": "夫妇箸", "chapter": "第六章", "icon": "icon_meoto_bashi", "desc": "峯子准备送给友人的一对筷子，是一份未能亲手交出的和解礼。" },
+  { "id": "finder_guilt", "title": "第一发现者", "chapter": "第六章", "icon": "icon_finder_guilt", "desc": "多美子把发现好友遇害的事实变成了无法卸下的自责。" },
+  { "id": "zaisan_memo", "title": "财产问题咨询", "chapter": "第七章", "icon": "icon_zaisan_memo", "desc": "峯子因误会祐理与直弘的关系，重新咨询离婚财产问题。" },
+  { "id": "secret_daughter", "title": "秘书的身世", "chapter": "第七章", "icon": "icon_secret_daughter", "desc": "社长与年轻秘书并非流言中的关系，而是迟来的父女相认。" },
+  { "id": "cooked_books", "title": "异常资金流向", "chapter": "第七章", "icon": "icon_cooked_books", "desc": "克哉造成的资金缺口与岸田替他遮掩的款项，让税理士进入调查中心。" },
+  { "id": "missing_string", "title": "两种独乐绳", "chapter": "第八章", "icon": "icon_missing_string", "desc": "两只来源不同的独乐配了不同结构的绳，细小错配暴露出替换。" },
+  { "id": "toyshop_theft", "title": "第一只独乐的来源", "chapter": "第八章", "icon": "icon_toyshop_theft", "desc": "第一只独乐的异常去向补上纸绳来源的一环；脚本不虚构精确日期和店名。" },
+  { "id": "second_koma", "title": "第二只独乐", "chapter": "第八章", "icon": "icon_second_koma", "desc": "同一种礼物被买了两次，暴露出第一次购买后发生过的事。" },
+  { "id": "fathers_ledger", "title": "父亲的账", "chapter": "终章", "icon": "icon_fathers_ledger", "desc": "账目缺口背后，是一个父亲替成年儿子不断收拾残局的选择。" }
+]

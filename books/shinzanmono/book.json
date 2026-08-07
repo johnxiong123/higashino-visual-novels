@@ -1,0 +1,30 @@
+{
+  "id": "shinzanmono",
+  "title": "新参者",
+  "author": "东野圭吾",
+  "cover": "assets/images/title_keyvisual.webp",
+  "theme": "theme.css",
+  "mark": "新",
+  "tagline": "解开九个心结，拼出一桩真相",
+  "quote": "案子会结，人心留下的结，也需要有人解开。",
+  "start": "ch01_001",
+  "chapters": [
+    { "id": "ch01", "title": "第一章 · 煎饼店的女儿", "start": "ch01_001", "bgm": "main" },
+    { "id": "ch02", "title": "第二章 · 料亭的小徒弟", "start": "ch02_001", "bgm": "main" },
+    { "id": "ch03", "title": "第三章 · 瓷器店的媳妇", "start": "ch03_001", "bgm": "main" },
+    { "id": "ch04", "title": "第四章 · 钟表店的狗", "start": "ch04_001", "bgm": "main" },
+    { "id": "ch05", "title": "第五章 · 洋菓子店的店员", "start": "ch05_001", "bgm": "main" },
+    { "id": "ch06", "title": "第六章 · 翻译家的友人", "start": "ch06_001", "bgm": "main" },
+    { "id": "ch07", "title": "第七章 · 清扫公司的社长", "start": "ch07_001", "bgm": "main" },
+    { "id": "ch08", "title": "第八章 · 民艺品店的客人", "start": "ch08_001", "bgm": "main" },
+    { "id": "ch09", "title": "终章 · 日本桥的刑警", "start": "ch09_001", "bgm": "main" }
+  ],
+  "vars": [
+    { "key": "trace", "label": "查访", "color": "#2b3a55", "init": 0, "max": 10 },
+    { "key": "ninjo", "label": "人情", "color": "#c98a3d", "init": 0, "max": 10 },
+    { "key": "kizuna", "label": "心意", "color": "#b4553e", "init": 0, "max": 10 },
+    { "key": "pressure", "label": "定式", "color": "#7c8794", "init": 0, "max": 10 }
+  ],
+  "initialState": { "povUnlocked": ["kaga"] },
+  "features": { "clues": true, "flowchart": true, "pov": true }
+}

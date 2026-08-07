@@ -1,0 +1,16 @@
+[
+  { "id": "kaga", "name": "加贺恭一郎", "role": "日本桥署刑警", "portrait": null, "desc": "刚到任的刑警；走访的不只是一桩案件，也是案件留下的人心裂缝。" },
+  { "id": "mineko", "name": "三井峯子", "role": "翻译家", "portrait": null, "desc": "独居小传马町的被害人；未说出口的心意散落在人形町各处。" },
+  { "id": "koki", "name": "清瀬弘毅", "role": "剧团演员", "portrait": null, "desc": "峯子的儿子；与母亲疏远，却一直处在她的守望里。" },
+  { "id": "naohiro", "name": "清瀬直弘", "role": "清扫公司社长", "portrait": null, "desc": "峯子的前夫；公司的家事与账目都藏着没有说完的话。" },
+  { "id": "ami", "name": "青山亜美", "role": "弘毅的恋人", "portrait": null, "desc": "峯子想认识却未能见到的人。" },
+  { "id": "kishida", "name": "岸田要作", "role": "税理士", "portrait": null, "desc": "清瀬家多年的旧识；用错误的方法替儿子填补亏空。" },
+  { "id": "katsuya", "name": "岸田克哉", "role": "岸田之子", "portrait": null, "desc": "公司账目异常背后的源头。" },
+  { "id": "yuri", "name": "祐理", "role": "清瀬公司秘书", "portrait": null, "desc": "直弘早年不知情留下的女儿；父女重逢后进入公司工作。" },
+  { "id": "tamiko", "name": "吉冈多美子", "role": "翻译家", "portrait": null, "desc": "峯子的挚友与工作伙伴，也是第一发现者。" },
+  { "id": "takura", "name": "田仓慎一", "role": "保险业务员", "portrait": null, "desc": "最早因时间陈述矛盾进入调查视野的人。" },
+  { "id": "naho", "name": "上川菜穗", "role": "煎饼店的女儿", "portrait": null, "desc": "最先决定向这位新来的刑警开口的街坊。" },
+  { "id": "genichi", "name": "寺田玄一", "role": "钟表店主", "portrait": null, "desc": "嘴硬的父亲；每天的散步路线泄露了他的牵挂。" },
+  { "id": "kanae", "name": "寺田香苗", "role": "玄一之女", "portrait": null, "desc": "与父亲僵持，却仍被父亲悄悄惦念。" },
+  { "id": "miyuki", "name": "美雪", "role": "洋菓子店店员", "portrait": null, "desc": "被峯子认错的人，也承接了她真实的守望。" }
+]

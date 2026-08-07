@@ -1,0 +1,18 @@
+{
+  "meta": { "id": "ch01", "title": "第一章 · 煎饼店的女儿", "defaultPov": "kaga" },
+  "start": "ch01_001",
+  "nodes": {
+    "ch01_001": { "bg": "bg_ningyocho_street", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "初到日本桥署不久，加贺便接到小传马町一宗命案的调查任务。对他和被害人而言，这条街都还陌生。" }], "next": "ch01_002" },
+    "ch01_002": { "bg": "bg_ch01_mineko_apartment", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "翻译家三井峯子独居的房间没有明显翻找痕迹。调查从谁曾被她迎进门开始。" }], "onEnter": { "clues": ["paper_cord", "untouched_flat"], "state": { "pressure": 1 } }, "next": "ch01_003" },
+    "ch01_003": { "bg": "bg_ch01_amakaraya_storefront", "pov": "naho", "lines": [{ "speaker": "旁白", "text": "煎饼店的暖帘下，上川菜穗看见那位新来的刑警又来找田仓。父亲的行程陈述有一处怎么也对不上。" }], "onEnter": { "povUnlock": ["naho"] }, "next": "ch01_004" },
+    "ch01_004": { "bg": "bg_ch01_amakaraya_storefront", "pov": "naho", "lines": [{ "speaker": "菜穗", "text": "田仓先生不是坏人。可他越想保护谁，说出的话就越像在掩饰什么。" }], "choices": [{ "text": "先问清保险材料的用途", "tag": "细看", "goto": "ch01_005" }, { "text": "先核对父亲与田仓的行程", "tag": "时间", "goto": "ch01_006" }] },
+    "ch01_005": { "bg": "bg_ch01_amakaraya_storefront", "pov": "naho", "lines": [{ "speaker": "旁白", "text": "两份内容不同的诊断材料并不是为了骗取钱财，而是家人面对病情时做出的隐瞒。" }], "next": "ch01_007" },
+    "ch01_006": { "bg": "bg_ch01_amakaraya_storefront", "pov": "naho", "lines": [{ "speaker": "旁白", "text": "行程逐段拼回原位。田仓隐瞒的不是接近峯子的理由，而是另一户人家的秘密。" }], "next": "ch01_007" },
+    "ch01_007": { "bg": "bg_ch01_amakaraya_storefront", "pov": "naho", "lines": [{ "speaker": "旁白", "text": "要不要把自己发现的矛盾交给加贺？菜穗必须决定，信不信任这个余所者。" }], "choices": [{ "text": "把两份材料与疑点一起交给加贺", "tag": "查访 +1 · 人情 +1", "effects": { "state": { "trace": 1, "ninjo": 1 }, "flags": ["naho_opened"], "clues": ["two_diagnoses"] }, "goto": "ch01_008" }, { "text": "自己追问，暂时不让刑警介入", "tag": "查访 +1 · 定式 +1", "effects": { "state": { "trace": 1, "pressure": 1 }, "clues": ["two_diagnoses"] }, "goto": "ch01_009" }] },
+    "ch01_008": { "bg": "bg_ch01_amakaraya_storefront", "pov": "naho", "lines": [{ "speaker": "加贺", "text": "说谎会妨碍调查，但说谎的理由也必须查清。谢谢你把两件事都告诉我。" }], "next": "ch01_010" },
+    "ch01_009": { "bg": "bg_ch01_amakaraya_storefront", "pov": "naho", "lines": [{ "speaker": "旁白", "text": "菜穗独自逼近答案，也让家人不得不在没有准备时面对它。加贺只把确认过的事实记进卷宗。" }], "next": "ch01_010" },
+    "ch01_010": { "bg": "bg_ch01_amakaraya_storefront", "pov": "naho", "lines": [{ "speaker": "旁白", "text": "田仓的嫌疑被排除。案子没有因此向前很多，但一家人终于不再被同一个秘密隔开。" }], "next": "ch01_011" },
+    "ch01_011": { "bg": "bg_ch01_amakaraya_storefront", "pov": "naho", "lines": [{ "speaker": "菜穗", "text": "您不像来给谁定罪，更像来问大家为什么不肯说实话。" }, { "speaker": "加贺", "text": "两件事有时离得很远，有时只隔一面暖帘。" }], "next": "ch01_012" },
+    "ch01_012": { "bg": "bg_ningyocho_street", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "田仓的歧路被排除。下一条线索，把加贺带到一家料亭。" }], "next": "ch02_001" }
+  }
+}

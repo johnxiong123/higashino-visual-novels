@@ -1,0 +1,18 @@
+{
+  "meta": { "id": "ch05", "title": "第五章 · 洋菓子店的店员", "defaultPov": "miyuki" },
+  "start": "ch05_001",
+  "nodes": {
+    "ch05_001": { "bg": "bg_ch05_quattro_patisserie", "pov": "miyuki", "lines": [{ "speaker": "旁白", "text": "美雪记得那位数次来到店里的客人。峯子很少攀谈，只在远处看她工作。" }], "onEnter": { "povUnlock": ["miyuki"], "state": { "pressure": 1 } }, "next": "ch05_002" },
+    "ch05_002": { "bg": "bg_ch05_quattro_patisserie", "pov": "miyuki", "lines": [{ "speaker": "美雪", "text": "她的眼神不冒犯，更像在确认我过得好不好。可我们明明不认识。" }], "onEnter": { "clues": ["showcase_gaze"] }, "next": "ch05_003" },
+    "ch05_003": { "bg": "bg_ch05_quattro_patisserie", "cg": "cg_ch05_showcase_gaze", "pov": "miyuki", "lines": [{ "speaker": "旁白", "text": "记忆中的峯子始终在远处，只留下一道侧影。美雪记不清每次来访是否都买过东西，不愿用猜测补上空白。" }], "choices": [{ "text": "整理她几次来店的共同点", "tag": "规律", "goto": "ch05_004" }, { "text": "回想她主动询问过的事", "tag": "话语", "goto": "ch05_005" }] },
+    "ch05_004": { "bg": "bg_ch05_quattro_patisserie", "pov": "miyuki", "lines": [{ "speaker": "旁白", "text": "重复的来访不是偶然。峯子在等待一个她以为与儿子有关的人。" }], "next": "ch05_006" },
+    "ch05_005": { "bg": "bg_ch05_quattro_patisserie", "pov": "miyuki", "lines": [{ "speaker": "旁白", "text": "一条转述来的消息，让峯子把美雪误认成弘毅的恋人。" }], "next": "ch05_006" },
+    "ch05_006": { "bg": "bg_ch05_quattro_patisserie", "pov": "miyuki", "lines": [{ "speaker": "旁白", "text": "这段注视似乎与命案无关。美雪可以说完，也可以让它留在店里的日常里。" }], "choices": [{ "text": "把峯子的来访与询问全部说出", "tag": "人情 +1 · 心意 +2", "effects": { "state": { "ninjo": 1, "kizuna": 2 }, "flags": ["watching_shared"], "clues": ["mistaken_lover"] }, "goto": "ch05_007" }, { "text": "只说购买记录，不谈她的目光", "tag": "心意 +1", "effects": { "state": { "kizuna": 1 }, "clues": ["mistaken_lover"] }, "goto": "ch05_008" }] },
+    "ch05_007": { "bg": "bg_ch05_quattro_patisserie", "pov": "miyuki", "lines": [{ "speaker": "加贺", "text": "她认错了你，却没有认错自己想确认的事：那个离开的孩子是否被人好好陪着。" }], "next": "ch05_009" },
+    "ch05_008": { "bg": "bg_ch05_quattro_patisserie", "pov": "miyuki", "lines": [{ "speaker": "旁白", "text": "加贺从购买记录与其他证词补上误认。美雪仍把那段目光留给自己。" }], "next": "ch05_009" },
+    "ch05_009": { "bg": "bg_ch05_quattro_patisserie", "pov": "miyuki", "lines": [{ "speaker": "旁白", "text": "峯子的购物不再只是散落的物件。它们都朝着她不敢直接靠近的人延伸。" }], "next": "ch05_010" },
+    "ch05_010": { "bg": "bg_ch05_quattro_patisserie", "pov": "miyuki", "lines": [{ "speaker": "美雪", "text": "如果见到她儿子，请告诉他，她每次都会把蛋糕护得很稳。" }], "next": "ch05_011" },
+    "ch05_011": { "bg": "bg_ch05_quattro_patisserie", "pov": "miyuki", "lines": [{ "speaker": "旁白", "text": "美雪把能够确认的来访次数写下，没有用记忆替空白补出日期。" }], "next": "ch05_012" },
+    "ch05_012": { "bg": "bg_ningyocho_street", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "被认错的人仍接住了一份真实的牵挂。接下来，加贺要去见推开峯子房门的人。" }], "next": "ch06_001" }
+  }
+}

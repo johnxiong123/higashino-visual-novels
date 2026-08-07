@@ -1,0 +1,22 @@
+{
+  "meta": { "id": "ch09", "title": "终章 · 日本桥的刑警", "defaultPov": "kaga" },
+  "start": "ch09_001",
+  "nodes": {
+    "ch09_001": { "bg": "bg_ningyocho_street", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "煎饼店、料亭、瓷器店、钟表店、洋菓子店、书房、公司与民艺品店。八段家事不是旁枝，而是排除误判的地图。" }], "next": "ch09_002" },
+    "ch09_002": { "bg": "bg_ch01_mineko_apartment", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "峯子追问了一个与清瀬公司有关的账户。岸田替儿子遮掩的资金问题，正要因此暴露。" }], "onEnter": { "clues": ["fathers_ledger"] }, "next": "ch09_003" },
+    "ch09_003": { "bg": "bg_ch08_hozuki_folkcraft", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "两只独乐与两种绳能否闭合，将决定警方是在追一个人，还是只有一串方向相似的怀疑。" }], "branches": [{ "requires": { "flags": ["cord_evidence"] }, "goto": "ch09_004" }, { "requires": {}, "goto": "ch09_015" }] },
+    "ch09_004": { "bg": "bg_ch08_hozuki_folkcraft", "cg": "cg_ch08_top_and_cord", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "来源与结构完成互证。岸田试图用后来的独乐掩盖先前那只的去向，反而留下无法解释的错配。" }], "next": "ch09_005" },
+    "ch09_005": { "bg": "bg_ch07_kiyose_office", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "证据足以收网，但动机仍可被压缩成一句“金钱”。加贺必须决定要不要继续还原父子之间的资金因果。" }], "choices": [{ "text": "继续核清岸田为何反复替克哉填补亏空", "tag": "人情门槛 · 完整因果", "requires": { "vars": { "ninjo": { "gte": 5 } } }, "effects": { "flags": ["motive_chain"] }, "goto": "ch09_006" }, { "text": "按现有证据立即收网", "tag": "定式 +2", "effects": { "state": { "pressure": 2 } }, "goto": "ch09_009" }] },
+    "ch09_006": { "bg": "bg_ch07_kiyose_office", "pov": "kaga", "lines": [{ "speaker": "加贺", "text": "克哉造成资金窟窿，岸田又挪动清瀬公司的钱替他遮盖。峯子的询问让这层遮掩即将失效。" }], "next": "ch09_007" },
+    "ch09_007": { "bg": "bg_ch09_suitengu_shrine", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "前八章里，人们一次次把保护家人与隐瞒事实混在一起。岸田把同一种选择推到了不可挽回的地方。" }], "next": "ch09_008" },
+    "ch09_008": { "bg": "bg_ch07_kiyose_office", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "完整因果与物证一同进入讯问。岸田无法再把儿子的窟窿、自己的挪款和峯子的死亡拆成互不相干的事。" }], "next": "ch09_009" },
+    "ch09_009": { "bg": "bg_ch01_mineko_apartment", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "岸田被依法带走。接下来不是新的证据，而是案件结束后如何对待被留下的人。" }], "next": "ch09_010" },
+    "ch09_010": { "bg": "bg_ningyocho_street", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "加贺可以把各章查明的心意分别交还给它们真正指向的人，也可以让一切随卷宗归档。" }], "choices": [{ "text": "逐一归还那些与命案无关却重要的心意", "tag": "心意", "effects": { "flags": ["hearts_returned"] }, "goto": "ch09_011" }, { "text": "按程序移交物品与记录", "tag": "程序", "effects": { "flags": ["procedure_only"] }, "goto": "ch09_012" }] },
+    "ch09_011": { "bg": "bg_ningyocho_street", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "剪刀回到婆媳的餐桌，夫妇箸交到多美子手中，水天宫的误会也回到各自家庭。每份心意都有真正的归处。" }], "next": "ch09_013" },
+    "ch09_012": { "bg": "bg_ningyocho_street", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "卷宗记录事实，却不会替每个人完成和解。加贺看着街坊各自接过案子留下的重量。" }], "next": "ch09_013" },
+    "ch09_013": { "bg": "bg_ningyocho_street", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "人形町恢复日常。加贺仍是这里的新面孔，却已经知道每一面暖帘后都有不能被案号概括的人。" }], "branches": [{ "requires": { "flags": ["cord_evidence", "motive_chain"] }, "goto": "ch09_014" }, { "requires": { "flags": ["cord_evidence"] }, "goto": "ch09_016" }, { "requires": {}, "goto": "ch09_015" }] },
+    "ch09_014": { "bg": "bg_ningyocho_street", "cg": "cg_true_mimamori_montage", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "街坊记忆里的峯子第一次由零散侧影拼成完整面容。她对不同人的善意，也终于各归其位。" }], "ending": { "id": "TE_shinzanmono" } },
+    "ch09_015": { "bg": "bg_ningyocho_street", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "纸绳的来源没有完成闭环。调查被结案压力截断，加贺走过一排低垂暖帘，仍是进不去的余所者。" }], "ending": { "id": "BE_yosomono" } },
+    "ch09_016": { "bg": "bg_ch07_kiyose_office", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "物证让案件成立，父子资金链却被压缩成卷宗里的“金钱纠纷”。凶手落网，案件之外的人仍独自收拾余波。" }], "ending": { "id": "ME_chosho" } }
+  }
+}

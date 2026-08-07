@@ -1,0 +1,18 @@
+{
+  "meta": { "id": "ch06", "title": "第六章 · 翻译家的友人", "defaultPov": "tamiko" },
+  "start": "ch06_001",
+  "nodes": {
+    "ch06_001": { "bg": "bg_ch06_tamiko_study", "pov": "tamiko", "lines": [{ "speaker": "旁白", "text": "吉冈多美子的书房里，两张工作桌只亮了一盏灯。作为第一发现者，她把那扇门在心里推开了无数次。" }], "onEnter": { "povUnlock": ["tamiko"], "state": { "pressure": 1 }, "clues": ["finder_guilt"] }, "next": "ch06_002" },
+    "ch06_002": { "bg": "bg_ch06_tamiko_study", "pov": "tamiko", "lines": [{ "speaker": "多美子", "text": "如果我早一点去，如果我没有因为争执避开她，也许事情会不同。" }], "next": "ch06_003" },
+    "ch06_003": { "bg": "bg_ch06_tamiko_study", "pov": "tamiko", "lines": [{ "speaker": "加贺", "text": "我今天不是来重问发现经过。峯子买了一对筷子，我想确认她准备送给谁。" }], "choices": [{ "text": "查看未完成工作的摆放", "tag": "书房", "goto": "ch06_004" }, { "text": "回想两人最后一次争执", "tag": "关系", "goto": "ch06_005" }] },
+    "ch06_004": { "bg": "bg_ch06_tamiko_study", "pov": "tamiko", "lines": [{ "speaker": "旁白", "text": "共同工作的痕迹没有被清走。争执没有结束友谊，只让和解晚了一步。" }], "next": "ch06_006" },
+    "ch06_005": { "bg": "bg_ch06_tamiko_study", "pov": "tamiko", "lines": [{ "speaker": "旁白", "text": "两位朋友对多美子的生活选择意见不合。峯子后来想用礼物先递出和解。" }], "next": "ch06_006" },
+    "ch06_006": { "bg": "bg_ch06_tamiko_study", "cg": "cg_ch06_meoto_chopsticks", "pov": "tamiko", "lines": [{ "speaker": "旁白", "text": "夫妇箸摆在桌上。它们没有回答案情，却回答了峯子最后如何看待这段友情。" }], "onEnter": { "clues": ["meoto_bashi", "gift_list"] }, "next": "ch06_007" },
+    "ch06_007": { "bg": "bg_ch06_tamiko_study", "pov": "tamiko", "lines": [{ "speaker": "旁白", "text": "多美子可以接过这份迟来的心意，也可以拒绝让一个刑警替朋友安慰自己。" }], "choices": [{ "text": "接下夫妇箸，也接下峯子的和解", "tag": "人情 +2 · 心意 +1", "effects": { "state": { "ninjo": 2, "kizuna": 1 }, "flags": ["healed_finder"] }, "goto": "ch06_008" }, { "text": "把筷子留在桌上", "tag": "保持距离", "goto": "ch06_009" }] },
+    "ch06_008": { "bg": "bg_ch06_tamiko_study", "pov": "tamiko", "lines": [{ "speaker": "多美子", "text": "我不能替她完成最后一页，但可以把我们没做完的工作整理好。" }], "next": "ch06_010" },
+    "ch06_009": { "bg": "bg_ch06_tamiko_study", "pov": "tamiko", "lines": [{ "speaker": "加贺", "text": "不必现在原谅自己。至少请把这双筷子留下，它不是证物。" }], "next": "ch06_010" },
+    "ch06_010": { "bg": "bg_ch06_tamiko_study", "pov": "tamiko", "lines": [{ "speaker": "旁白", "text": "加贺确认：抚慰第一发现者并不会妨碍破案。相反，它让峯子作为一个活过的人重新出现。" }], "next": "ch06_011" },
+    "ch06_011": { "bg": "bg_ch06_tamiko_study", "pov": "tamiko", "lines": [{ "speaker": "旁白", "text": "离开前，加贺把夫妇箸留给多美子。它属于她与峯子的故事，不属于警方证物袋。" }], "next": "ch06_012" },
+    "ch06_012": { "bg": "bg_ningyocho_street", "pov": "kaga", "lines": [{ "speaker": "旁白", "text": "心意清单渐渐完整，主案却仍缺少动机。峯子的前夫与公司账目成为下一站。" }], "next": "ch07_001" }
+  }
+}
